@@ -1,0 +1,545 @@
+<!-- sections/collection-promo-grid.liquid -->
+{%- liquid
+  assign collection = collections[section.settings.collection]
+  assign limit = section.settings.limit
+  assign columns = section.settings.slides_to_show
+  assign enable_slider = section.settings.enable_slider
+  assign arrows = section.settings.arrows
+  assign dots = section.settings.dots
+  assign promo_pos = section.settings.promo_position
+  assign overlay_bg = section.settings.overlay_color
+  assign overlay_opacity = section.settings.overlay_opacity
+  assign promo_text_color = section.settings.promo_text_color
+-%}
+
+{%- style -%}
+  /* Custom scoped layout styles for the promo-grid */
+  .collection-promo-grid__container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .collection-promo-grid__promo-col {
+    width: 100%;
+  }
+
+  .collection-promo-grid__content-col {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: 992px) {
+    .collection-promo-grid__container {
+      display: grid;
+      grid-template-columns: 28% 72%;
+      column-gap: var(--g-gutter, 30px);
+    }
+    .collection-promo-grid__container.promo-pos-right {
+      grid-template-columns: 72% 28%;
+    }
+    .collection-promo-grid__promo-col {
+      grid-column: 1;
+    }
+    .collection-promo-grid__container.promo-pos-right .collection-promo-grid__promo-col {
+      grid-column: 2;
+    }
+    .collection-promo-grid__content-col {
+      grid-column: 2;
+      /* Prevent grid blowout with slide-based items */
+      min-width: 0; 
+    }
+    .collection-promo-grid__container.promo-pos-right .collection-promo-grid__content-col {
+      grid-column: 1;
+    }
+  }
+
+  /* Promo card card-styling */
+  .promo-block {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 100%;
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  }
+
+  @media (max-width: 991px) {
+    .promo-block {
+      min-height: 350px;
+    }
+  }
+
+  .promo-block__image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  .promo-block__image-wrapper img, 
+  .promo-block__image-wrapper svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .promo-block__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .promo-block__content {
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+    color: var(--text-color);
+  }
+
+  .promo-block__text {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+
+  .promo-block__btn-wrapper {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  /* Grid/Slider Heading Styles */
+  .promo-grid__heading-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 15px;
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 15px;
+  }
+
+  .promo-grid__heading-text {
+    flex: 1 1 auto;
+  }
+
+  .promo-grid__heading {
+    margin: 0 0 8px;
+    font-size: 2.25rem;
+    font-weight: 600;
+  }
+
+  .promo-grid__description {
+    font-size: 0.95rem;
+    color: #666;
+  }
+
+  .promo-grid__heading-actions {
+    flex: 0 0 auto;
+  }
+
+  /* Adjust spacing for slider items */
+  .collection-promo-grid__content-col .productlist-item {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .collection-promo-grid__content-col .slick-list {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  /* Slider arrows */
+  .collection-promo-grid__content-col .slick-prev {
+    left: -20px;
+    z-index: 10;
+  }
+
+  .collection-promo-grid__content-col .slick-next {
+    right: -20px;
+    z-index: 10;
+  }
+{%- endstyle -%}
+
+<div class="customstyle{{ section.id }}" data-aos="{{ section.settings.animation }}">
+  {%- render 'style-section' -%}
+  <div class="{{ section.settings.setwidth }}">
+    <div class="section-block">
+      <div class="collection-promo-grid__container promo-pos-{{ promo_pos }}">
+        
+        <!-- Promo Column -->
+        <div class="collection-promo-grid__promo-col">
+          <div class="promo-block">
+            <div class="promo-block__image-wrapper">
+              {%- if section.settings.promo_image != blank -%}
+                {% assign img_url = section.settings.promo_image | image_url: width: 1 | replace: 'width=1', 'width={width}' %}
+                <img class="lazyload scale-in"
+                     src="{{ section.settings.promo_image | image_url: width: 720 }}"
+                     data-src="{{ img_url }}"
+                     data-widths="[180, 360, 540, 720, 900, 1080]"
+                     data-aspectratio="{{ section.settings.promo_image.aspect_ratio }}"
+                     data-sizes="auto"
+                     alt="{{ section.settings.promo_image.alt | escape }}"
+                     loading="lazy">
+              {%- else -%}
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+              {%- endif -%}
+            </div>
+            
+            <div class="promo-block__overlay" style="background-color: {{ overlay_bg }}; opacity: {{ overlay_opacity }};"></div>
+            
+            <div class="promo-block__content" style="--text-color: {{ promo_text_color }};">
+              {%- if section.settings.promo_text != blank -%}
+                <div class="promo-block__text">
+                  {{ section.settings.promo_text }}
+                </div>
+              {%- endif -%}
+              
+              {%- if section.settings.promo_btn_label != blank and section.settings.promo_btn_link != blank -%}
+                <div class="promo-block__btn-wrapper">
+                  <a href="{{ section.settings.promo_btn_link }}" class="btn {{ section.settings.style_btn_promo }}">
+                    {{ section.settings.promo_btn_label | escape }}
+                  </a>
+                </div>
+              {%- endif -%}
+            </div>
+          </div>
+        </div>
+        
+        <!-- Content Column (Heading + Grid/Slider) -->
+        <div class="collection-promo-grid__content-col">
+          <div class="promo-grid__heading-holder">
+            <div class="promo-grid__heading-text">
+              {%- if section.settings.title != blank -%}
+                <h2 class="promo-grid__heading">{{ section.settings.title | escape }}</h2>
+              {%- endif -%}
+              {%- if section.settings.description != blank -%}
+                <div class="promo-grid__description">
+                  {{ section.settings.description }}
+                </div>
+              {%- endif -%}
+            </div>
+            
+            {%- if section.settings.view_all_text != blank and section.settings.view_all_link != blank -%}
+              <div class="promo-grid__heading-actions">
+                <a href="{{ section.settings.view_all_link }}" class="btn {{ section.settings.style_btn_all }}">
+                  {{ section.settings.view_all_text | escape }}
+                </a>
+              </div>
+            {%- endif -%}
+          </div>
+          
+          <div class="grid-outer">
+            {%- if enable_slider -%}
+              <div class="productlist-slider row" id="Productlist-{{ section.id }}"
+                   style="opacity:0"
+                   data-rows="1"
+                   data-slidesToShow="{{ columns }}"
+                   data-arrows="{{ arrows }}"
+                   data-dots="{{ dots }}" 
+                   data-draggable="true" 
+                   data-infinite="true" 
+                   data-section-id="{{ section.id }}" 
+                   data-section-type="productlist">
+                {%- if collection != blank and collection.products.size > 0 -%}
+                  {%- for product in collection.products limit: limit -%}
+                    <div class="productlist-item col">
+                      {%- render 'product-card', product: product -%}
+                    </div>
+                  {%- endfor -%}
+                {%- else -%}
+                  {%- for i in (1..limit) -%}
+                    <div class="productlist-item col">
+                      {%- render 'product-grid-blank' -%}
+                    </div>
+                  {%- endfor -%}
+                {%- endif -%}
+              </div>
+            {%- else -%}
+              {%- liquid
+                case columns
+                  when 2
+                    assign grid_col = 'col-lg-6 col-md-6 col-6'
+                  when 3
+                    assign grid_col = 'col-lg-4 col-md-6 col-6'
+                  when 4
+                    assign grid_col = 'col-lg-3 col-md-6 col-6'
+                  else
+                    assign grid_col = 'col-lg-4 col-md-6 col-6'
+                endcase
+              -%}
+              <div class="row">
+                {%- if collection != blank and collection.products.size > 0 -%}
+                  {%- for product in collection.products limit: limit -%}
+                    <div class="{{ grid_col }} mb-4">
+                      {%- render 'product-card', product: product -%}
+                    </div>
+                  {%- endfor -%}
+                {%- else -%}
+                  {%- for i in (1..limit) -%}
+                    <div class="{{ grid_col }} mb-4">
+                      {%- render 'product-grid-blank' -%}
+                    </div>
+                  {%- endfor -%}
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Collection with Promo",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "animation",
+      "options": [
+        { "value": "", "label": "None" },
+        { "value": "fade", "label": "Fade" },
+        { "value": "fade-up", "label": "Fade Up" },
+        { "value": "fade-down", "label": "Fade Down" },
+        { "value": "fade-left", "label": "Fade Left" },
+        { "value": "fade-right", "label": "Fade Right" }
+      ],
+      "label": "Select Animation",
+      "default": "fade-up"
+    },
+    {
+      "type": "select",
+      "id": "setwidth",
+      "label": "Section Width",
+      "default": "container",
+      "options": [
+        { "value": "container", "label": "Box" },
+        { "value": "container-fluid", "label": "Container Fluid" },
+        { "value": "full", "label": "Full Width" }
+      ]
+    },
+    {
+      "type": "color",
+      "id": "bgsection",
+      "label": "Background Section",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Collection Header"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Best Sellers"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Meet our tried and true line-up of clean beauty favorites.</p>"
+    },
+    {
+      "type": "text",
+      "id": "view_all_text",
+      "label": "View All Button Text",
+      "default": "Shop Best Sellers"
+    },
+    {
+      "type": "url",
+      "id": "view_all_link",
+      "label": "View All Button Link"
+    },
+    {
+      "type": "select",
+      "id": "style_btn_all",
+      "label": "View All Button Style",
+      "default": "btn-underline",
+      "options": [
+        { "value": "btn-theme", "label": "Button Box" },
+        { "value": "btn-theme btn-white", "label": "Button Box White" },
+        { "value": "btn-underline", "label": "Button Line" },
+        { "value": "btn-underline btn-underline-white", "label": "Button Line White" },
+        { "value": "btn-outline", "label": "Button Outline" },
+        { "value": "btn-outline btn-outline-white", "label": "Button Outline White" }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Product List Settings"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    },
+    {
+      "type": "range",
+      "id": "limit",
+      "label": "Max Products to Show",
+      "min": 2,
+      "max": 20,
+      "step": 1,
+      "default": 8
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_slider",
+      "label": "Enable Product Slider",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "slides_to_show",
+      "label": "Grid Columns / Slides to Show",
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "checkbox",
+      "id": "arrows",
+      "label": "Show Slider Arrows",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "dots",
+      "label": "Show Slider Dots",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Promo Block Settings"
+    },
+    {
+      "type": "select",
+      "id": "promo_position",
+      "label": "Promo Block Position",
+      "default": "left",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "right", "label": "Right" }
+      ]
+    },
+    {
+      "type": "image_picker",
+      "id": "promo_image",
+      "label": "Promo Image"
+    },
+    {
+      "type": "text",
+      "id": "promo_text",
+      "label": "Promo Text Accent",
+      "default": "Extremely hydrating and nourishing, thanks to natural fatty acids and 100% grass-fed tallow."
+    },
+    {
+      "type": "color",
+      "id": "promo_text_color",
+      "label": "Promo Text Color",
+      "default": "#f7f6f2"
+    },
+    {
+      "type": "text",
+      "id": "promo_btn_label",
+      "label": "Promo Button Label",
+      "default": "SHOP FRANKINCENSE BALM"
+    },
+    {
+      "type": "url",
+      "id": "promo_btn_link",
+      "label": "Promo Button Link"
+    },
+    {
+      "type": "select",
+      "id": "style_btn_promo",
+      "label": "Promo Button Style",
+      "default": "btn-theme btn-white",
+      "options": [
+        { "value": "btn-theme", "label": "Button Box" },
+        { "value": "btn-theme btn-white", "label": "Button Box White" },
+        { "value": "btn-underline", "label": "Button Line" },
+        { "value": "btn-underline btn-underline-white", "label": "Button Line White" },
+        { "value": "btn-outline", "label": "Button Outline" },
+        { "value": "btn-outline btn-outline-white", "label": "Button Outline White" }
+      ]
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Image Overlay Color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "Image Overlay Opacity",
+      "min": 0,
+      "max": 1,
+      "step": 0.1,
+      "default": 0.2
+    },
+    {
+      "type": "header",
+      "content": "Section Padding"
+    },
+    {
+      "type": "text",
+      "id": "paddingsection",
+      "label": "Padding Section",
+      "default": "36px 0px 50px 0px",
+      "info": "Padding: Top Right Bottom Left"
+    },
+    {
+      "type": "text",
+      "id": "paddingmobile",
+      "label": "Padding Section Mobile",
+      "default": "36px 0px 40px 0px",
+      "info": "Padding: Top Right Bottom Left"
+    },
+    {
+      "type": "header",
+      "content": "Section Margin"
+    },
+    {
+      "type": "text",
+      "id": "marginsection",
+      "label": "Margin Section",
+      "default": "0px 0px 0px 0px",
+      "info": "Margin: Top Right Bottom Left"
+    },
+    {
+      "type": "text",
+      "id": "marginmobile",
+      "label": "Margin Mobile",
+      "default": "0px 0px 0px 0px",
+      "info": "Margin: Top Right Bottom Left"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection with Promo",
+      "category": "Collection"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,291 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "product-template-1",
+      "blocks": {
+        "989bce2f-7961-4267-8e6c-40ff4bb0ed64": {
+          "type": "title",
+          "settings": {
+            "e_label": true
+          }
+        },
+        "63b4b894-da0f-497b-aaef-b11f3e5f55ff": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "c5c11045-e3b5-47e4-80d1-25e86ec844cc": {
+          "type": "price",
+          "settings": {}
+        },
+        "1affb493-1e14-4893-9876-be8d348ee475": {
+          "type": "shortdesc",
+          "settings": {}
+        },
+        "ff32ea77-bcea-43d3-8e38-55894c9d938a": {
+          "type": "separator",
+          "settings": {}
+        },
+        "8288910a-1ad6-47df-b127-118bc1d2ce24": {
+          "type": "buttons",
+          "settings": {
+            "enable_local_pickup": true,
+            "enable_hurrify": false,
+            "enable_payment_button": true,
+            "waitlist": true,
+            "product_selector": "radio",
+            "sw_color_product": true,
+            "color_circle": true,
+            "size_color": "small-38"
+          }
+        },
+        "ab3c624e-4b26-4bb4-b6bc-f283badc9347": {
+          "type": "separator",
+          "settings": {}
+        },
+        "2830007b-b9f5-4f33-86cf-680e0a91ca8d": {
+          "type": "tabcustom",
+          "disabled": true,
+          "settings": {
+            "title_tab": "Shipping information",
+            "icon": "truck",
+            "answer_content": "<p>- No EU import duties.<br/>- Ships within 1-2 business days.<br/>- Ships in our fully recyclable and biodegradable signature boxes.</p>",
+            "page": ""
+          }
+        },
+        "0a71f30d-dba2-4bca-a64d-c3cc2ed17e7d": {
+          "type": "tabcustom",
+          "disabled": true,
+          "settings": {
+            "title_tab": "Care Guide",
+            "icon": "leaf",
+            "answer_content": "<p>Hand-wash warm. Tumble dry low. This product has been washed at the factory after sewing to minimize fabric shrinkage.</p>",
+            "page": ""
+          }
+        },
+        "8d4704f6-d81d-4390-9ec5-af58698bef51": {
+          "type": "salepoint",
+          "disabled": true,
+          "settings": {
+            "icon": "globe",
+            "free_word": "55% Linen, 45% Rayon"
+          }
+        },
+        "b7034bf2-48fd-492f-a089-3169873730db": {
+          "type": "salepoint",
+          "disabled": true,
+          "settings": {
+            "icon": "lock",
+            "free_word": "Secure payment"
+          }
+        },
+        "842b653e-7ccb-4f45-ad7c-8619b58f56ee": {
+          "type": "separator",
+          "disabled": true,
+          "settings": {}
+        },
+        "bf089f50-667c-4417-a84a-9478625741a1": {
+          "type": "list-info",
+          "settings": {
+            "block_style": "ver",
+            "product_vendor_enable": true,
+            "product_type_enable": false,
+            "variant_sku_enable": true,
+            "variant_available_enable": false
+          }
+        },
+        "7120c076-9673-4f15-a579-5efa29fefb6f": {
+          "type": "separator",
+          "settings": {}
+        },
+        "1431e891-e819-4fa1-8416-0cb3956f0e39": {
+          "type": "description",
+          "settings": {
+            "enable_tab": true,
+            "title_tab": "Description"
+          }
+        },
+        "883720d7-3346-4495-85a0-add8b3d7a51f": {
+          "type": "trust-badge",
+          "settings": {
+            "trust-heading": "Guarantee safe checkout",
+            "width_image": 66
+          }
+        },
+        "2d534ed0-517d-48ca-8370-8659965f32c4": {
+          "type": "share",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "989bce2f-7961-4267-8e6c-40ff4bb0ed64",
+        "63b4b894-da0f-497b-aaef-b11f3e5f55ff",
+        "c5c11045-e3b5-47e4-80d1-25e86ec844cc",
+        "1affb493-1e14-4893-9876-be8d348ee475",
+        "ff32ea77-bcea-43d3-8e38-55894c9d938a",
+        "8288910a-1ad6-47df-b127-118bc1d2ce24",
+        "ab3c624e-4b26-4bb4-b6bc-f283badc9347",
+        "2830007b-b9f5-4f33-86cf-680e0a91ca8d",
+        "0a71f30d-dba2-4bca-a64d-c3cc2ed17e7d",
+        "8d4704f6-d81d-4390-9ec5-af58698bef51",
+        "b7034bf2-48fd-492f-a089-3169873730db",
+        "842b653e-7ccb-4f45-ad7c-8619b58f56ee",
+        "bf089f50-667c-4417-a84a-9478625741a1",
+        "7120c076-9673-4f15-a579-5efa29fefb6f",
+        "1431e891-e819-4fa1-8416-0cb3956f0e39",
+        "883720d7-3346-4495-85a0-add8b3d7a51f",
+        "2d534ed0-517d-48ca-8370-8659965f32c4"
+      ],
+      "settings": {
+        "setwidth": "container",
+        "media_style": "media-left",
+        "media_size": "normal",
+        "image_size": "square",
+        "enable_video_looping": true,
+        "stock_enable": true,
+        "sizeguide_enable": false,
+        "sizeguide_title": "Size Guide",
+        "sizeguide_page": "size-guide",
+        "crosssell_title": "Cross selling",
+        "upsell_accept": "Add to cart",
+        "upsell_decline": "No, thanks",
+        "upsell_time": 3,
+        "enable": true,
+        "mix_1": "#2c4a3b",
+        "mix_2": "#ffffff",
+        "text_cl": "#ffffff",
+        "cart_bg": "#ffffff",
+        "cart_cl": "#094a6e",
+        "cart_cl_hover": "#ffffff"
+      }
+    },
+    "product-requently": {
+      "type": "product-bundle",
+      "disabled": true,
+      "settings": {
+        "animation": "fade-up",
+        "bgsection": "#ffffff",
+        "bundle_title": "Frequently Bought Together",
+        "size_text": "h4",
+        "limit_bundle": 3,
+        "enable_border": true,
+        "btn_add": "Add selected items",
+        "paddingsection": "40px 0px 40px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "product-content": {
+      "type": "product-content",
+      "blocks": {
+        "6889c9ba-caef-4edd-9757-6711505cb095": {
+          "type": "description",
+          "settings": {
+            "title_tab": "Description"
+          }
+        },
+        "2e69c5c0-ab83-4cda-9c38-1aaab6fdf1cc": {
+          "type": "related-product",
+          "settings": {
+            "title_heading": "Buy with",
+            "size_text": "h4",
+            "product_limit": 3
+          }
+        }
+      },
+      "block_order": [
+        "6889c9ba-caef-4edd-9757-6711505cb095",
+        "2e69c5c0-ab83-4cda-9c38-1aaab6fdf1cc"
+      ],
+      "disabled": true,
+      "settings": {
+        "animation": "fade-up",
+        "setwidth": "container",
+        "tab_size": "normal",
+        "enable_left": true,
+        "paddingsection": "48px 0px 20px 0px",
+        "paddingmobile": "32px 0px 32px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "16956665928504d885": {
+      "type": "apps",
+      "blocks": {
+        "fc8a78d7-718e-46c1-b694-84579038acfb": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "fc8a78d7-718e-46c1-b694-84579038acfb"
+      ],
+      "settings": {
+        "animation": "",
+        "setwidth": "container",
+        "paddingsection": "40px 0px 20px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px",
+        "bgsection": "#f5f0e6"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "animation": "fade-up",
+        "setwidth": "container",
+        "heading": "You may also like",
+        "heading_size": "h3",
+        "heading_align": "center",
+        "products_to_show": 10,
+        "spaceBetween": 30,
+        "perviewDesktop": 4,
+        "nowrap": false,
+        "arrows": true,
+        "scrollbar": false,
+        "padding_top": 80,
+        "padding_bottom": 32
+      }
+    },
+    "product-recent": {
+      "type": "recently-viewed",
+      "settings": {
+        "enable": true,
+        "animation": "fade-up",
+        "setwidth": "container",
+        "title_top": "",
+        "title": "Recently viewed",
+        "des": "",
+        "align-heading": "center",
+        "limit": 4,
+        "paddingsection": "0px 0px 60px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-requently",
+    "product-content",
+    "16956665928504d885",
+    "product-recommendations",
+    "product-recent"
+  ]
+}

@@ -1,0 +1,194 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {}
+    },
+    "9ad78513-f48a-4eed-affd-30f6d370be1c": {
+      "type": "faq-accordion",
+      "blocks": {
+        "template--16736981942590__9ad78513-f48a-4eed-affd-30f6d370be1c-1666772143a4c26d1e-0": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "So, who is Fleuriation?",
+            "faq_des": "<p>Fleuriation is more than just skincare—it's a faith-driven herbal wellness brand inspired by Genesis 1:29. Every product is handcrafted in small batches using high-quality organic and natural ingredients to restore and nourish your body while maintaining complete transparency about what goes into every formula.</p>"
+          }
+        },
+        "template--16736981942590__9ad78513-f48a-4eed-affd-30f6d370be1c-1666772143a4c26d1e-1": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "What does Fleuriation mean?",
+            "faq_des": "<p>The name combines the French word <em>fleuri</em> (meaning flowery or blooming) with the suffix <em>-ation</em>, representing the process of blooming naturally through herbs and plants.</p>"
+          }
+        },
+        "template--16736981942590__9ad78513-f48a-4eed-affd-30f6d370be1c-1666772143a4c26d1e-2": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "What makes your products different?",
+            "faq_des": "<p>Our products are herbal and plant-powered, non-toxic, safe for the whole family, handcrafted in small batches for freshness, and made with complete honesty about every ingredient we use.</p>"
+          }
+        },
+        "faq_Gp4xRt": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Are your products safe for sensitive skin?",
+            "faq_des": "<p>Yes. Our formulas are gentle, non-toxic, and free from harsh chemicals and artificial fragrances. We still recommend performing a patch test before using any new product.</p>"
+          }
+        },
+        "faq_whxPcf": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Are your products vegan and cruelty-free?",
+            "faq_des": "<p>We never test on animals and offer many vegan products. Products containing beeswax are clearly labeled, and all beeswax is ethically sourced.</p>"
+          }
+        },
+        "faq_VKF9cb": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Do you use synthetic preservatives or additives?",
+            "faq_des": "<p>No. We avoid synthetic fillers, parabens, sulfates, and unnecessary additives, using natural preservatives whenever needed.</p>"
+          }
+        },
+        "faq_DHXyEN": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "What kind of ingredients do you use?",
+            "faq_des": "<p>We use carefully selected botanical oils, medicinal herbs, and essential oils—including rosehip, calendula, chamomile, lavender, frankincense, and more—to nourish and restore healthy skin.</p>"
+          }
+        },
+        "faq_8hK2Lp": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Is Fleuriation just about skincare?",
+            "faq_des": "<p>No. Our mission goes beyond skincare to promote overall wellness while sharing the restorative benefits of medicinal herbs.</p>"
+          }
+        },
+        "faq_J7mQzX": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Can I use these products on my kids?",
+            "faq_des": "<p>Yes. We offer several gentle herbal products designed for children. As with any skincare product, we recommend performing a patch test before first use.</p>"
+          }
+        },
+        "faq_P4vDnR": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "How do you make sure your products are high-quality?",
+            "faq_des": "<p>We source ingredients from trusted suppliers and farmers who share our commitment to purity, sustainability, and ethical practices. Every product is handcrafted in small batches for maximum freshness.</p>"
+          }
+        },
+        "faq_A9cLmW": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "How long do your products last?",
+            "faq_des": "<p>We recommend using our products within 6–12 months and storing them in a cool, dry place away from direct sunlight.</p>"
+          }
+        },
+        "faq_M2rTyE": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Do you offer wholesale?",
+            "faq_des": "<p>Yes. We offer wholesale opportunities on selected products for retailers, healthcare providers, ministries, and businesses. Contact us for more information.</p>"
+          }
+        },
+        "faq_X5uNpK": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "What about your packaging?",
+            "faq_des": "<p>We use eco-friendly and recyclable packaging whenever possible and encourage customers to recycle containers after use.</p>"
+          }
+        },
+        "faq_H8qVrM": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Why does shipping take a few days before my order goes out?",
+            "faq_des": "<p>Since every product is handcrafted in small batches, orders may take a little longer to prepare, ensuring the highest quality and freshness.</p>"
+          }
+        },
+        "faq_B3nCsQ": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "What if my order arrives damaged or incorrect?",
+            "faq_des": "<p>If your order arrives damaged or incorrect, please contact us immediately with photos of the product and packaging. Our team will work quickly to resolve the issue.</p>"
+          }
+        },
+        "faq_F6kLdJ": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Do you ship internationally?",
+            "faq_des": "<p>We currently ship to the United States and Canada, with plans to expand to additional countries in the future. International customers are responsible for any applicable customs duties and taxes.</p>"
+          }
+        },
+        "faq_T9pWxN": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "How do I know when my order ships?",
+            "faq_des": "<p>Once your order has shipped, you'll receive a confirmation email containing your tracking number so you can follow your package every step of the way.</p>"
+          }
+        },
+        "faq_Y4bGhU": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Do you use eco-friendly packaging?",
+            "faq_des": "<p>Yes. We prioritize environmentally responsible packaging, including recyclable containers, boxes, paper fillers, and compostable materials whenever possible.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16736981942590__9ad78513-f48a-4eed-affd-30f6d370be1c-1666772143a4c26d1e-0",
+        "template--16736981942590__9ad78513-f48a-4eed-affd-30f6d370be1c-1666772143a4c26d1e-1",
+        "template--16736981942590__9ad78513-f48a-4eed-affd-30f6d370be1c-1666772143a4c26d1e-2",
+        "faq_Gp4xRt",
+        "faq_whxPcf",
+        "faq_VKF9cb",
+        "faq_DHXyEN",
+        "faq_8hK2Lp",
+        "faq_J7mQzX",
+        "faq_P4vDnR",
+        "faq_A9cLmW",
+        "faq_M2rTyE",
+        "faq_X5uNpK",
+        "faq_H8qVrM",
+        "faq_B3nCsQ",
+        "faq_F6kLdJ",
+        "faq_T9pWxN",
+        "faq_Y4bGhU"
+      ],
+      "settings": {
+        "animation": "fade-up",
+        "setwidth": "container",
+        "bgsection": "#F5F0E6",
+        "e_size": "contain",
+        "e_repeat": "no-repeat",
+        "e_pos": "center center",
+        "title_top": "",
+        "title": "Frequently asked questions",
+        "des": "",
+        "align-heading": "center",
+        "title_size": "h5",
+        "e_first_open": false,
+        "e_reverse": true,
+        "e_small": true,
+        "left_html": "",
+        "e_right": false,
+        "paddingsection": "48px 0px 60px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "9ad78513-f48a-4eed-affd-30f6d370be1c"
+  ]
+}

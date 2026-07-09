@@ -1,0 +1,137 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer group",
+  "sections": {
+    "newsletter-footer": {
+      "type": "newsletter-footer",
+      "settings": {
+        "enable_newletter_footer": false,
+        "animation": "",
+        "setwidth": "container",
+        "bgsection": "#000000",
+        "newletter_color": "#ff6f2e",
+        "colorborder": "#C9A961",
+        "e_size": "cover",
+        "e_repeat": "no-repeat",
+        "title_top": "",
+        "title": "Subscrible & Get <span class=\"text-theme\">10% </span> Discount",
+        "des": "",
+        "html_left": false,
+        "html_left_block": "",
+        "paddingsection": "60px 0px 0px 0px",
+        "paddingmobile": "30px 0px 30px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "1595696762386": {
+          "type": "text",
+          "settings": {
+            "widthlogofooter": 150,
+            "title": "About us",
+            "text": "At Fleuriation, we believe nature provides the ingredients needed to nourish and restore. Our handmade products are crafted with organic herbs and plant-based ingredients to promote healthy, radiant skin.",
+            "width": "25%"
+          }
+        },
+        "b68420a7-353e-422d-9a28-2dba5275c372": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "widthlogofooter": 130,
+            "title": "",
+            "text": "",
+            "width": "16%"
+          }
+        },
+        "cc3564b0-a994-4c33-affb-158751f7bac5": {
+          "type": "menu",
+          "settings": {
+            "link_list": "main-menu-1",
+            "width": "16%"
+          }
+        },
+        "1562342622030": {
+          "type": "menu",
+          "settings": {
+            "link_list": "more-information-copy",
+            "width": "16%"
+          }
+        },
+        "1567410176792": {
+          "type": "menu",
+          "settings": {
+            "link_list": "need-answers-copy",
+            "width": "16%"
+          }
+        },
+        "ec49d85b-17bb-4b65-a49f-3086aa5430cd": {
+          "type": "newsletter",
+          "settings": {
+            "bg_new": "rgba(0,0,0,0)",
+            "border_new": "#FFFFFF",
+            "btn_bg_new": "#FFFFFF",
+            "btn_cl_new": "#2C4A3B",
+            "btn_cl_new_hover": "#ffffff",
+            "title": "Join our Glow Community",
+            "subheading": "<p>Subscribe to the Glow Community for exclusive promotions!</p>",
+            "enablesocial": true,
+            "width": "25%"
+          }
+        }
+      },
+      "block_order": [
+        "1595696762386",
+        "b68420a7-353e-422d-9a28-2dba5275c372",
+        "cc3564b0-a994-4c33-affb-158751f7bac5",
+        "1562342622030",
+        "1567410176792",
+        "ec49d85b-17bb-4b65-a49f-3086aa5430cd"
+      ],
+      "settings": {
+        "setwidth": "container-fluid",
+        "background": "#2C4A3B",
+        "border_headfooter": "rgba(0,0,0,0)",
+        "border-copryright": "#d9d7dd",
+        "text": "#FFFFFF",
+        "text_hover": "#C9A961",
+        "title": "#C9A961",
+        "footer_align_title": "left",
+        "enable_border": false,
+        "footer_font_family": "--g-font-1",
+        "footer_font_size_title": 16,
+        "footer_font_weight": "600",
+        "footer_spacing": 0,
+        "footer_typetext": "capitalize",
+        "acc_mobile": true,
+        "e_ft_currency": true,
+        "enable_image": true,
+        "enable_name": true,
+        "enable_language_selector": true,
+        "payment_info": "svg",
+        "copyright": true,
+        "link_list_bottom": "",
+        "customcopyright": "",
+        "padding_top": 64,
+        "padding_bottom": 32,
+        "m_padding_top": 32,
+        "m_padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "newsletter-footer",
+    "footer"
+  ]
+}

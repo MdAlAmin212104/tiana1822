@@ -1,0 +1,124 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "faq_accordion_QRke6w": {
+      "type": "faq-accordion",
+      "blocks": {
+        "faq_4pQT7T": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Important Information About Our Products",
+            "faq_des": "<p>Fleuriation products are for external use only and are made with organic, all-natural, and herbal ingredients. Individual results may vary, and our products are not intended to diagnose, treat, cure, or replace professional medical advice. Always consult your healthcare provider if you have medical concerns.</p>"
+          }
+        },
+        "faq_XKHEr3": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Allergies and Sensitivities",
+            "faq_des": "<p>Please review the ingredient list before use. If you have allergies or sensitive skin, perform a patch test first. Some products contain Chamomile and Calendula, which may trigger reactions in individuals with ragweed allergies.</p>"
+          }
+        },
+        "faq_XGFqrH": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Health Care Provider",
+            "faq_des": "<p>Avoid contact with the eyes, nose, and mouth. If irritation occurs, discontinue use and consult a healthcare professional. If you are pregnant, nursing, or have an existing skin condition, speak with your healthcare provider before using our products.</p>"
+          }
+        },
+        "faq_WBUGRC": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Safety",
+            "faq_des": "<p>Keep products out of the reach of children. Our soaps are not tear-free, so avoid contact with the eyes and other sensitive areas.</p>"
+          }
+        },
+        "faq_JeN7Xf": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Product Variations",
+            "faq_des": "<p>Because our products are handcrafted with natural ingredients, slight variations in color, texture, and scent are normal. Body butters may soften in warm temperatures; simply refrigerate them to restore consistency. Avoid introducing water into jars to prevent contamination.</p>"
+          }
+        },
+        "faq_tEHHtg": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Animal Testing",
+            "faq_des": "<p>No. Fleuriation never tests on animals. We are committed to creating cruelty-free products with respect for all living things.</p>"
+          }
+        },
+        "faq_yFE3wt": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Storage",
+            "faq_des": "<p>Store products in a cool, dry place away from direct sunlight and excess moisture to maintain their freshness and quality.</p>"
+          }
+        },
+        "faq_BdiwrA": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Sustainability",
+            "faq_des": "<p>We are committed to sustainability by responsibly sourcing ingredients, partnering with ethical suppliers, and using eco-friendly packaging whenever possible to reduce our environmental impact.</p>"
+          }
+        },
+        "faq_NqQGrt": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Medical Advice Disclaimer",
+            "faq_des": "<p>The information provided by Fleuriation is for general educational purposes only and should not be considered medical advice. Please consult a qualified healthcare professional for personalized guidance.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_4pQT7T",
+        "faq_XKHEr3",
+        "faq_XGFqrH",
+        "faq_WBUGRC",
+        "faq_JeN7Xf",
+        "faq_tEHHtg",
+        "faq_yFE3wt",
+        "faq_BdiwrA",
+        "faq_NqQGrt"
+      ],
+      "name": "Faqs Accordion",
+      "settings": {
+        "animation": "",
+        "setwidth": "container",
+        "bgsection": "#F5F0E6",
+        "e_size": "auto",
+        "e_repeat": "no-repeat",
+        "e_pos": "center center",
+        "title_top": "",
+        "title": "Disclaimer Information",
+        "des": "",
+        "align-heading": "center",
+        "title_size": "h5",
+        "e_first_open": false,
+        "e_reverse": true,
+        "e_small": true,
+        "left_html": "",
+        "e_right": false,
+        "paddingsection": "40px 0px 40px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "faq_accordion_QRke6w"
+  ]
+}

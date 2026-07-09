@@ -1,0 +1,220 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "faq_accordion_K4pYqH": {
+      "type": "faq-accordion",
+      "blocks": {
+        "faq_001": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Our Terms of Care & Use",
+            "faq_des": "<p>Effective Date: 12/20/2025<br/><br/>Avant Toi, LLC dba Fleuriation (\"Company,\" \"we,\" \"our,\" or \"us\") is a skincare and wellness brand dedicated to formulating herbal, non-toxic products to restore and replenish the body. These Terms of Service (\"Terms\") govern your use of our website (https://www.fleuriation.com), products, and services (collectively, the \"Services\"). By using our products and services, you agree to these Terms.</p>"
+          }
+        },
+        "faq_002": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Eligibility",
+            "faq_des": "<p>You must be at least 18 years old (or the age of majority in your state or country) to use our website, products, services, or make purchases. By using our website, products, or services, you confirm that you meet these requirements or have parental/guardian consent.</p>"
+          }
+        },
+        "faq_003": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Use of the Website & Services",
+            "faq_des": "<p>A. You may use our website for personal, non-commercial purposes only.</p><p>B. You agree not to misuse our website, products, or services, attempt unauthorized access, or engage in unlawful or harmful activities.</p><p>C. You agree to provide accurate and current information when creating an account or making a purchase.</p><p>D. You may be required to provide information about yourself including your name, email address, and other personal information.</p><p>E. You agree not to impersonate someone else or provide (account information, an email address, or other personal information) other than your own.</p><p></p>"
+          }
+        },
+        "faq_004": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Product Information & Disclaimer",
+            "faq_des": "<p>A. Fleuriation formulates herbal, plant-based products for skincare and wellness.</p><p>B. No Medical Advice: Our products are not intended to diagnose, treat, cure, or prevent any medical condition. Consult a healthcare provider before use, especially if pregnant, nursing, or managing medical conditions.</p><p>C. All products should be used according to their instructions. Fleuriation is not responsible for misuse, allergic reactions, or adverse effects.</p><p></p>"
+          }
+        },
+        "faq_005": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Orders, Payments, Pricing, & Discounts",
+            "faq_des": "<p>A. Prices are listed in USD and are subject to change without notice.</p><p>B. All orders are subject to availability and acceptance.</p><p>C. Payments are processed securely through trusted third-party providers. We do not store payment information.</p><p>D. We reserve the right to refuse or cancel orders for any reason, including suspected fraud or policy violations.</p><p>E. When you purchase from Fleuriation, we collect only the necessary information like your name, address, and payment details to fulfill your order. We treat this information with care and integrity, partnering with trusted processors to keep it secure.</p><p>F. If you choose to engage with another business through our website, the terms of that transaction like payment, delivery, or refunds are between you and that merchant. While we aim to connect you with trusted partners, Fleuriation isn’t responsible for any issues that may result from those dealings.</p><p>G. Payment processors and merchants have their own policies, and we are not responsible for them. Some purchases may include additional terms from those parties or from us.</p><p>H. We encourage you to review their websites or contact them directly for more details. By making a purchase, you release Fleuriation, our trusted partners, and payment processors from any claims or damages related to your use of our website or products.</p><p>I. Your cart always shows the latest prices and includes any discounts you’ve applied. Prices may change, so the final price could differ from when you first added items.</p><p>J. Placing an item in your cart doesn’t guarantee the price. Since discounts are often limited-time, prices may change before you finish checking out and depend on product availability.</p><p>K. We do our best to keep prices accurate, but mistakes may occur. If an item is priced incorrectly, you may cancel your order or reach out to us at <a href=\"mailto:info@fleuriation.com\">info@fleuriation.com</a> for instructions.</p><p>L. Please Note: prices don’t include state sales tax. Your total, including any taxes, will be shown at checkout.</p><p>M. To keep offering you the best in herbal wellness, we may add new products or discontinue some over time. If a product is being discontinued, we’ll let you know in advance before it’s no longer available.</p><p>N. At times, we may offer special promotions or discounts for a limited time or to select customers. These may change or end at our discretion.</p><p>O. We honor only current and authorized promotions, even if shared on third-party websites.</p><p>P. Discounts cannot be combined with other offers, hold no cash value, and may not be sold or exchanged.</p><p></p>"
+          }
+        },
+        "faq_006": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Shipping & Returns",
+            "faq_des": "<p>Shipping times and rates vary based on your location and selected method. For details on returns, exchanges, and refunds, refer to our <a href=\"https://fleuriation.com/pages/shipping-policy-1\"><strong>Shipping</strong></a> & <a href=\"https://fleuriation.com/pages/refund-policy-1\"><strong>Return</strong></a> Policy.</p>"
+          }
+        },
+        "faq_007": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Intellectual Property",
+            "faq_des": "<p>All content on the Fleuriation website including logos, product designs, images, text, trademark, and other materials are owned by Fleuriation and protected by intellectual property laws. You may not copy, modify, distribute, or use our content without prior written consent.</p>"
+          }
+        },
+        "faq_008": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Prohibited Conduct",
+            "faq_des": "<p>You agree not to:</p><p>A. Use the website, products, and/or services for unlawful, fraudulent, or malicious purposes.</p><p>B. Attempt to gain unauthorized access to our systems or interfere with website functionality.</p><p>C. Post, upload, or transmit any harmful or offensive content.</p><p></p>"
+          }
+        },
+        "faq_009": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Limitation of Liability",
+            "faq_des": "<p>To the fullest extent permitted by law, Fleuriation will not be liable for:</p><p>A. Any indirect, incidental, or consequential damages arising from your use of our website, products, or services.</p><p>B. Any injury, reaction, or adverse effect resulting from product use.</p><p>C. You assume full responsibility for using our website, products, and services.</p><p>D. If you experience dissatisfaction with our website, product, or services, your primary solution is to email us at <a href=\"mailto:info@fleuriation.com\">info@fleuriation.com</a> or discontinue use.</p><p>E. Fleuriation is not liable for any losses or damages whether direct or indirect arising from your use of our website, products, or services.</p><p>F. For product concerns, your options are limited to those in our <a href=\"https://fleuriation.com/pages/refund-policy-1\"><strong>Return Policy</strong></a> or applicable warranties.</p><p>G. While we strive for excellence, we do not guarantee uninterrupted or error-free services. You agree to use them at your own risk.</p><p></p>"
+          }
+        },
+        "faq_010": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Indemnification",
+            "faq_des": "<p>You agree to indemnify and hold harmless Fleuriation, its employees, affiliates, and partners from any claims, damages, or expenses (including legal fees) resulting from your use of our products, services, or violation of these Terms.</p>"
+          }
+        },
+        "faq_011": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Release of Claims",
+            "faq_des": "<p>Fleuriation cannot be held responsible for losses or damages tied to your use of our website, products, or content. By using our products and/or services, you release us from any such claims.</p>"
+          }
+        },
+        "faq_012": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Notice to California Residents",
+            "faq_des": "<p>In keeping with California’s Proposition 65, we are required to inform you that some products may contain trace amounts of chemicals associated with cancer or reproductive harm. While we don’t believe our products contain these in meaningful amounts, we provide this notice out of transparency and care for our customers. To comply with California’s Proposition 65, we notify you that some products may contain trace amounts of chemicals linked to cancer or reproductive harm. For questions, please contact us at: <a href=\"mailto:info@fleuriation.com\">info@fleuriation.com</a>.</p>"
+          }
+        },
+        "faq_013": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Animal Testing",
+            "faq_des": "<p>In alignment with our values of care and stewardship, we do not test on animals. Our products and raw materials meet E.U. cruelty-free standards.</p>"
+          }
+        },
+        "faq_014": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Termination",
+            "faq_des": "<p>We may suspend or terminate your access to our website or services at any time, without notice, if we believe you have violated these Terms or engaged in harmful conduct.</p>"
+          }
+        },
+        "faq_015": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Third-Party Links",
+            "faq_des": "<p>Our website may contain links to third-party websites. Fleuriation is not responsible for the content, policies, or practices of third-party websites.</p>"
+          }
+        },
+        "faq_016": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Governing Law",
+            "faq_des": "<p>These Terms are governed by and construed in accordance with the laws of Florida, without regard to its conflict of principles of law.</p>"
+          }
+        },
+        "faq_017": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Modification to These Terms",
+            "faq_des": "<p>We may update these Terms of Service and our Privacy Policy at any time. Updates will be posted on this page with an updated <strong>Effective Date</strong>. Continued use of our website, products, or services after changes are posted constitutes your acceptance of the updated Terms.</p>"
+          }
+        },
+        "faq_018": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Dispute Resolution",
+            "faq_des": "<p>By using our website, products, or services, you agree that any dispute will be resolved through binding arbitration with the American Arbitration Association (AAA), not in court, and not as part of any class action.</p><p>1. Arbitration will be handled by one arbitrator applying Florida law.</p><p>2. You may choose to hold the hearing in Florida or in the federal district covering your billing address.</p><p>3. Small claims court remains an option for individual cases within its limits.</p><p>4. If you win, we will reimburse your AAA arbitration fees.</p><p>5. Arbitration rules are available at <a href=\"https://www.adr.org\">www.adr.org</a>.</p><p></p>"
+          }
+        },
+        "faq_019": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Severability",
+            "faq_des": "<p>If any part of these Terms is found invalid or unenforceable, the rest remains in effect. Failure to enforce a right does not mean we waive it.</p>"
+          }
+        },
+        "faq_020": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Entire Agreement",
+            "faq_des": "<p>These Terms, our Privacy Policy, and any posted guidelines form the entire agreement between you and Fleuriation. Additional terms may apply when you buy products. Liability limitations survive termination of this Agreement.</p>"
+          }
+        },
+        "faq_021": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Contact Us",
+            "faq_des": "<p>For questions about our Terms of Service, contact us at:</p><p>15205 Collier Blvd, Suite 106-109, Naples, FL 34119<br/><a href=\"mailto:info@fleuriation.com\">info@fleuriation.com</a></p><p></p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_001",
+        "faq_002",
+        "faq_003",
+        "faq_004",
+        "faq_005",
+        "faq_006",
+        "faq_007",
+        "faq_008",
+        "faq_009",
+        "faq_010",
+        "faq_011",
+        "faq_012",
+        "faq_013",
+        "faq_014",
+        "faq_015",
+        "faq_016",
+        "faq_017",
+        "faq_018",
+        "faq_019",
+        "faq_020",
+        "faq_021"
+      ],
+      "name": "Faqs Accordion",
+      "settings": {
+        "animation": "",
+        "setwidth": "container",
+        "bgsection": "#F5F0E6",
+        "e_size": "auto",
+        "e_repeat": "no-repeat",
+        "e_pos": "center center",
+        "title_top": "",
+        "title": "Terms of Service",
+        "des": "",
+        "align-heading": "center",
+        "title_size": "h5",
+        "e_first_open": false,
+        "e_reverse": true,
+        "e_small": true,
+        "left_html": "",
+        "e_right": false,
+        "paddingsection": "40px 0px 40px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "faq_accordion_K4pYqH"
+  ]
+}

@@ -1,0 +1,428 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {}
+    },
+    "parallax_banner_whnVpN": {
+      "type": "parallax-banner",
+      "blocks": {
+        "heading_3Fw8kQ": {
+          "type": "heading",
+          "settings": {
+            "title": "The Heart Behind Fleuriation",
+            "size_text": "h2"
+          }
+        },
+        "paragraph_8GHnNx": {
+          "type": "paragraph",
+          "settings": {
+            "subtext": "At Fleuriation, we believe beauty begins with wellness. Our mission is to create high-quality, gentle, and effective products that nurture your skin, elevate your daily routine, and inspire confidence. Every collection is thoughtfully designed with care, sustainability, and timeless elegance at its core."
+          }
+        }
+      },
+      "block_order": [
+        "heading_3Fw8kQ",
+        "paragraph_8GHnNx"
+      ],
+      "name": "Parallax banner",
+      "settings": {
+        "animation": "",
+        "setwidth": "full",
+        "bgsection": "#f5f0e6",
+        "parrallax_enable": true,
+        "image": "shopify://shop_images/pexels-tara-winstead-6690884.png",
+        "height_section": "450",
+        "height_section_mobile": "350",
+        "align": "center",
+        "position_text": "mid-center",
+        "bg_box": "#fff",
+        "opacity_bgbox": 0,
+        "title_color": "#ffffff",
+        "bg_overlay": "#000",
+        "gradient_bg": "",
+        "opacity_bg_overlay": 0.4,
+        "paddingsection": "0px 0px 0px 0px",
+        "marginsection": "0px 0px 0px 0px"
+      }
+    },
+    "49b0a5ba-1ebd-493b-ae50-1ec847159046": {
+      "type": "image-content",
+      "blocks": {
+        "template--21250050228504__49b0a5ba-1ebd-493b-ae50-1ec847159046-image_block-2": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/Newsletter_pop_picture_caaa754b-fbe6-4ef4-9c31-729604d48faf.jpg"
+          }
+        },
+        "template--21250050228504__49b0a5ba-1ebd-493b-ae50-1ec847159046-text_block-1": {
+          "type": "text_block",
+          "settings": {
+            "width": "100%",
+            "bgtext": "#f5f0e6",
+            "title_color": "rgba(0,0,0,0)",
+            "subtitle": "",
+            "title": "Our Story",
+            "size_text": "h2",
+            "text": "",
+            "answer_content": "<p>Fleuriation was birthed from a mother navigating the unexpected challenges of developmental delays and eczema. She found herself desperate for answers and for a deeper understanding of what true wellness meant. That search led her to a life-changing discovery of non-toxic living and medicinal herbs. Through her discovery, she desired to create something pure, purposeful, and restorative. This led to the creation of Fleuriation. At the heart of Fleuriation is a belief inspired by Genesis 1:29, that God, in His wisdom, has provided plants and herbs as gifts for our nourishment and restoration. We honor this provision by crafting handmade batches of non-toxic and sustainable solutions that promote both skin health and internal vitality. Our products are formulated with high-quality organic and all-natural ingredients, enhanced with herbal-infused components. Our skin is our body’s largest organ, and what we put on our skin is just as important as what we eat. Fleuriation is more than just skincare; it is a symbol of hope for every person and family seeking non-toxic and high-quality plant-based products.</p>",
+            "style_btn": "btn-underline btn-underline-white",
+            "button": "",
+            "link": "",
+            "enable_padding": true,
+            "align": "left"
+          }
+        }
+      },
+      "block_order": [
+        "template--21250050228504__49b0a5ba-1ebd-493b-ae50-1ec847159046-image_block-2",
+        "template--21250050228504__49b0a5ba-1ebd-493b-ae50-1ec847159046-text_block-1"
+      ],
+      "settings": {
+        "animation": "fade",
+        "setwidth": "container",
+        "bgsection": "#f5f0e6",
+        "rangebg": 0,
+        "bgbefore": "rgba(0,0,0,0)",
+        "bg_pos": "left",
+        "enable_padding": false,
+        "align_center": true,
+        "paddingsection": "40px 0px 40px 0px",
+        "paddingmobile": "40px 0px 0px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "service_f3Cp8T": {
+      "type": "service",
+      "blocks": {
+        "service_9aAa6P": {
+          "type": "service",
+          "settings": {
+            "bgblock": "#f5f0e6",
+            "title": "Organic & Herb-Infused Formulas",
+            "description": "Every product is thoughtfully crafted with organic botanicals, herbal infusions, and plant-based ingredients selected to nourish, soothe, and restore your skin naturally. We believe skincare should work in harmony.",
+            "icon": "",
+            "icon_image": "shopify://shop_images/31714.png"
+          }
+        },
+        "service_pefXFE": {
+          "type": "service",
+          "settings": {
+            "bgblock": "#f5f0e6",
+            "title": "Gentle Care for Every Skin Journey",
+            "description": "From everyday hydration to sensitive skin support, our handcrafted formulas are designed to be gentle enough for the whole family. We create products that prioritize comfort, balance, and long-term skin wellness.",
+            "icon": "",
+            "icon_image": "shopify://shop_images/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTEyL3NtYWxsZGVzaWduY29tcGFueTAxX2FfYmxhY2tfaGVhcnRfc2hhcGVkX2ljb25fd2l0aF9hX3doaXRlX2JhY18yNDU3ZTM4NS1hN2Y5LTRlMDctODhkOS0yYzQxMzA5ZTA1NTIucG5.png"
+          }
+        },
+        "service_JtBrTw": {
+          "type": "service",
+          "settings": {
+            "bgblock": "#f5f0e6",
+            "title": "Pure Ingredients. Honest Promise.",
+            "description": "We formulate without harsh chemicals, synthetic fragrances, parabens, or unnecessary fillers. Every ingredient is carefully chosen with transparency, sustainability, and your well-being in mind.",
+            "icon": "",
+            "icon_image": "shopify://shop_images/657504.png"
+          }
+        }
+      },
+      "block_order": [
+        "service_9aAa6P",
+        "service_pefXFE",
+        "service_JtBrTw"
+      ],
+      "custom_css": [
+        ".mb-3.iconx8 {display: flex; justify-content: center;}",
+        "h3.section-title-1.text-center.mb-5.aos-init.aos-animate {color: white;}"
+      ],
+      "name": "Services",
+      "settings": {
+        "animation": "",
+        "setwidth": "container",
+        "bgsection": "#2c4a3b",
+        "title_top": "",
+        "title": "Why Families Choose Fleuriation",
+        "des": "",
+        "align-heading": "center",
+        "paddingbox": "0px 0px 0px 0px",
+        "iconcolor": "#222222",
+        "titlecolor": "#222222",
+        "subcolor": "#999999",
+        "size": 50,
+        "stroke_svg": 0,
+        "service_heading": "h4",
+        "layout": "style-2",
+        "enable_carousel": true,
+        "arrows": true,
+        "draggable": true,
+        "dots": true,
+        "infinite": true,
+        "paddingsection": "40px 0px 40px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "b2ef3f00-5f4f-4e93-8187-3970a28a8f9e": {
+      "type": "parallax-banner",
+      "blocks": {
+        "template--19549173514560__b2ef3f00-5f4f-4e93-8187-3970a28a8f9e-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "High-Quality Ingredients",
+            "size_text": "h1"
+          }
+        },
+        "94c7371c-d71f-4781-892e-d23c731daa77": {
+          "type": "paragraph",
+          "settings": {
+            "subtext": "We are devoted to crafting products with the highest quality of organic and all-natural ingredients. Every botanical extract, cold-pressed oil, and herbal infusion is thoughtfully selected for its proven nourishment, potency, and integrity. Our plant-based oils are rich in essential fatty acids and antioxidants that help strengthen the skin’s barrier, lock in moisture, and support a radiant complexion. Herbal extracts are chosen for their soothing and anti-inflammatory properties to calm irritation and promote restoration, while natural humectants help maintain optimal hydration. Every ingredient serves a clear purpose, working in harmony with your skin’s natural functions rather than against them. Our ingredients are sourced from ethical growers and trusted suppliers who share our commitment to sustainability and non-toxic living. Free from synthetic fragrances, parabens, and harsh/synthetic chemicals."
+          }
+        }
+      },
+      "block_order": [
+        "template--19549173514560__b2ef3f00-5f4f-4e93-8187-3970a28a8f9e-heading-1",
+        "94c7371c-d71f-4781-892e-d23c731daa77"
+      ],
+      "settings": {
+        "animation": "fade",
+        "setwidth": "full",
+        "bgsection": "#ffffff",
+        "parrallax_enable": true,
+        "image": "shopify://shop_images/asian-happy-woman-with-toothbrush-bathrobe-morning-mood.jpg",
+        "height_section": "650",
+        "height_section_mobile": "450",
+        "align": "left",
+        "position_text": "mid-right",
+        "bg_box": "#ffffff",
+        "opacity_bgbox": 0,
+        "title_color": "#ffffff",
+        "bg_overlay": "#000000",
+        "gradient_bg": "",
+        "opacity_bg_overlay": 0.2,
+        "paddingsection": "0px 0px 0px 0px",
+        "marginsection": "0px 0px 0px 0px"
+      }
+    },
+    "3a37a7d4-3633-4dd9-93c8-8609cd17d9c4": {
+      "type": "image-content",
+      "blocks": {
+        "18d2b540-6aa2-4967-b7fd-c7eefd2bd1e5": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/young-woman-doing-her-morning-skincare-routine_23-2148837439.jpg"
+          }
+        },
+        "e3cdf781-1586-4bad-94d6-ba09691910ac": {
+          "type": "text_block",
+          "settings": {
+            "width": "100%",
+            "bgtext": "rgba(0,0,0,0)",
+            "title_color": "#5c6458",
+            "subtitle": "",
+            "title": "Medicinal Herbs",
+            "size_text": "h2",
+            "text": "",
+            "answer_content": "<p>We embrace the medicinal properties and the restorative power of herbs and plants. For centuries, herbs have been used to promote healing, restoration, and vitality, offering nature’s own remedies for skin and body wellness. Each herb we use is intentionally chosen for its unique therapeutic properties, whether to soothe irritation, support cell renewal, or protect the skin from environmental stressors. These botanicals work synergistically to nourish the body by addressing the root of skin concerns rather than masking them. Based on the combined insights of traditional herbal knowledge and modern research, we harness the potency of God-given herbs to create formulas that bring restoration and lasting results naturally.</p>",
+            "style_btn": "btn-underline btn-underline-white",
+            "button": "",
+            "link": "",
+            "enable_padding": true,
+            "align": "left"
+          }
+        }
+      },
+      "block_order": [
+        "18d2b540-6aa2-4967-b7fd-c7eefd2bd1e5",
+        "e3cdf781-1586-4bad-94d6-ba09691910ac"
+      ],
+      "settings": {
+        "animation": "fade",
+        "setwidth": "full",
+        "bgsection": "#f5f0e6",
+        "rangebg": 0,
+        "bgbefore": "rgba(0,0,0,0)",
+        "bg_pos": "left",
+        "enable_padding": false,
+        "align_center": true,
+        "paddingsection": "80px 0px 40px 0px",
+        "paddingmobile": "0px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "40px 0px 0px 0px"
+      }
+    },
+    "2d11636f-e0da-4a86-b3b5-c1eda5735347": {
+      "type": "rich-text",
+      "blocks": {
+        "7407acef-3e90-41f5-9ecf-356bd562c30b": {
+          "type": "heading",
+          "settings": {
+            "title": "Keeping It Pure",
+            "size_text": "h2"
+          }
+        },
+        "8a950665-fd5a-43a3-bf89-8ba1c9967e92": {
+          "type": "paragraph",
+          "settings": {
+            "subtext": "“Keeping It Pure” means honoring your body with products that nourish, protect, and restore naturally. It is the heart of Fleuriation’s pledge. We believe purity begins with integrity; from the ingredients we choose to the way each product is crafted. Every formulation is made with high-quality, non-toxic, and naturally derived ingredients that reflect the simplicity and medicinal wonders of herbs. We avoid harmful chemicals, synthetic fragrances, and unnecessary fillers to ensure that what touches your skin is non-toxic, effective, and true to nature. Our process honors transparency and sustainability, allowing each product to embody clean beauty as it was intended: pure, honest, and purposeful."
+          }
+        }
+      },
+      "block_order": [
+        "7407acef-3e90-41f5-9ecf-356bd562c30b",
+        "8a950665-fd5a-43a3-bf89-8ba1c9967e92"
+      ],
+      "settings": {
+        "animation": "fade-up",
+        "setwidth": "container",
+        "bgsection": "#f5f0e6",
+        "gradient_bg": "",
+        "title_color": "#8d9587",
+        "title_top": "",
+        "title": "",
+        "text": "",
+        "align-heading": "center",
+        "align-content": "center",
+        "paddingsection": "40px 0px 40px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "line_4EhPKb": {
+      "type": "line",
+      "name": "Divider",
+      "settings": {
+        "animation": "",
+        "paddingsection": "0px 0px 0px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "bgsection": "#F5F0E6",
+        "setwidth": "container",
+        "bgborder": "#C9A961",
+        "wborder": "1px"
+      }
+    },
+    "d72bcc8c-88fe-4415-96f0-06511b070083": {
+      "type": "image-content-6",
+      "blocks": {
+        "template--16716887458110__d72bcc8c-88fe-4415-96f0-06511b070083-16666725974cf35e4d-0": {
+          "type": "image_block",
+          "settings": {
+            "style_content": "default",
+            "w_image": 40,
+            "pos_image": 78,
+            "e_image": "right",
+            "image": "shopify://shop_images/Model_in_white_dress_copy_2_48405c3b-1ae5-4a5d-a7ea-61e3a9fcdb6b.png",
+            "image2": "shopify://shop_images/Body_Care.jpg",
+            "enable_video": false,
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "text_circle": "New Fashion style store",
+            "video_url": ""
+          }
+        },
+        "template--16716887458110__d72bcc8c-88fe-4415-96f0-06511b070083-16666725974cf35e4d-1": {
+          "type": "text_block",
+          "settings": {
+            "bgtext": "rgba(0,0,0,0)",
+            "subtitle": "",
+            "title": "Heart of Fleuriation",
+            "size_text": "h2",
+            "text": "Hi there! I'm Katia, the heart and hands behind Fleuriation. This journey began when I witnessed the profound difference nature-crafted skincare made for my children. I felt called to create products with the finest herbal ingredients and turn it into a mission that cares for others with purity and purpose.   At Fleuriation, our mission is to formulate high-quality, all-natural, and organic herb-infused skincare and wellness products to restore and replenish the body. Integrity and transparency guide everything we do as we provide individuals and families with pure, plant-based products they can trust. Whether I'm at local events, connecting with families, or blending herbs in the studio, my intention is always the same: to offer products that honor God's creation and bring more peace and nourishment to your daily skin routine.  Fleuriation has grown in beautiful ways, but it will always remain deeply personal. Every product is something I truly believe in, crafted with prayer, purpose, and love. I believe you'll feel that in every jar, bottle, and bar.    With Gratitude,  Katia",
+            "answer_content": "",
+            "button": "",
+            "link": "",
+            "style_btn": "btn-underline",
+            "align": "left",
+            "enable_padding_left": false,
+            "enable_padding_right": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16716887458110__d72bcc8c-88fe-4415-96f0-06511b070083-16666725974cf35e4d-0",
+        "template--16716887458110__d72bcc8c-88fe-4415-96f0-06511b070083-16666725974cf35e4d-1"
+      ],
+      "settings": {
+        "animation": "fade",
+        "setwidth": "container",
+        "bgsection": "#f5f0e6",
+        "size": "50-50",
+        "enable_padding": true,
+        "align_center": true,
+        "paddingsection": "40px 0px 60px 0px",
+        "paddingmobile": "60px 0px 0px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "24a28133-2e01-4361-8b00-ad164f72336f": {
+      "type": "image-content",
+      "blocks": {
+        "template--16716887458110__24a28133-2e01-4361-8b00-ad164f72336f-1666686767d1a98887-1": {
+          "type": "text_block",
+          "settings": {
+            "width": "100%",
+            "bgtext": "#ffffff",
+            "title_color": "rgba(0,0,0,0)",
+            "subtitle": "Our Mission",
+            "title": "Ethical and sustainable",
+            "size_text": "h2",
+            "text": "<div class=\"pr-lg-5 mr-lg-4\">\n<p>Need a little newness in your life? We've got you covered. Bringing you \nthe latest drop of more killer clothes, versatile accessories, stand-out \nfootwear, and much, much more. Update those lifesaving essentials \nor bag a knock-out, night-out number.</p>\n      <div class=\"mt-5 pt-4 px-lg-5\">\n        <img class=\"lazyload\" loading=\"lazy\" data-src=\"https://cdn.shopify.com/s/files/1/0830/3722/5240/files/Rectangle_2_4_1.webp?v=1696176878\">\n      </div>\n    \n</div>",
+            "answer_content": "",
+            "style_btn": "btn-underline btn-underline-white",
+            "button": "",
+            "link": "",
+            "enable_padding": false,
+            "align": "left"
+          }
+        },
+        "template--16716887458110__24a28133-2e01-4361-8b00-ad164f72336f-1666686767d1a98887-0": {
+          "type": "image_block",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "template--16716887458110__24a28133-2e01-4361-8b00-ad164f72336f-1666686767d1a98887-1",
+        "template--16716887458110__24a28133-2e01-4361-8b00-ad164f72336f-1666686767d1a98887-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "animation": "fade",
+        "setwidth": "container",
+        "bgsection": "#ffffff",
+        "rangebg": 0,
+        "bgbefore": "rgba(0,0,0,0)",
+        "bg_pos": "left",
+        "enable_padding": true,
+        "align_center": false,
+        "paddingsection": "100px 0px 100px 0px",
+        "paddingmobile": "60px 0px 60px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "parallax_banner_whnVpN",
+    "49b0a5ba-1ebd-493b-ae50-1ec847159046",
+    "service_f3Cp8T",
+    "b2ef3f00-5f4f-4e93-8187-3970a28a8f9e",
+    "3a37a7d4-3633-4dd9-93c8-8609cd17d9c4",
+    "2d11636f-e0da-4a86-b3b5-c1eda5735347",
+    "line_4EhPKb",
+    "d72bcc8c-88fe-4415-96f0-06511b070083",
+    "24a28133-2e01-4361-8b00-ad164f72336f"
+  ]
+}

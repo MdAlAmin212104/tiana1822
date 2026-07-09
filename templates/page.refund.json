@@ -1,0 +1,108 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "faq_accordion_Qya63e": {
+      "type": "faq-accordion",
+      "blocks": {
+        "faq_HHDNHc": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Why should I add package protection to my order?",
+            "faq_des": "<p>At checkout, you'll have the option to add package protection to your order. This is to safeguard your products from loss or damages en route. While we aim to package every item with great care, unexpected things can happen during shipment. We encourage adding this protection to your package to ensure that it arrives safely in your hands. We take pleasure in crafting skin care products made with integrity, transparency, and the finest herbal ingredients. Your satisfaction matters to us, and we want you to love every purchase.</p>"
+          }
+        },
+        "faq_wdGmwU": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "My package is missing. Now what?",
+            "faq_des": "<p>We're sorry that happened. If your package never arrived or is missing, please contact us at <a href=\"mailto:support@fleuriation.com\">support@fleuriation.com</a>, and we'll gladly help guide you toward the best solution. We highly encourage you to add package protection to your order at checkout to help ensure your handcrafted items arrive safely at your doorstep.</p>"
+          }
+        },
+        "faq_RicTKd": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "What is Fleuriation's return policy?",
+            "faq_des": "<p>At Fleuriation, we offer a 30-day return policy. This means you have 30 days from the date you receive your product to request a return.</p>"
+          }
+        },
+        "faq_4": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "What is your return and exchange process?",
+            "faq_des": "<p>1. We accept returns on eligible items within 30 days of delivery.</p><p>2. To be eligible for a return, items must be <strong><em>unused, unopened, and in their original packaging.</em></strong></p><p>3. A proof of purchase (e.g., order number) is required to process your return.</p>"
+          }
+        },
+        "faq_5": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "What items are considered non-returnable?",
+            "faq_des": "<p>1. Due to the nature of our products, perishable items such as opened skin care products, herbal blends, and custom-made items cannot be returned or exchanged.</p><p>2. Gift cards and promotional items are non-returnable.</p>"
+          }
+        },
+        "faq_6": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "How do I Initiate a Return?",
+            "faq_des": "<p>1. Email our customer care team at <a href=\"mailto:support@fleuriation.com\">support@fleuriation.com</a> with your order number and reason for return.</p><p>2. Once approved, we'll provide instructions for returning your item.</p><p>3. Customers are responsible for return shipping costs unless the return is due to our error (e.g., incorrect or damaged product).</p>"
+          }
+        },
+        "faq_7": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "How long is the refund process?",
+            "faq_des": "<p>1. Once we receive and inspect your return, we will notify you of the approval or rejection of your refund.</p><p>2. Approved refunds will be processed to your original payment method within 5–7 business days.</p><p>If you have questions about your order or need assistance with a return, please contact us at <a href=\"mailto:support@fleuriation.com\">support@fleuriation.com</a>.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_HHDNHc",
+        "faq_wdGmwU",
+        "faq_RicTKd",
+        "faq_4",
+        "faq_5",
+        "faq_6",
+        "faq_7"
+      ],
+      "name": "Faqs Accordion",
+      "settings": {
+        "animation": "",
+        "setwidth": "container",
+        "bgsection": "#F5F0E6",
+        "e_size": "auto",
+        "e_repeat": "no-repeat",
+        "e_pos": "center center",
+        "title_top": "",
+        "title": "Return Policy",
+        "des": "",
+        "align-heading": "center",
+        "title_size": "h5",
+        "e_first_open": false,
+        "e_reverse": true,
+        "e_small": true,
+        "left_html": "",
+        "e_right": false,
+        "paddingsection": "40px 0px 40px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "faq_accordion_Qya63e"
+  ]
+}
