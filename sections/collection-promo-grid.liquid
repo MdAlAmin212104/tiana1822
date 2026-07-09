@@ -172,6 +172,75 @@
     right: -20px;
     z-index: 10;
   }
+
+  /* Equalize heights for slider and grid items */
+  .customstyle{{ section.id }} .row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+  }
+  .customstyle{{ section.id }} .row > [class*="col-"] {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .customstyle{{ section.id }} .slick-track {
+    display: flex !important;
+  }
+  .customstyle{{ section.id }} .slick-slide {
+    height: auto !important;
+    display: flex !important;
+  }
+  .customstyle{{ section.id }} .slick-slide > div {
+    display: flex !important;
+    height: 100% !important;
+    width: 100% !important;
+  }
+
+  /* Scoped layout styling for style9 product card inside our custom section */
+  .customstyle{{ section.id }} .product-card {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+    width: 100% !important;
+  }
+  .customstyle{{ section.id }} .product-card__image-wr {
+    flex-shrink: 0 !important;
+  }
+  .customstyle{{ section.id }} .product-card__info {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-grow: 1 !important;
+  }
+  .customstyle{{ section.id }} .product-card--style9 .product-card-cart {
+    margin-top: auto !important;
+    padding-top: 15px !important;
+    position: relative !important;
+    bottom: auto !important;
+    left: auto !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    display: block !important;
+  }
+
+  .customstyle{{ section.id }} .product-card--style9 .product-card-cart .btn-theme {
+    width: 100% !important;
+    display: block !important;
+    background-color: var(--g-color-heading, #333333) !important; /* Dynamic theme heading color */
+    color: #ffffff !important;
+    border: none !important;
+    text-align: center !important;
+    padding: 12px 10px !important;
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.05em !important;
+    text-transform: uppercase !important;
+    transition: background-color 0.3s ease !important;
+  }
+
+  .customstyle{{ section.id }} .product-card--style9 .product-card-cart .btn-theme:hover {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+  }
 {%- endstyle -%}
 
 <div class="customstyle{{ section.id }}" data-aos="{{ section.settings.animation }}">

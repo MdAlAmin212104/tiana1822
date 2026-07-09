@@ -610,8 +610,20 @@
           {%- endif -%}
           
         </div>
-        <div class="product-card-cart">
-          <span  class="btn btn-theme js-grid-cart w-100 {% unless product.available %} disabled {% endunless %}" 
+        {%- liquid
+          if settings.enable_countdown_card
+            render 'product-countdown', product : product
+          endif
+        -%}
+      </div>
+      <div class="product-card__info text-left">
+        {{ vendor }}
+        <a href="{{ product.url | within: collection }}" title="{{ product.title }}" class=" d-block product-card__name {% if settings.t_product %} text-uppercase {% endif %}">{{ product.title }}</a>
+        {{ review }}
+        {{ price }}
+        {% render 'swatch-grid-1', product: product %}
+        <div class="product-card-cart mt-2">
+          <span class="btn btn-theme js-grid-cart w-100 {% unless product.available %} disabled {% endunless %}" 
             {% if product.available %}
               title="{{ 'products.product.add_to_cart' | t }}" 
             {% else %}
@@ -628,18 +640,6 @@
               </span>
           </span>
         </div>
-        {%- liquid
-          if settings.enable_countdown_card
-            render 'product-countdown', product : product
-          endif
-        -%}
-      </div>
-      <div class="product-card__info text-left">
-        {{ vendor }}
-        <a href="{{ product.url | within: collection }}" title="{{ product.title }}" class=" d-block product-card__name {% if settings.t_product %} text-uppercase {% endif %}">{{ product.title }}</a>
-        {{ review }}
-        {{ price }}
-        {% render 'swatch-grid-1', product: product %}
       </div>
     </div>
     {%- when 'product-10' -%}

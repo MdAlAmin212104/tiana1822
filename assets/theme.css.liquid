@@ -5580,16 +5580,19 @@ p a:not(.button):focus,
     pointer-events: none;
   }
   .product-card--style9 .product-card-cart{
-    position: absolute;
-    bottom:0px;
+    position: relative;
+    bottom: auto;
+    left: auto;
+    padding: 0;
+    margin-top: auto;
+    padding-top: 15px;
     z-index: 10;
     width: 100%;
-    left:0;
-    padding:16px;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(16px);
-    transition:0.2s ease opacity, 0.2s ease visibility, 0.3s ease transform;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    display: block;
+    transition: none;
   }
 }
 
@@ -5597,6 +5600,8 @@ p a:not(.button):focus,
 .product-card--style9 .product-card-cart .btn-theme{
   padding-top:14px;
   padding-bottom: 14px;
+  background-color: var(--g-color-heading, #333333);
+  color: #ffffff;
 }
 .product-card--style9 .product-card__swatch{
   padding: 4px 0 0 0;
@@ -5611,16 +5616,17 @@ p a:not(.button):focus,
     transition:0.2s ease opacity, 0.2s ease visibility, 0.3s ease transform;
   }
   .product-card--style9 .product-card-cart .btn-theme{
-    background: white;
-    color: rgba(var(--g-color-heading-rgb),1);
+    background: var(--g-color-heading, #333333);
+    color: #ffffff;
   }
   .product-card--style9 .product-card-cart .btn-theme:hover,.product-card--style9 .product-card-cart .btn-theme:focus{
-    color:var(--g-btn-hover-color);
+    background: #000000;
+    color: #ffffff;
   }
   .product-card--style9:hover .product-card-cart{
     opacity: 1;
     visibility: visible;
-    transform: translateY(0px);
+    transform: none;
   }
   .product-card--style9:hover .product-card__overlay{
     opacity: 1;
@@ -5638,7 +5644,7 @@ p a:not(.button):focus,
     padding:8px;
   }
   .product-card--style9 .product-card-cart{
-    display: none;
+    display: block;
   }
 }
 /*product-card--style10*/
@@ -11655,3 +11661,79 @@ blockquote::before {
   border-top:none;
 }
 /*# sourceMappingURL=/s/files/1/1430/7398/t/14/assets/theme.scss.css.map?v=117309441519461084871658374400 */
+
+/* Custom Global Style9 Adjustments for Always-Visible Bottom-Aligned Cart Buttons */
+.product-card {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.product-card .product-card__image-wr {
+  flex-shrink: 0 !important;
+}
+
+.product-card .product-card__info {
+  display: flex !important;
+  flex-direction: column !important;
+  flex-grow: 1 !important;
+}
+
+.product-card .product-card-cart {
+  margin-top: auto !important;
+  padding-top: 15px !important;
+  position: relative !important;
+  bottom: auto !important;
+  left: auto !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  display: block !important;
+}
+
+/* Enable equal-height grids globally for product card rows and slick slides */
+.row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+}
+
+.row > [class*="col-"] {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.row > [class*="col-"] > .product-card {
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 1 auto !important;
+  height: 100% !important;
+}
+
+.slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  height: auto !important;
+  display: flex !important;
+}
+
+.slick-slide > div {
+  display: flex !important;
+  height: 100% !important;
+  width: 100% !important;
+  flex: 1 1 auto !important;
+}
+
+.slick-slide > div > .productlist-item,
+.slick-slide > div > .col-item,
+.slick-slide > div > .col {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+  width: 100% !important;
+  flex: 1 1 auto !important;
+}
+
+
