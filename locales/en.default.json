@@ -257,7 +257,7 @@
       "email": "Email",
       "password": "Password",
       "forgot_password": "Forgot your password?",
-      "sign_in": "Login",
+      "sign_in": "Account",
       "guest_title": "Continue as a guest",
       "guest_continue": "Continue"
     },

@@ -472,6 +472,20 @@ html:not(.no-js) .slideshow.slick-initialized .slideshow__slide{
   transform: scale(1);
 }
 
+
+
+@media (max-width: 767.98px) {
+  .mobile-absolute {
+    position: absolute;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-absolute {
+    position: static;
+  }
+}
+
 </style>
 <!-- slideshow-1.liquid -->
 {%- liquid
@@ -583,24 +597,24 @@ html:not(.no-js) .slideshow.slick-initialized .slideshow__slide{
           <div class="slideshow__text-content slideshow__text-content--vertical-{{ text_vertical_alignment }} text-{{ text_horizontal_alignment }}">
             <div class="{{ section.settings.setwidth }}" data-aos="fade" data-aos-anchor-placement="top-bottom"  data-aos-once="true">
               
-              <div class="d-inline-block text-{% if text_horizontal_alignment == 'right' %}left{% else %}{{text_horizontal_alignment}}{% endif %} ">
-              <ul class="list-unstyled"  >
+              <div class="mobile-absolute d-inline-block text-{% if text_horizontal_alignment == 'right' %}left{% else %}{{text_horizontal_alignment}}{% endif %}">
+              <ul class="list-unstyled mb-4"  >
                 {%- unless block.settings.slide_toptitle == blank -%}
-                <li class="mb-3">
+                <li class="mb-2">
                   <p class="slideshow__toptitle subtop" style="color:{{ block.settings.slide_toptitle_color }}">
                     {{ block.settings.slide_toptitle }}
                   </p>
                 </li>
                 {%- endunless -%}
                 {%- unless block.settings.slide_title == blank -%}
-                <li class="mb-3">
+                <li class="mb-2">
                   <h2 class="h1 mega-title slideshow__title font-family-1" style="color:{{ block.settings.slide_title_color }}">
                     {{ block.settings.slide_title }}
                   </h2>
                 </li>
                 {%- endunless -%}
                 {%- unless block.settings.subheading == blank -%}
-                <li class="mb-lg-5">
+                <li class="mb-lg-4">
                   <div class="mega-subtitle slideshow__subtitle  d-lg-block fz-2" style="color:{{ block.settings.subheading_color }}">
                     {{ block.settings.subheading }}
                   </div>
@@ -1438,6 +1452,11 @@ html:not(.no-js) .slideshow.slick-initialized .slideshow__slide{
           "default": "#ffffff"
         }
       ]
+    }
+  ],
+  "presets": [
+    {
+      "name" : "Slider 1"
     }
   ]
 }
