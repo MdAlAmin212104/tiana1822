@@ -11692,43 +11692,89 @@ blockquote::before {
   display: block !important;
 }
 
-/* Enable equal-height grids globally for product card rows and slick slides */
-.row {
+/* Force product card names to be exactly 2 lines and truncate with ellipsis */
+.product-card__name {
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  min-height: 2.8em !important;
+  max-height: 2.8em !important;
+  line-height: 1.4 !important;
+}
+
+/* Enable equal-height grids ONLY for rows/slides wrapping product cards (avoids breaking slideshow, service block, etc.) */
+.productlist-slider,
+.productlist-swiper .row,
+.productlist-wrapper .row,
+.index-products .row,
+.product-image__product .row,
+.main-collection-template .row {
   display: flex !important;
   flex-wrap: wrap !important;
 }
 
-.row > [class*="col-"] {
+.productlist-slider > .productlist-item,
+.productlist-swiper .row > [class*="col-"],
+.productlist-wrapper .row > [class*="col-"],
+.index-products .row > [class*="col-"],
+.product-image__product .row > [class*="col-"],
+.main-collection-template .row > [class*="col-"] {
   display: flex !important;
   flex-direction: column !important;
 }
 
-.row > [class*="col-"] > .product-card {
+.productlist-slider > .productlist-item > .product-card,
+.productlist-swiper .row > [class*="col-"] > .product-card,
+.productlist-wrapper .row > [class*="col-"] > .product-card,
+.index-products .row > [class*="col-"] > .product-card,
+.product-image__product .row > [class*="col-"] > .product-card,
+.main-collection-template .row > [class*="col-"] > .product-card {
   display: flex !important;
   flex-direction: column !important;
   flex: 1 1 auto !important;
   height: 100% !important;
 }
 
-.slick-track {
+/* Slick Track / Slide overrides explicitly scoped to product slide containers */
+.productlist-slider .slick-track,
+.productlist-swiper .slick-track,
+.productlist-wrapper .slick-track,
+.index-products .slick-track {
   display: flex !important;
 }
 
-.slick-slide {
+.productlist-slider .slick-slide,
+.productlist-swiper .slick-slide,
+.productlist-wrapper .slick-slide,
+.index-products .slick-slide {
   height: auto !important;
   display: flex !important;
 }
 
-.slick-slide > div {
+.productlist-slider .slick-slide > div,
+.productlist-swiper .slick-slide > div,
+.productlist-wrapper .slick-slide > div,
+.index-products .slick-slide > div {
   display: flex !important;
   height: 100% !important;
   width: 100% !important;
   flex: 1 1 auto !important;
 }
 
-.slick-slide > div > .productlist-item,
-.slick-slide > div > .col-item,
-.slick-slide > div > .col {
+.productlist-slider .slick-slide > div > .productlist-item,
+.productlist-slider .slick-slide > div > .col-item,
+.productlist-slider .slick-slide > div > .col,
+.productlist-swiper .slick-slide > div > .productlist-item,
+.productlist-swiper .slick-slide > div > .col-item,
+.productlist-swiper .slick-slide > div > .col,
+.productlist-wrapper .slick-slide > div > .productlist-item,
+.productlist-wrapper .slick-slide > div > .col-item,
+.productlist-wrapper .slick-slide > div > .col,
+.index-products .slick-slide > div > .productlist-item,
+.index-products .slick-slide > div > .col-item,
+.index-products .slick-slide > div > .col {
   display: flex !important;
   flex-direction: column !important;
   height: 100% !important;
