@@ -39,7 +39,7 @@
         "a00daf6f-fb1c-4351-80dc-24e405bf630e": {
           "type": "Item",
           "settings": {
-            "code": "FREE STANDARD SHIPPING ON ALL U.S. ORDERS OVER $75",
+            "code": "FREE STANDARD SHIPPING ON ALL U.S. ORDERS over $75",
             "button_text": "Shop now",
             "button_link": "shopify://collections"
           }
@@ -47,7 +47,7 @@
         "afb084a9-2a31-4207-9d23-694c0f6b1281": {
           "type": "Item",
           "settings": {
-            "code": "RECEIVE 20% OFF  WHEN YOU SIGN UP FOR THE GLOW NEWSLETTER",
+            "code": "RECEIVE 10% OFF WHEN YOU SIGN UP FOR THE GLOW NEWSLETTER",
             "button_text": "Shop Now",
             "button_link": "shopify://collections/best-seller"
           }
@@ -66,7 +66,7 @@
         "size_icon": 24,
         "speed": 21,
         "scroll_type": "from-right",
-        "background": "#c9a961",
+        "background": "#2f4f3e",
         "gradient_bg": "",
         "text": "#ffffff"
       }
@@ -74,8 +74,8 @@
     "header": {
       "type": "header",
       "settings": {
-        "logo": "shopify://shop_images/Gemini_Generated_Image_3hhods3hhods3hho-removebg-preview.png",
-        "logo_white": "shopify://shop_images/Gemini_Generated_Image_3hhods3hhods3hho-removebg-preview.png",
+        "logo": "shopify://shop_images/Logo_Deep_Forest_Color_5f06f918-f976-4887-9d19-db2f8b0c9dcd.png",
+        "logo_white": "shopify://shop_images/Logo_Deep_Forest_Color_5f06f918-f976-4887-9d19-db2f8b0c9dcd.png",
         "logo_max_width": 200,
         "enable_transparent": false,
         "hover_transparent": false,
@@ -84,16 +84,16 @@
         "layout_header": "logo-left-navigation-center",
         "type_sticky": "sticky",
         "height_header": "normal",
-        "background": "#2f4f3e",
-        "textcolor": "#FCC231",
-        "linkcolor": "#FCC231",
-        "linkhover": "#FCC231",
-        "color_indicator": "#FCC231",
-        "menutext": "#FCC231",
-        "menutexthover": "#FCC231",
-        "menudroptexttitle": "#FCC231",
-        "menudroptext": "#FCC231",
-        "menudropbg": "#2F4F3E",
+        "background": "#fffdf9",
+        "textcolor": "#3D4540",
+        "linkcolor": "#3D4540",
+        "linkhover": "#3D4540",
+        "color_indicator": "#3D4540",
+        "menutext": "#3D4540",
+        "menutexthover": "#3D4540",
+        "menudroptexttitle": "#3D4540",
+        "menudroptext": "#3D4540",
+        "menudropbg": "#2f4f3e",
         "menudropborder": "#b9975b",
         "main_linklist": "main-menu-1",
         "font_family_menu": "--g-font-2",

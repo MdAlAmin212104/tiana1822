@@ -41,14 +41,14 @@
           "type": "faq",
           "settings": {
             "faq_title": "Are your products safe for sensitive skin?",
-            "faq_des": "<p>Yes. Our formulas are gentle, non-toxic, and free from harsh chemicals and artificial fragrances. We still recommend performing a patch test before using any new product.</p>"
+            "faq_des": "<p>Yes. Our formulas are gentle, non-toxic, and free from synthetic ingredients and artificial fragrances. Our products are thoughtfully crafted with carefully selected ingredients for gentle, everyday care. Because every individual's skin is unique, we recommend performing a patch test before using any new product to help identify potential sensitivities or allergic reactions.</p>"
           }
         },
         "faq_whxPcf": {
           "type": "faq",
           "settings": {
             "faq_title": "Are your products vegan and cruelty-free?",
-            "faq_des": "<p>We never test on animals and offer many vegan products. Products containing beeswax are clearly labeled, and all beeswax is ethically sourced.</p>"
+            "faq_des": "<p>We never test on animals and offer several vegan products. Products containing beeswax are clearly labeled, and all beeswax is ethically sourced by local beekeepers.</p>"
           }
         },
         "faq_VKF9cb": {
@@ -76,7 +76,7 @@
           "type": "faq",
           "settings": {
             "faq_title": "Can I use these products on my kids?",
-            "faq_des": "<p>Yes. We offer several gentle herbal products designed for children. As with any skincare product, we recommend performing a patch test before first use.</p>"
+            "faq_des": "<p>Yes. We offer several gentle herbal products designed for children. Because every individual's skin is unique, we recommend performing a patch test before using any new product to help identify potential sensitivities or allergic reactions.</p>"
           }
         },
         "faq_P4vDnR": {
@@ -97,7 +97,7 @@
           "type": "faq",
           "settings": {
             "faq_title": "Do you offer wholesale?",
-            "faq_des": "<p>Yes. We offer wholesale opportunities on selected products for retailers, healthcare providers, ministries, and businesses. Contact us for more information.</p>"
+            "faq_des": "<p>At this time, we offer bulk pricing opportunities on select products for retailers, healthcare providers, ministries, and businesses. Contact us for more information at info@fleuriation.com</p>"
           }
         },
         "faq_X5uNpK": {
@@ -166,7 +166,7 @@
       "settings": {
         "animation": "fade-up",
         "setwidth": "container",
-        "bgsection": "#F5F0E6",
+        "bgsection": "#f5f0e6",
         "e_size": "contain",
         "e_repeat": "no-repeat",
         "e_pos": "center center",

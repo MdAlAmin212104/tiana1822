@@ -19,7 +19,7 @@
         "setwidth": "container",
         "bgsection": "#000000",
         "newletter_color": "#ff6f2e",
-        "colorborder": "#C9A961",
+        "colorborder": "#c9a961",
         "e_size": "cover",
         "e_repeat": "no-repeat",
         "title_top": "",
@@ -36,15 +36,6 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "1595696762386": {
-          "type": "text",
-          "settings": {
-            "widthlogofooter": 150,
-            "title": "About us",
-            "text": "At Fleuriation, we believe nature provides the ingredients needed to nourish and restore. Our handmade products are crafted with organic herbs and plant-based ingredients to promote healthy, radiant skin.",
-            "width": "25%"
-          }
-        },
         "b68420a7-353e-422d-9a28-2dba5275c372": {
           "type": "text",
           "disabled": true,
@@ -73,26 +64,25 @@
           "type": "menu",
           "settings": {
             "link_list": "need-answers-copy",
-            "width": "16%"
+            "width": "33%"
           }
         },
         "ec49d85b-17bb-4b65-a49f-3086aa5430cd": {
           "type": "newsletter",
           "settings": {
             "bg_new": "rgba(0,0,0,0)",
-            "border_new": "#FFFFFF",
-            "btn_bg_new": "#FFFFFF",
-            "btn_cl_new": "#2C4A3B",
+            "border_new": "#2F4F3E",
+            "btn_bg_new": "#2F4F3E",
+            "btn_cl_new": "#FFFFFF",
             "btn_cl_new_hover": "#ffffff",
             "title": "Join our Glow Community",
-            "subheading": "<p>Subscribe to the Glow Community for exclusive promotions!</p>",
+            "subheading": "<p>Join our newsletter and enjoy a discount on your first order, exclusive offers, expert skincare tips, and botanical wellness inspiration delivered to your inbox.</p>",
             "enablesocial": true,
-            "width": "25%"
+            "width": "33%"
           }
         }
       },
       "block_order": [
-        "1595696762386",
         "b68420a7-353e-422d-9a28-2dba5275c372",
         "cc3564b0-a994-4c33-affb-158751f7bac5",
         "1562342622030",
@@ -100,13 +90,13 @@
         "ec49d85b-17bb-4b65-a49f-3086aa5430cd"
       ],
       "settings": {
-        "setwidth": "container-fluid",
-        "background": "#2C4A3B",
+        "setwidth": "container",
+        "background": "#DDE8D5",
         "border_headfooter": "rgba(0,0,0,0)",
         "border-copryright": "#d9d7dd",
-        "text": "#FFFFFF",
-        "text_hover": "#C9A961",
-        "title": "#C9A961",
+        "text": "#4B5D52",
+        "text_hover": "#C8A96A",
+        "title": "#2F4F3E",
         "footer_align_title": "left",
         "enable_border": false,
         "footer_font_family": "--g-font-1",

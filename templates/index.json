@@ -65,9 +65,9 @@
             "button_label": "Shop Now",
             "button_link": "shopify://collections/all",
             "stylebtns": "btn-theme",
-            "bg_button": "#FFFFFF",
-            "color_button": "#2F4F3E",
-            "bg_button_hover": "#FCC231",
+            "bg_button": "#ffffff",
+            "color_button": "#2f4f3e",
+            "bg_button_hover": "#fcc231",
             "color_button_hover": "#ffffff",
             "button_label_2": "",
             "button_link_2": "",
@@ -87,7 +87,7 @@
       "settings": {
         "enable_slideshow": true,
         "setwidthout": "full",
-        "slideshow_height_adapt": "750",
+        "slideshow_height_adapt": "550",
         "slideshow_height_mobile": "500",
         "setwidth": "container",
         "slideshow_mobile": true,
@@ -104,6 +104,43 @@
         "color_dot_active": "#c99a5c"
       }
     },
+    "collection_promo_grid_piEYqk": {
+      "type": "collection-promo-grid",
+      "custom_css": [
+        ".slick-slider {margin-bottom: 0px;}",
+        ".product-card__info {margin-bottom: 0 !important; padding-bottom: 0;}"
+      ],
+      "name": "Collection with Promo",
+      "settings": {
+        "animation": "fade-up",
+        "setwidth": "container-fluid",
+        "bgsection": "#f8f5ee",
+        "title": "Best Sellers",
+        "description": "<p>Shop the botanical favorites our customers keep coming back for.</p>",
+        "view_all_text": "Shop Best Sellers",
+        "view_all_link": "",
+        "style_btn_all": "btn-theme",
+        "collection": "best-seller",
+        "limit": 8,
+        "enable_slider": true,
+        "slides_to_show": 4,
+        "arrows": true,
+        "dots": false,
+        "promo_position": "left",
+        "promo_image": "shopify://shop_images/7.png",
+        "promo_text": "Meet elderberry and goji berry. Two of nature's most potent antioxidants  finally together in your daily facial routine.",
+        "promo_text_color": "#f8f5ee",
+        "promo_btn_label": "SHOP  FACIAL BALM",
+        "promo_btn_link": "shopify://collections/all",
+        "style_btn_promo": "btn-theme",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "paddingsection": "60px 80px 50px 0px",
+        "paddingmobile": "36px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
     "b178c7b9-711f-464d-af9c-aac1f4f31179": {
       "type": "grid-banner-2",
       "blocks": {
@@ -113,10 +150,10 @@
             "paddingblock": "0px 0px 0px 0px",
             "border_banner": "rgba(0,0,0,0)",
             "bg_banner": "rgba(0,0,0,0)",
-            "image": "shopify://shop_images/young-woman-doing-her-morning-skincare-routine_23-2148837439.jpg",
+            "image": "shopify://shop_images/rosehip-sea-buckthorn-face-oil.jpg",
             "width": "4",
-            "description": "<div class=\"subtop\">Facial Care</div><h4 class=\"mt-2 mb-3\">ORGANIC AND ALL-NATURAL INGREDIENTS</h4>\n<p>Our signature facial serums, toners, and masks are crafted with pure, plant-based, nutrient-rich botanicals to restore and replenish the skin.</p>",
-            "button_text": "Restorative Facial Care",
+            "description": "<h4 class=\"mt-2 mb-3\">FACIAL CARE</h4>\n<p>Botanical facial care thoughtfully crafted to cleanse, nourish, and reveal your skin's natural radiance..</p>",
+            "button_text": "SHOP FACIAL PRODUCTS",
             "button_link": "shopify://collections/face",
             "style_btn": "btn-underline",
             "reverse": "flex-column",
@@ -131,8 +168,8 @@
             "bg_banner": "rgba(0,0,0,0)",
             "image": "shopify://shop_images/Gemini_Generated_Image_nl8393nl8393nl83_12f84c32-aa6b-4ff4-af23-1fa7d3414412.png",
             "width": "4",
-            "description": "<div class=\"subtop\">Body Care</div><h4 class=\"mt-2 mb-3\">KEEPING IT PURE</h4>\n<p>Indulge in the art of self-care with our handcrafted body care essentials, rich, soothing, and designed to leave your skin glowing with luxurious nourishment.</p>",
-            "button_text": "Herbal Body Care",
+            "description": "<h4 class=\"mt-2 mb-3\">BODY CARE</h4>\n<p>Nourish your skin with handcrafted botanical body care made to hydrate, soften, and support healthy-looking skin every day.</p>",
+            "button_text": "SHOP BODY PRODUCTS",
             "button_link": "shopify://collections/body",
             "style_btn": "btn-underline",
             "reverse": "flex-column flex-lg-column-reverse",
@@ -147,8 +184,8 @@
             "bg_banner": "rgba(0,0,0,0)",
             "image": "shopify://shop_images/asian-happy-woman-with-toothbrush-bathrobe-morning-mood.png",
             "width": "4",
-            "description": "<div class=\"subtop\">GENTLE CARE </div><h4 class=\"mt-2 mb-3\">Organic & Natural Baby Skincare</h4>\n<p>Our organic baby skincare products are made with gentle, plant-based ingredients to nourish, soothe, and protect your baby's delicate skin every day.</p>",
-            "button_text": "Organic & Natural Body",
+            "description": "<h4 class=\"mt-2 mb-3\">GENTL CARE</h4>\n<p>Care for your little one with gentle, plant-based baby & kids skincare crafted to nourish, protect, and soothe delicate skin naturally.</p>",
+            "button_text": "SHOP BABY PRODUCTS",
             "button_link": "shopify://collections/baby-kids",
             "style_btn": "btn-underline",
             "reverse": "flex-column",
@@ -171,176 +208,265 @@
         "align-heading": "center",
         "no_gutter": false,
         "gutter_padding": 30,
-        "paddingsection": "80px 0px 80px 0px",
+        "paddingsection": "40px 0px 40px 0px",
         "paddingmobile": "40px 0px 40px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
       }
     },
-    "collection_promo_grid_piEYqk": {
+    "17624047726c6428e4": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_d298cf3_EGkVLK": {
+          "type": "ai_gen_block_d298cf3",
+          "settings": {
+            "title": "THE FLEURIATION PLEDGE",
+            "subtitle": "We are committed to formulating herb-infused skincare and wellness \nplant-based products using high-quality organic and all-natural ingredients.",
+            "text_alignment": "center",
+            "content_width": 1050,
+            "spacing_between": 5,
+            "spacing_between_mobile": 10,
+            "title_size": 40,
+            "title_size_mobile": 28,
+            "title_weight": "700",
+            "title_color": "#000000",
+            "subtitle_size": 18,
+            "subtitle_size_mobile": 16,
+            "subtitle_weight": "400",
+            "subtitle_color": "#666666",
+            "section_padding_top": 50,
+            "section_padding_bottom": 50,
+            "section_padding_horizontal": 20,
+            "section_padding_top_mobile": 30,
+            "section_padding_bottom_mobile": 30,
+            "section_padding_horizontal_mobile": 15,
+            "background_color": "#f5f0e6"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_d298cf3_EGkVLK"
+      ],
+      "custom_css": [
+        ".ai-title-subtitle-aae5anvy5tkm5uujnlaigenblockd298cf3egkvlk {margin-top: 50px;}"
+      ],
+      "settings": {}
+    },
+    "1762405093ee54c436": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_0944645_ygDTTz": {
+          "type": "ai_gen_block_0944645",
+          "settings": {
+            "text_1": "Plant-Based Products",
+            "icon_1": "shopify://shop_images/vegan.png",
+            "text_2": "Organic and All-Natural Ongredients",
+            "icon_2": "shopify://shop_images/organic_and_all_natural_illustration.png",
+            "text_3": "No Synthetic Ingredients",
+            "icon_3": "shopify://shop_images/dropper.png",
+            "text_4": "Made in Small Batches",
+            "icon_4": "shopify://shop_images/small_batches_illustration.png",
+            "text_5": "Handcrafted in Southwest Florida",
+            "icon_5": "shopify://shop_images/handmade_in_FL_illustration.png",
+            "icon_size": 48,
+            "text_size": 20,
+            "text_weight": "500",
+            "text_color": "#2C4A3B",
+            "background_color": "#F5F0E6",
+            "section_padding": 40,
+            "item_spacing": 60,
+            "icon_text_gap": 12,
+            "scroll_speed": 30,
+            "pause_on_hover": true
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_1be3a4e_mKnA4i": {
+          "type": "ai_gen_block_1be3a4e",
+          "settings": {
+            "heading": "<strong>Facial Skin Type</strong>",
+            "heading_alignment": "center",
+            "heading_size": 32,
+            "heading_color": "#2C4A3B",
+            "heading_spacing": 30,
+            "slides_per_view": 4,
+            "slides_per_view_mobile": "2",
+            "slide_gap": 20,
+            "desktop_width_percent": 100,
+            "section_padding": 40,
+            "card_background": "#ffffff",
+            "card_border_radius": 8,
+            "card_padding": 20,
+            "image_aspect_ratio": 100,
+            "title_size": 20,
+            "title_color": "#2C4A3B",
+            "title_spacing": 10,
+            "description_size": 14,
+            "description_color": "#2C4A3B",
+            "nav_button_background": "#2C4A3B",
+            "nav_button_color": "#FFFDF9",
+            "nav_spacing": 30,
+            "collection_1": "dry-skincare-products-nourishing-hydrating-care",
+            "image_1": "shopify://shop_images/icon-02_c85413d4-db9c-495b-9973-8c1be492f5e5.jpg",
+            "title_1": "Dry Skin",
+            "description_1": "<h5> Rich, moisture-restoring formulas designed to replenish hydration, strengthen the skin barrier, and soothe dryness using nourishing plant oils and calming botanicals.</h5><p></p>",
+            "collection_2": "oily-skin",
+            "image_2": "shopify://shop_images/icon-03_6a623703-ea99-4c80-92ad-312215cda0c7.jpg",
+            "title_2": "Oily Skin",
+            "description_2": "<h5>Lightweight, balancing formulas designed to control excess oil, refine pores, and support clear, healthy skin using gentle botanical ingredients daily.</h5>",
+            "collection_3": "combination-skincare-products-fleuriation",
+            "image_3": "shopify://shop_images/icon-05_870ce155-00b5-47cc-9dc4-0207c4fb65bd.jpg",
+            "title_3": "Combination Skin",
+            "description_3": "<h5>Balanced care for combination skin that hydrates dry areas, controls shine, and supports healthy, harmonious skin with plant-based ingredients for daily use.</h5>",
+            "collection_4": "mature-skincare-products-fleuriation",
+            "image_4": "shopify://shop_images/icon-06_b6324753-dbe3-4164-ae71-d91b60be7c17.jpg",
+            "title_4": "Mature Skin",
+            "description_4": "<h5>Nourishing skincare for mature skin designed to support elasticity, boost radiance, and soften fine lines using plant-based and restorative ingredients.</h5>",
+            "collection_5": "",
+            "title_5": "",
+            "description_5": "",
+            "collection_6": "",
+            "title_6": "",
+            "description_6": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_0944645_ygDTTz",
+        "ai_gen_block_1be3a4e_mKnA4i"
+      ],
+      "custom_css": [
+        ".ai-marquee-text-auxg4wkn6zezpqtqrbaigenblock0944645ygdttz {font-family: \"Lobster\", cursive !important;}",
+        ".ai-collections-slider__button-adlqzwkl3q2tzngrnaaigenblock1be3a4emkna4i {color: white;}"
+      ],
+      "settings": {}
+    },
+    "collection_promo_grid_nqADNL": {
       "type": "collection-promo-grid",
       "custom_css": [
         ".slick-slider {margin-bottom: 0px;}",
-        ".product-card__info {margin-bottom: 0;}"
+        ".product-card__info {margin-bottom: 0 !important; padding-bottom: 0;}"
       ],
       "name": "Collection with Promo",
       "settings": {
         "animation": "fade-up",
         "setwidth": "container-fluid",
-        "bgsection": "#F5F0E6",
-        "title": "Best Sellers",
-        "description": "<p>Meet our tried and true line-up of clean beauty favorites.</p>",
+        "bgsection": "#f5f0e6",
+        "title": "Explore Our Bundles",
+        "description": "<p>Save more with our curated bundles to elevate every step of your skincare routine.</p>",
         "view_all_text": "Shop Best Sellers",
         "view_all_link": "",
-        "style_btn_all": "btn-underline",
-        "collection": "best-seller",
+        "style_btn_all": "btn-theme",
+        "collection": "bundle-save",
         "limit": 8,
         "enable_slider": true,
         "slides_to_show": 4,
         "arrows": true,
         "dots": false,
         "promo_position": "left",
-        "promo_image": "shopify://shop_images/FacialTreatmentDuo.png",
-        "promo_text": "Extremely hydrating and nourishing, thanks to natural fatty acids and 100% grass-fed tallow.",
+        "promo_image": "shopify://shop_images/Face_care_2.jpg",
+        "promo_text": "",
         "promo_text_color": "#f7f6f2",
-        "promo_btn_label": "SHOP FRANKINCENSE BALM",
-        "promo_btn_link": "shopify://collections/all",
-        "style_btn_promo": "btn-theme btn-white",
+        "promo_btn_label": "Shop Bundles",
+        "promo_btn_link": "shopify://collections/bundle-save",
+        "style_btn_promo": "btn-theme",
         "overlay_color": "#000000",
-        "overlay_opacity": 0.2,
-        "paddingsection": "36px 80px 50px 0px",
+        "overlay_opacity": 0.4,
+        "paddingsection": "60px 80px 50px 0px",
         "paddingmobile": "36px 0px 40px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
       }
     },
-    "edad9550-c2b6-496a-ae2e-3895c1196618": {
-      "type": "product-tab-2",
-      "blocks": {
-        "template--18489216860467__edad9550-c2b6-496a-ae2e-3895c1196618-16798911505c20006e-0": {
-          "type": "collection",
-          "settings": {
-            "title": "Restorative Facial Care",
-            "collection": "face",
-            "button": "Discover All Products",
-            "link": "shopify://collections/face",
-            "style_btn": "btn-underline btn-underline-white",
-            "image": "shopify://shop_images/Elderberry_Glow_Oil_Serum.png",
-            "colortabimage": "#ffffff",
-            "bg_overlay": "#000000",
-            "opacity_bgbox": 12,
-            "position_text": "mid-center"
-          }
-        },
-        "template--18489216860467__edad9550-c2b6-496a-ae2e-3895c1196618-16798911505c20006e-1": {
-          "type": "collection",
-          "settings": {
-            "title": "Postpartum Essentials",
-            "collection": "postpartum-essentials",
-            "button": "discover All Products",
-            "link": "shopify://collections/postpartum-essentials",
-            "style_btn": "btn-underline btn-underline-white",
-            "image": "shopify://shop_images/OLD_FLEUriology_pictures.jpg",
-            "colortabimage": "#ffffff",
-            "bg_overlay": "#000000",
-            "opacity_bgbox": 20,
-            "position_text": "mid-center"
-          }
-        },
-        "template--18489216860467__edad9550-c2b6-496a-ae2e-3895c1196618-16798911505c20006e-2": {
-          "type": "collection",
-          "settings": {
-            "title": "Organic & Natural",
-            "collection": "baby-kids",
-            "button": "discover All Products",
-            "link": "shopify://collections/baby-kids",
-            "style_btn": "btn-underline btn-underline-white",
-            "image": "shopify://shop_images/FacialTreatmentDuo.png",
-            "colortabimage": "#ffffff",
-            "bg_overlay": "#000000",
-            "opacity_bgbox": 10,
-            "position_text": "mid-center"
-          }
-        }
-      },
-      "block_order": [
-        "template--18489216860467__edad9550-c2b6-496a-ae2e-3895c1196618-16798911505c20006e-0",
-        "template--18489216860467__edad9550-c2b6-496a-ae2e-3895c1196618-16798911505c20006e-1",
-        "template--18489216860467__edad9550-c2b6-496a-ae2e-3895c1196618-16798911505c20006e-2"
-      ],
-      "settings": {
-        "animation": "fade-up",
-        "setwidth": "container",
-        "bgsection": "#f5f0e6",
-        "title": "Our Collections",
-        "limit": 4,
-        "enable_reverse": true,
-        "paddingsection": "80px 0px 80px 0px",
-        "paddingmobile": "40px 0px 40px 0px",
-        "marginsection": "0px 0px 0px 0px",
-        "marginmobile": "0px 0px 0px 0px"
-      }
-    },
-    "46879304-b905-4023-b279-2bf6d71497b1": {
+    "parallax_banner_4fbV4J": {
       "type": "parallax-banner",
       "blocks": {
-        "template--18385545593139__46879304-b905-4023-b279-2bf6d71497b1-16791668150450dda2-0": {
-          "type": "sub_title",
-          "settings": {
-            "subtitle": "CLEAN BEAUTY ESSENTIALS"
-          }
-        },
-        "template--18385545593139__46879304-b905-4023-b279-2bf6d71497b1-16791668150450dda2-1": {
+        "heading_mrGHaW": {
           "type": "heading",
           "settings": {
-            "title": "Glow Naturally, Every Day",
+            "title": "Traditional Botanicals <br> for Modern Living",
             "size_text": "h2"
           }
         },
-        "template--18385545593139__46879304-b905-4023-b279-2bf6d71497b1-16791668150450dda2-2": {
+        "paragraph_3XkgKW": {
           "type": "paragraph",
           "settings": {
-            "subtext": "Experience botanical skincare and herbal body care crafted to hydrate, soothe, and enhance your natural beauty without compromising on quality."
+            "subtext": "Inspired by creation's provision and generations of herbal wisdom, <br> we blend botanical traditions with modern skincare."
           }
         },
-        "a1f0b16e-17bf-45de-9334-cce5a4b6882a": {
+        "button_3ttyBi": {
           "type": "button",
           "settings": {
-            "button": "Discover More",
-            "link": "shopify://collections/all",
-            "style_btn": "btn-theme"
+            "button": "OUR STORY",
+            "link": "shopify://pages/about",
+            "style_btn": "btn-theme btn-white"
           }
         }
       },
       "block_order": [
-        "template--18385545593139__46879304-b905-4023-b279-2bf6d71497b1-16791668150450dda2-0",
-        "template--18385545593139__46879304-b905-4023-b279-2bf6d71497b1-16791668150450dda2-1",
-        "template--18385545593139__46879304-b905-4023-b279-2bf6d71497b1-16791668150450dda2-2",
-        "a1f0b16e-17bf-45de-9334-cce5a4b6882a"
+        "heading_mrGHaW",
+        "paragraph_3XkgKW",
+        "button_3ttyBi"
       ],
-      "disabled": true,
+      "name": "Parallax banner",
       "settings": {
-        "animation": "zoom-out",
+        "animation": "",
         "setwidth": "full",
-        "bgsection": "#f5f0e6",
+        "bgsection": "#f8f5ee",
         "parrallax_enable": true,
-        "image": "shopify://shop_images/beauty-spa-concept-caucasian-woman-with-perfect-face-skin-portrait-beautiful-brunette-spa-girl-showing-empty-copy-space-isolated-pink-studio-background-proposing-product_ce98cc7e-e659-43f7-846c-fdc49c7df180.jpg",
+        "image": "shopify://shop_images/Newsletter_pop_picture.jpg",
         "height_section": "650",
-        "height_section_mobile": "350",
+        "height_section_mobile": "450",
         "align": "left",
         "position_text": "mid-left",
-        "bg_box": "#ffffff",
-        "opacity_bgbox": 0,
-        "title_color": "#ffffff",
-        "bg_overlay": "#000000",
+        "bg_box": "#fff",
+        "opacity_bgbox": 0.2,
+        "title_color": "#f8f5ee",
+        "bg_overlay": "#000",
         "gradient_bg": "",
         "opacity_bg_overlay": 0,
         "paddingsection": "0px 0px 0px 0px",
         "marginsection": "0px 0px 0px 0px"
       }
     },
+    "collection_promo_grid_qWTi33": {
+      "type": "collection-promo-grid",
+      "name": "Collection with Promo",
+      "settings": {
+        "animation": "fade-up",
+        "setwidth": "full",
+        "bgsection": "#f5f0e6",
+        "title": "Shop Our Baby & Kids Collections",
+        "description": "<p>Gentle yet effective, our baby + kids products provide everyday care that's pure, nourishing, and specifically formulated for little one. </p>",
+        "view_all_text": "Shop Best Sellers",
+        "view_all_link": "",
+        "style_btn_all": "btn-theme",
+        "collection": "baby-kids",
+        "limit": 8,
+        "enable_slider": true,
+        "slides_to_show": 4,
+        "arrows": true,
+        "dots": false,
+        "promo_position": "left",
+        "promo_image": "shopify://shop_images/IMG_6298.jpg",
+        "promo_text": "",
+        "promo_text_color": "#f7f6f2",
+        "promo_btn_label": "SHOP BABY COLLECTION",
+        "promo_btn_link": "shopify://collections/baby-kids",
+        "style_btn_promo": "btn-theme",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0.1,
+        "paddingsection": "60px 80px 50px 0px",
+        "paddingmobile": "36px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
     "6bcd474f-6206-4b67-a8f7-ffc08cd482f3": {
       "type": "image-content-3",
+      "disabled": true,
       "settings": {
         "animation": "",
         "bgsection": "#f5f0e6",
@@ -357,6 +483,82 @@
         "enable_subbg": true,
         "leftimage": false,
         "paddingsection": "100px 0px 0px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "1660925094098c539e": {
+      "type": "instagram-customize",
+      "blocks": {
+        "1660925094098c539e-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/4_36d63b05-fa57-416e-b477-d288df8d53f6.png",
+            "image_link": "https://www.instagram.com/fleuriation"
+          }
+        },
+        "1660925094098c539e-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/3_2590e7fa-680c-41b7-8b97-d652cea5dfba.png",
+            "image_link": "https://www.instagram.com/fleuriation"
+          }
+        },
+        "1660925094098c539e-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1_8d0fb3a4-5ea0-4e9c-abe9-dda1aab4d62d.png",
+            "image_link": "https://www.instagram.com/fleuriation"
+          }
+        },
+        "1660925094098c539e-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2_b84b4f8b-4cef-4fa0-9779-7941925b954c.png",
+            "image_link": "https://www.instagram.com/fleuriation"
+          }
+        },
+        "1660925094098c539e-4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/3_8220b614-559a-40e3-8900-e5e6cadc4c33.png",
+            "image_link": "https://www.instagram.com/fleuriation"
+          }
+        },
+        "1660925094098c539e-5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_nl8393nl8393nl83_12f84c32-aa6b-4ff4-af23-1fa7d3414412.png",
+            "image_link": "https://www.instagram.com/fleuriation"
+          }
+        }
+      },
+      "block_order": [
+        "1660925094098c539e-0",
+        "1660925094098c539e-1",
+        "1660925094098c539e-2",
+        "1660925094098c539e-3",
+        "1660925094098c539e-4",
+        "1660925094098c539e-5"
+      ],
+      "settings": {
+        "animation": "fade-up",
+        "setwidth": "container-fluid",
+        "bgsection": "#f5f0e6",
+        "title_top": "Follow us",
+        "title": "@fleuriation",
+        "des": "Join the convo with #fleuriation",
+        "align-heading": "center",
+        "image_size": "square",
+        "arrows": true,
+        "draggable": true,
+        "dots": true,
+        "infinite": true,
+        "show": 4,
+        "padding": true,
+        "gutter_padding": 16,
+        "paddingsection": "40px 0px 40px 0px",
         "paddingmobile": "40px 0px 40px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
@@ -460,7 +662,7 @@
         "color_rated": "#c9a961",
         "size_text": "h5",
         "bg_item": "#f5f0e6",
-        "widthcolumn": 70,
+        "widthcolumn": 69,
         "enable_padding_inner": false,
         "show": 1,
         "arrows": true,
@@ -475,6 +677,7 @@
     },
     "16609007639672b3d5": {
       "type": "newsletter",
+      "disabled": true,
       "settings": {
         "animation": "fade-up",
         "setwidth": "container",
@@ -495,82 +698,6 @@
         "html_left_block": "<h4>Subscrible & Get 10%  Discount</h4>\n<p class=\"mb-4 mb-lg-0\">Subscrible & Get 10%  Discount</p>",
         "paddingsection": "58px 0px 58px 0px",
         "paddingmobile": "32px 0px 32px 0px",
-        "marginsection": "0px 0px 0px 0px",
-        "marginmobile": "0px 0px 0px 0px"
-      }
-    },
-    "1660925094098c539e": {
-      "type": "instagram-customize",
-      "blocks": {
-        "1660925094098c539e-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/4_36d63b05-fa57-416e-b477-d288df8d53f6.png",
-            "image_link": "#"
-          }
-        },
-        "1660925094098c539e-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/3_2590e7fa-680c-41b7-8b97-d652cea5dfba.png",
-            "image_link": "#"
-          }
-        },
-        "1660925094098c539e-2": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/1_8d0fb3a4-5ea0-4e9c-abe9-dda1aab4d62d.png",
-            "image_link": "#"
-          }
-        },
-        "1660925094098c539e-3": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/2_b84b4f8b-4cef-4fa0-9779-7941925b954c.png",
-            "image_link": "#"
-          }
-        },
-        "1660925094098c539e-4": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/3_8220b614-559a-40e3-8900-e5e6cadc4c33.png",
-            "image_link": "#"
-          }
-        },
-        "1660925094098c539e-5": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Gemini_Generated_Image_nl8393nl8393nl83_12f84c32-aa6b-4ff4-af23-1fa7d3414412.png",
-            "image_link": "#"
-          }
-        }
-      },
-      "block_order": [
-        "1660925094098c539e-0",
-        "1660925094098c539e-1",
-        "1660925094098c539e-2",
-        "1660925094098c539e-3",
-        "1660925094098c539e-4",
-        "1660925094098c539e-5"
-      ],
-      "settings": {
-        "animation": "fade-up",
-        "setwidth": "container-fluid",
-        "bgsection": "#f5f0e6",
-        "title_top": "Follow us",
-        "title": "@fleuriation",
-        "des": "Join the convo with #fleuriation",
-        "align-heading": "center",
-        "image_size": "square",
-        "arrows": true,
-        "draggable": true,
-        "dots": true,
-        "infinite": true,
-        "show": 4,
-        "padding": true,
-        "gutter_padding": 16,
-        "paddingsection": "80px 0px 80px 0px",
-        "paddingmobile": "40px 0px 40px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
       }
@@ -636,6 +763,7 @@
         "8fb6874d-8c42-405c-9da3-134f7a8a0c73",
         "service_ihkhLk"
       ],
+      "disabled": true,
       "settings": {
         "animation": "fade-up",
         "setwidth": "container",
@@ -666,14 +794,17 @@
   },
   "order": [
     "slideshow_1_HKLY88",
-    "b178c7b9-711f-464d-af9c-aac1f4f31179",
     "collection_promo_grid_piEYqk",
-    "edad9550-c2b6-496a-ae2e-3895c1196618",
-    "46879304-b905-4023-b279-2bf6d71497b1",
+    "b178c7b9-711f-464d-af9c-aac1f4f31179",
+    "17624047726c6428e4",
+    "1762405093ee54c436",
+    "collection_promo_grid_nqADNL",
+    "parallax_banner_4fbV4J",
+    "collection_promo_grid_qWTi33",
     "6bcd474f-6206-4b67-a8f7-ffc08cd482f3",
+    "1660925094098c539e",
     "6551debf-17e2-4b42-97df-03970e25b300",
     "16609007639672b3d5",
-    "1660925094098c539e",
     "16485444103c52f5e9"
   ]
 }
