@@ -688,115 +688,89 @@
         "marginmobile": "0px 0px 0px 0px"
       }
     },
-    "6551debf-17e2-4b42-97df-03970e25b300": {
-      "type": "quotes",
+    "testimonials_rebuilt_BzYHXV": {
+      "type": "testimonials-rebuilt",
       "blocks": {
-        "template--18458241270067__6551debf-17e2-4b42-97df-03970e25b300-16796757630e0d7a22-0": {
-          "type": "quote",
+        "testimonial_ygbJfV": {
+          "type": "testimonial",
           "settings": {
-            "title": "",
+            "quote": "“I am VERY selective when it comes to choosing skin care products, especially since I only want the cleanest and safest options for myself and my family. Fleuriation truly checks every single box! Their products are SIMPLY AMAZING! The consistency is luxurious, the scents are fresh and natural (never overpowering), and the results speak for themselves.  My skin feels nourished, healthy, and radiant after every use. What I love most is knowing I can trust this brand to deliver clean, effective products without any harsh or questionable ingredients. Fleuriation has quickly become a staple in my home! If you’re looking for quality skin care you can feel good about, this is it!”",
             "author": "Esther M",
-            "info": "",
-            "rate": 5,
-            "quote": "“I am VERY selective when it comes to choosing skin care products, especially since I only want the cleanest and safest options for myself and my family. Fleuriation truly checks every single box! Their products are SIMPLY AMAZING! The consistency is luxurious, the scents are fresh and natural (never overpowering), and the results speak for themselves.  My skin feels nourished, healthy, and radiant after every use. What I love most is knowing I can trust this brand to deliver clean, effective products without any harsh or questionable ingredients. Fleuriation has quickly become a staple in my home! If you’re looking for quality skin care you can feel good about, this is it!”"
+            "card_bg": "",
+            "card_text_color": ""
           }
         },
-        "template--18458241270067__6551debf-17e2-4b42-97df-03970e25b300-16796757630e0d7a22-1": {
-          "type": "quote",
+        "testimonial_nFcN6q": {
+          "type": "testimonial",
           "settings": {
-            "title": "",
-            "author": "Olivia W",
-            "info": "",
-            "rate": 5,
-            "quote": "The lip balm is great! I like how smooth it is and the peppermint smell."
-          }
-        },
-        "template--18458241270067__6551debf-17e2-4b42-97df-03970e25b300-16796757630e0d7a22-2": {
-          "type": "quote",
-          "settings": {
-            "title": "",
-            "author": "Hilaire C",
-            "info": "",
-            "rate": 5,
-            "quote": "“I’ve tried many lotions, and they all left my skin dry and itchy. Finally, body salves that soothes, moisturizes, and doesn’t irritate my skin. Great job, Fleuriation on your Gentle Baby Balm and Herbal Body Salve.”"
-          }
-        },
-        "quote_AmRHmG": {
-          "type": "quote",
-          "settings": {
-            "title": "",
+            "quote": "\"My grandson suffers from terrible eczema and constantly scratches his arms and legs. We've tried so many salves, but nothing seemed to help until now! A friend sent us this all-natural salve, and it has made a huge difference. His skin is visibly calmer, and the itching has reduced dramatically. He absolutely loves the gentle, pleasant smell, and best of all it doesn't sting or burn like so many other products we've tried. My daughter was so impressed, she immediately ordered more and plans to keep it stocked in bulk. This salve has truly been a game-changer for our family. We highly recommend it for babies and young children dealing with eczema. It’s soothing, safe, and incredibly effective. Thank you for making a product that finally works! I am anxious to try other products.”",
             "author": "Tammie S",
-            "info": "",
-            "rate": 5,
-            "quote": "\"My grandson suffers from terrible eczema and constantly scratches his arms and legs. We've tried so many salves, but nothing seemed to help until now! A friend sent us this all-natural salve, and it has made a huge difference. His skin is visibly calmer, and the itching has reduced dramatically. He absolutely loves the gentle, pleasant smell, and best of all it doesn't sting or burn like so many other products we've tried. My daughter was so impressed, she immediately ordered more and plans to keep it stocked in bulk. This salve has truly been a game-changer for our family. We highly recommend it for babies and young children dealing with eczema. It’s soothing, safe, and incredibly effective. Thank you for making a product that finally works! I am anxious to try other products.”"
+            "card_bg": "",
+            "card_text_color": ""
           }
         },
-        "quote_hHKbWy": {
-          "type": "quote",
+        "testimonial_cGzGUJ": {
+          "type": "testimonial",
           "settings": {
-            "title": "",
+            "quote": "“This herbal salve has been a game changer for both me and my husband. He had some skin irritation that just wouldn’t calm down, but after using this salve, the area started to soothe and improve quickly. It really helped reduce the redness and discomfort. I’ve also used it in my bikini area, where I had stubborn bumps and blemishes that wouldn’t go away no matter what I tried. After applying the salve, I noticed a huge difference within just two days; the bumps were gone, and my skin felt calm and smooth again. I was genuinely surprised at how fast it worked, especially since that area can be sensitive and easily irritated.\"",
             "author": "Rachel O",
-            "info": "",
-            "rate": 5,
-            "quote": "“This herbal salve has been a game changer for both me and my husband. He had some skin irritation that just wouldn’t calm down, but after using this salve, the area started to soothe and improve quickly. It really helped reduce the redness and discomfort. I’ve also used it in my bikini area, where I had stubborn bumps and blemishes that wouldn’t go away no matter what I tried. After applying the salve, I noticed a huge difference within just two days; the bumps were gone, and my skin felt calm and smooth again. I was genuinely surprised at how fast it worked, especially since that area can be sensitive and easily irritated.\""
+            "card_bg": "",
+            "card_text_color": ""
           }
         },
-        "quote_pzfiFw": {
-          "type": "quote",
+        "testimonial_camPUW": {
+          "type": "testimonial",
           "settings": {
-            "title": "",
-            "author": "Jeremiah W",
-            "info": "",
-            "rate": 5,
-            "quote": "For more than a decade, I've tried several creams and topicals due to my severe skin condition. However, I couldn't find one that suited my needs. I found out about Fleuriation's hydrating body butter from a family member, and it has been a game-changer! The moisture and relief that my skin has received have been just what I've been looking for. This body butter is a must!"
-          }
-        },
-        "quote_XA8cVr": {
-          "type": "quote",
-          "settings": {
-            "title": "",
+            "quote": "The hydrating body butter is my favorite. It doesn't take much of it to smooth out the skin. My dry skin has drastically improved after using the body butter. It's better than any lotion I've used.",
             "author": "Emmanuel G.",
-            "info": "",
-            "rate": 5,
-            "quote": "The hydrating body butter is my favorite. It doesn't take much of it to smooth out the skin. My dry skin has drastically improved after using the body butter. It's better than any lotion I've used."
+            "card_bg": "",
+            "card_text_color": ""
+          }
+        },
+        "testimonial_EVtXNY": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "“I’ve tried many lotions, and they all left my skin dry and itchy. Finally, body salves that soothes, moisturizes, and doesn’t irritate my skin. Great job, Fleuriation on your Gentle Baby Balm and Herbal Body Salve.”",
+            "author": "Hilaire C",
+            "card_bg": "",
+            "card_text_color": ""
+          }
+        },
+        "testimonial_BTXX9e": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "The lip balm is great! I like how smooth it is and the peppermint smell.",
+            "author": "Olivia W",
+            "card_bg": "",
+            "card_text_color": ""
           }
         }
       },
       "block_order": [
-        "template--18458241270067__6551debf-17e2-4b42-97df-03970e25b300-16796757630e0d7a22-0",
-        "template--18458241270067__6551debf-17e2-4b42-97df-03970e25b300-16796757630e0d7a22-1",
-        "template--18458241270067__6551debf-17e2-4b42-97df-03970e25b300-16796757630e0d7a22-2",
-        "quote_AmRHmG",
-        "quote_hHKbWy",
-        "quote_pzfiFw",
-        "quote_XA8cVr"
+        "testimonial_ygbJfV",
+        "testimonial_nFcN6q",
+        "testimonial_cGzGUJ",
+        "testimonial_camPUW",
+        "testimonial_EVtXNY",
+        "testimonial_BTXX9e"
       ],
+      "name": "Testimonials Rebuilt",
       "settings": {
-        "animation": "",
-        "setwidth": "container",
-        "bgsection": "#e5e0d6",
-        "title_color": "rgba(0,0,0,0)",
-        "title_top": "",
-        "title": "Blooming Reviews",
-        "des": "",
-        "align-heading": "center",
-        "aligntext": "text-center",
-        "style": "style-1",
-        "color_rate": "#f1f1f1",
-        "color_rated": "#c9a961",
-        "size_text": "h5",
-        "bg_item": "#f5f0e6",
-        "widthcolumn": 87,
-        "enable_padding_inner": false,
-        "show": 1,
-        "arrows": true,
-        "draggable": true,
-        "dots": false,
+        "promo_image": "shopify://shop_images/hydrating_body_butter2_copy_2.png",
+        "promo_heading": "Over 40,000 5-Star Reviews",
+        "text_color": "#ffffff",
+        "bg_section": "#e5e0d6",
+        "card_bg_color": "#f5f0e6",
+        "card_text_color": "#2c4a3b",
+        "columns_desktop": 3,
+        "columns_mobile": 3,
+        "autoplay": false,
+        "autoplay_speed": 3000,
+        "show_arrows": true,
+        "show_dots": false,
         "infinite": true,
-        "paddingsection": "80px 0px 60px 0px",
-        "paddingmobile": "40px 0px 40px 0px",
-        "marginsection": "0px 0px 0px 0px",
-        "marginmobile": "0px 0px 0px 0px"
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "featured_articles_MmPpg6": {
@@ -1138,18 +1112,18 @@
             "title_size": 40,
             "title_size_mobile": 28,
             "title_weight": "700",
-            "title_color": "#2C4A3B",
+            "title_color": "#2c4a3b",
             "subtitle_size": 18,
             "subtitle_size_mobile": 16,
             "subtitle_weight": "400",
-            "subtitle_color": "#2C4A3B",
+            "subtitle_color": "#2c4a3b",
             "section_padding_top": 50,
             "section_padding_bottom": 50,
             "section_padding_horizontal": 20,
             "section_padding_top_mobile": 30,
             "section_padding_bottom_mobile": 30,
             "section_padding_horizontal_mobile": 15,
-            "background_color": "#F5F0E6"
+            "background_color": "#f5f0e6"
           },
           "blocks": {}
         }
@@ -1175,7 +1149,7 @@
     "1762405093ee54c436",
     "update_collection_M79B9N",
     "quotes_square_qXHtih",
-    "6551debf-17e2-4b42-97df-03970e25b300",
+    "testimonials_rebuilt_BzYHXV",
     "featured_articles_MmPpg6",
     "1660925094098c539e",
     "blocks_FbUQaq",
