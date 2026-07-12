@@ -47,6 +47,13 @@
     padding: 30px;
   }
 
+  /* Testimonials slider container */
+  .pp-testimonials-slider-container-{{ section.id }} {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
   @media (min-width: 768px) {
     .pp-testimonials-promo-card-{{ section.id }} {
       flex: 0 0 calc(33.33% - 14px);
@@ -99,12 +106,7 @@
     letter-spacing: -0.5px;
   }
 
-  /* Testimonials slider container */
-  .pp-testimonials-slider-container-{{ section.id }} {
-    position: relative;
-    width: 100%;
-    box-sizing: border-box;
-  }
+
 
   @media (max-width: 767px) {
     .pp-testimonials-slider-container-{{ section.id }} .slick-prev {
@@ -324,7 +326,7 @@
 </style>
 
 <div id="pp-testimonials-{{ section.id }}" class="pp-testimonials-section">
-  <div class="pp-testimonials-wrapper-{{ section.id }}">
+  <div class="pp-testimonials-wrapper-{{ section.id }} container-fluid">
     
     {%- if promo_image != blank -%}
       <div class="pp-testimonials-promo-card-{{ section.id }}" 
