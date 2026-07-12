@@ -39,17 +39,17 @@
         "a00daf6f-fb1c-4351-80dc-24e405bf630e": {
           "type": "Item",
           "settings": {
-            "code": "FREE STANDARD SHIPPING ON ALL U.S. ORDERS over $75",
-            "button_text": "Shop now",
-            "button_link": "shopify://collections"
+            "code": "FREE STANDARD SHIPPING ON ALL U.S. ORDERS OVER $75",
+            "button_text": "SHOP NOW",
+            "button_link": "shopify://collections/all"
           }
         },
         "afb084a9-2a31-4207-9d23-694c0f6b1281": {
           "type": "Item",
           "settings": {
             "code": "RECEIVE 10% OFF WHEN YOU SIGN UP FOR THE GLOW NEWSLETTER",
-            "button_text": "Shop Now",
-            "button_link": "shopify://collections/best-seller"
+            "button_text": "SIGN UP NOW",
+            "button_link": ""
           }
         }
       },
@@ -84,18 +84,18 @@
         "layout_header": "logo-left-navigation-center",
         "type_sticky": "sticky",
         "height_header": "normal",
-        "background": "#fffdf9",
-        "textcolor": "#3D4540",
-        "linkcolor": "#3D4540",
-        "linkhover": "#3D4540",
-        "color_indicator": "#3D4540",
-        "menutext": "#3D4540",
-        "menutexthover": "#3D4540",
-        "menudroptexttitle": "#3D4540",
-        "menudroptext": "#3D4540",
+        "background": "#f8f5ee",
+        "textcolor": "#3d4540",
+        "linkcolor": "#3d4540",
+        "linkhover": "#3d4540",
+        "color_indicator": "#3d4540",
+        "menutext": "#3d4540",
+        "menutexthover": "#3d4540",
+        "menudroptexttitle": "#3d4540",
+        "menudroptext": "#3d4540",
         "menudropbg": "#2f4f3e",
         "menudropborder": "#b9975b",
-        "main_linklist": "main-menu-1",
+        "main_linklist": "header",
         "font_family_menu": "--g-font-2",
         "font_sizemenu": "17px",
         "font_weight": "700",

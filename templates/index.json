@@ -151,11 +151,11 @@
             "border_banner": "rgba(0,0,0,0)",
             "bg_banner": "rgba(0,0,0,0)",
             "image": "shopify://shop_images/rosehip-sea-buckthorn-face-oil.jpg",
-            "width": "4",
+            "width": "6",
             "description": "<h4 class=\"mt-2 mb-3\">FACIAL CARE</h4>\n<p>Botanical facial care thoughtfully crafted to cleanse, nourish, and reveal your skin's natural radiance..</p>",
             "button_text": "SHOP FACIAL PRODUCTS",
             "button_link": "shopify://collections/face",
-            "style_btn": "btn-underline",
+            "style_btn": "btn-theme",
             "reverse": "flex-column",
             "text_align": "center"
           }
@@ -167,17 +167,18 @@
             "border_banner": "rgba(0,0,0,0)",
             "bg_banner": "rgba(0,0,0,0)",
             "image": "shopify://shop_images/Gemini_Generated_Image_nl8393nl8393nl83_12f84c32-aa6b-4ff4-af23-1fa7d3414412.png",
-            "width": "4",
+            "width": "6",
             "description": "<h4 class=\"mt-2 mb-3\">BODY CARE</h4>\n<p>Nourish your skin with handcrafted botanical body care made to hydrate, soften, and support healthy-looking skin every day.</p>",
             "button_text": "SHOP BODY PRODUCTS",
             "button_link": "shopify://collections/body",
-            "style_btn": "btn-underline",
+            "style_btn": "btn-theme",
             "reverse": "flex-column flex-lg-column-reverse",
             "text_align": "center"
           }
         },
         "9cc18185-327c-4202-8d63-7b0099a30384": {
           "type": "banner",
+          "disabled": true,
           "settings": {
             "paddingblock": "0px 0px 0px 0px",
             "border_banner": "rgba(0,0,0,0)",
@@ -201,7 +202,7 @@
       "settings": {
         "animation": "fade-up",
         "setwidth": "container-fluid",
-        "bgsection": "#f5f0e6",
+        "bgsection": "#f8f5ee",
         "title_top": "",
         "title": "",
         "des": "",
@@ -219,6 +220,7 @@
       "blocks": {
         "ai_gen_block_d298cf3_EGkVLK": {
           "type": "ai_gen_block_d298cf3",
+          "disabled": true,
           "settings": {
             "title": "THE FLEURIATION PLEDGE",
             "subtitle": "We are committed to formulating herb-infused skincare and wellness \nplant-based products using high-quality organic and all-natural ingredients.",
@@ -240,7 +242,7 @@
             "section_padding_top_mobile": 30,
             "section_padding_bottom_mobile": 30,
             "section_padding_horizontal_mobile": 15,
-            "background_color": "#f5f0e6"
+            "background_color": "#e5e0d6"
           },
           "blocks": {}
         }
@@ -250,96 +252,6 @@
       ],
       "custom_css": [
         ".ai-title-subtitle-aae5anvy5tkm5uujnlaigenblockd298cf3egkvlk {margin-top: 50px;}"
-      ],
-      "settings": {}
-    },
-    "1762405093ee54c436": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_0944645_ygDTTz": {
-          "type": "ai_gen_block_0944645",
-          "settings": {
-            "text_1": "Plant-Based Products",
-            "icon_1": "shopify://shop_images/vegan.png",
-            "text_2": "Organic and All-Natural Ongredients",
-            "icon_2": "shopify://shop_images/organic_and_all_natural_illustration.png",
-            "text_3": "No Synthetic Ingredients",
-            "icon_3": "shopify://shop_images/dropper.png",
-            "text_4": "Made in Small Batches",
-            "icon_4": "shopify://shop_images/small_batches_illustration.png",
-            "text_5": "Handcrafted in Southwest Florida",
-            "icon_5": "shopify://shop_images/handmade_in_FL_illustration.png",
-            "icon_size": 48,
-            "text_size": 20,
-            "text_weight": "500",
-            "text_color": "#2C4A3B",
-            "background_color": "#F5F0E6",
-            "section_padding": 40,
-            "item_spacing": 60,
-            "icon_text_gap": 12,
-            "scroll_speed": 30,
-            "pause_on_hover": true
-          },
-          "blocks": {}
-        },
-        "ai_gen_block_1be3a4e_mKnA4i": {
-          "type": "ai_gen_block_1be3a4e",
-          "settings": {
-            "heading": "<strong>Facial Skin Type</strong>",
-            "heading_alignment": "center",
-            "heading_size": 32,
-            "heading_color": "#2C4A3B",
-            "heading_spacing": 30,
-            "slides_per_view": 4,
-            "slides_per_view_mobile": "2",
-            "slide_gap": 20,
-            "desktop_width_percent": 100,
-            "section_padding": 40,
-            "card_background": "#ffffff",
-            "card_border_radius": 8,
-            "card_padding": 20,
-            "image_aspect_ratio": 100,
-            "title_size": 20,
-            "title_color": "#2C4A3B",
-            "title_spacing": 10,
-            "description_size": 14,
-            "description_color": "#2C4A3B",
-            "nav_button_background": "#2C4A3B",
-            "nav_button_color": "#FFFDF9",
-            "nav_spacing": 30,
-            "collection_1": "dry-skincare-products-nourishing-hydrating-care",
-            "image_1": "shopify://shop_images/icon-02_c85413d4-db9c-495b-9973-8c1be492f5e5.jpg",
-            "title_1": "Dry Skin",
-            "description_1": "<h5> Rich, moisture-restoring formulas designed to replenish hydration, strengthen the skin barrier, and soothe dryness using nourishing plant oils and calming botanicals.</h5><p></p>",
-            "collection_2": "oily-skin",
-            "image_2": "shopify://shop_images/icon-03_6a623703-ea99-4c80-92ad-312215cda0c7.jpg",
-            "title_2": "Oily Skin",
-            "description_2": "<h5>Lightweight, balancing formulas designed to control excess oil, refine pores, and support clear, healthy skin using gentle botanical ingredients daily.</h5>",
-            "collection_3": "combination-skincare-products-fleuriation",
-            "image_3": "shopify://shop_images/icon-05_870ce155-00b5-47cc-9dc4-0207c4fb65bd.jpg",
-            "title_3": "Combination Skin",
-            "description_3": "<h5>Balanced care for combination skin that hydrates dry areas, controls shine, and supports healthy, harmonious skin with plant-based ingredients for daily use.</h5>",
-            "collection_4": "mature-skincare-products-fleuriation",
-            "image_4": "shopify://shop_images/icon-06_b6324753-dbe3-4164-ae71-d91b60be7c17.jpg",
-            "title_4": "Mature Skin",
-            "description_4": "<h5>Nourishing skincare for mature skin designed to support elasticity, boost radiance, and soften fine lines using plant-based and restorative ingredients.</h5>",
-            "collection_5": "",
-            "title_5": "",
-            "description_5": "",
-            "collection_6": "",
-            "title_6": "",
-            "description_6": ""
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_0944645_ygDTTz",
-        "ai_gen_block_1be3a4e_mKnA4i"
-      ],
-      "custom_css": [
-        ".ai-marquee-text-auxg4wkn6zezpqtqrbaigenblock0944645ygdttz {font-family: \"Lobster\", cursive !important;}",
-        ".ai-collections-slider__button-adlqzwkl3q2tzngrnaaigenblock1be3a4emkna4i {color: white;}"
       ],
       "settings": {}
     },
@@ -433,6 +345,7 @@
     },
     "collection_promo_grid_qWTi33": {
       "type": "collection-promo-grid",
+      "disabled": true,
       "name": "Collection with Promo",
       "settings": {
         "animation": "fade-up",
@@ -488,78 +401,289 @@
         "marginmobile": "0px 0px 0px 0px"
       }
     },
-    "1660925094098c539e": {
-      "type": "instagram-customize",
+    "1762405093ee54c436": {
+      "type": "_blocks",
       "blocks": {
-        "1660925094098c539e-0": {
-          "type": "image",
+        "ai_gen_block_1be3a4e_mKnA4i": {
+          "type": "ai_gen_block_1be3a4e",
+          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/4_36d63b05-fa57-416e-b477-d288df8d53f6.png",
-            "image_link": "https://www.instagram.com/fleuriation"
-          }
+            "heading": "<strong>Facial Skin Type</strong>",
+            "heading_alignment": "center",
+            "heading_size": 32,
+            "heading_color": "#2c4a3b",
+            "heading_spacing": 30,
+            "slides_per_view": 4,
+            "slides_per_view_mobile": "2",
+            "slide_gap": 20,
+            "desktop_width_percent": 90,
+            "section_padding": 40,
+            "card_background": "#f8f5ee",
+            "card_border_radius": 8,
+            "card_padding": 20,
+            "image_aspect_ratio": 100,
+            "title_size": 20,
+            "title_color": "#2c4a3b",
+            "title_spacing": 10,
+            "description_size": 14,
+            "description_color": "#2c4a3b",
+            "nav_button_background": "#2c4a3b",
+            "nav_button_color": "#fffdf9",
+            "nav_spacing": 30,
+            "collection_1": "dry-skincare-products-nourishing-hydrating-care",
+            "image_1": "shopify://shop_images/icon-02_c85413d4-db9c-495b-9973-8c1be492f5e5.jpg",
+            "title_1": "Dry Skin",
+            "description_1": "<h5> Rich, moisture-restoring formulas designed to replenish hydration, strengthen the skin barrier, and soothe dryness using nourishing plant oils and calming botanicals.</h5><p></p>",
+            "collection_2": "oily-skin",
+            "image_2": "shopify://shop_images/icon-03_6a623703-ea99-4c80-92ad-312215cda0c7.jpg",
+            "title_2": "Oily Skin",
+            "description_2": "<h5>Lightweight, balancing formulas designed to control excess oil, refine pores, and support clear, healthy skin using gentle botanical ingredients daily.</h5>",
+            "collection_3": "combination-skincare-products-fleuriation",
+            "image_3": "shopify://shop_images/icon-05_870ce155-00b5-47cc-9dc4-0207c4fb65bd.jpg",
+            "title_3": "Combination Skin",
+            "description_3": "<h5>Balanced care for combination skin that hydrates dry areas, controls shine, and supports healthy, harmonious skin with plant-based ingredients for daily use.</h5>",
+            "collection_4": "mature-skincare-products-fleuriation",
+            "image_4": "shopify://shop_images/icon-06_b6324753-dbe3-4164-ae71-d91b60be7c17.jpg",
+            "title_4": "Mature Skin",
+            "description_4": "<h5>Nourishing skincare for mature skin designed to support elasticity, boost radiance, and soften fine lines using plant-based and restorative ingredients.</h5>",
+            "collection_5": "",
+            "title_5": "",
+            "description_5": "",
+            "collection_6": "",
+            "title_6": "",
+            "description_6": ""
+          },
+          "blocks": {}
         },
-        "1660925094098c539e-1": {
-          "type": "image",
+        "ai_gen_block_1be3a4e_UfJULn": {
+          "type": "ai_gen_block_1be3a4e",
           "settings": {
-            "image": "shopify://shop_images/3_2590e7fa-680c-41b7-8b97-d652cea5dfba.png",
-            "image_link": "https://www.instagram.com/fleuriation"
-          }
+            "heading": "<strong>The Fleuriation Pledge</strong>",
+            "heading_alignment": "center",
+            "heading_size": 36,
+            "heading_color": "#2c4a3b",
+            "heading_spacing": 30,
+            "slides_per_view": 4,
+            "slides_per_view_mobile": "2",
+            "slide_gap": 20,
+            "desktop_width_percent": 90,
+            "section_padding": 40,
+            "card_background": "#f8f5ee",
+            "card_border_radius": 8,
+            "card_padding": 20,
+            "image_aspect_ratio": 50,
+            "title_size": 20,
+            "title_color": "#2c4a3b",
+            "title_spacing": 10,
+            "description_size": 14,
+            "description_color": "#2c4a3b",
+            "nav_button_background": "#2c4a3b",
+            "nav_button_color": "#fffdf9",
+            "nav_spacing": 30,
+            "collection_1": "",
+            "image_1": "shopify://shop_images/icon-02_c85413d4-db9c-495b-9973-8c1be492f5e5.jpg",
+            "title_1": "Quality ingredients",
+            "description_1": "<h6>We source ingredients from trusted partners and farmers who share our dedication to quality, sustainability, and responsible practices.</h6>",
+            "collection_2": "",
+            "image_2": "shopify://shop_images/icon-03_6a623703-ea99-4c80-92ad-312215cda0c7.jpg",
+            "title_2": "Non-Toxic Standards",
+            "description_2": "<h6>No synthetic ingredients, parabens, preservatives, artificial fragrances, or emulsifiers. It is the promise behind every Fleuriation formula.</h6>",
+            "collection_3": "",
+            "image_3": "shopify://shop_images/icon-05_870ce155-00b5-47cc-9dc4-0207c4fb65bd.jpg",
+            "title_3": "Sustainable Packaging",
+            "description_3": "<h6>We strive to use recyclable packaging. We are committed to protecting the beauty of your products while stewarding our Earth. </h6>",
+            "collection_4": "",
+            "image_4": "shopify://shop_images/icon-06_b6324753-dbe3-4164-ae71-d91b60be7c17.jpg",
+            "title_4": "Transparency",
+            "description_4": "<h6>Our ingredients are listed, explained, and selected with intention. We never use synthetic ingredients because your skin deserves the best.</h6>",
+            "collection_5": "",
+            "title_5": "",
+            "description_5": "",
+            "collection_6": "",
+            "title_6": "",
+            "description_6": ""
+          },
+          "blocks": {}
         },
-        "1660925094098c539e-2": {
-          "type": "image",
+        "ai_gen_block_0944645_ygDTTz": {
+          "type": "ai_gen_block_0944645",
           "settings": {
-            "image": "shopify://shop_images/1_8d0fb3a4-5ea0-4e9c-abe9-dda1aab4d62d.png",
-            "image_link": "https://www.instagram.com/fleuriation"
-          }
-        },
-        "1660925094098c539e-3": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/2_b84b4f8b-4cef-4fa0-9779-7941925b954c.png",
-            "image_link": "https://www.instagram.com/fleuriation"
-          }
-        },
-        "1660925094098c539e-4": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/3_8220b614-559a-40e3-8900-e5e6cadc4c33.png",
-            "image_link": "https://www.instagram.com/fleuriation"
-          }
-        },
-        "1660925094098c539e-5": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Gemini_Generated_Image_nl8393nl8393nl83_12f84c32-aa6b-4ff4-af23-1fa7d3414412.png",
-            "image_link": "https://www.instagram.com/fleuriation"
-          }
+            "text_1": "Plant-Based Products",
+            "icon_1": "shopify://shop_images/vegan.png",
+            "text_2": "Organic and All-Natural Ingredients",
+            "icon_2": "shopify://shop_images/organic_and_all_natural_illustration.png",
+            "text_3": "No Synthetic Ingredients",
+            "icon_3": "shopify://shop_images/dropper.png",
+            "text_4": "Made in Small Batches",
+            "icon_4": "shopify://shop_images/small_batches_illustration.png",
+            "text_5": "Handcrafted in Southwest Florida",
+            "icon_5": "shopify://shop_images/handmade_in_FL_illustration.png",
+            "icon_size": 48,
+            "text_size": 20,
+            "text_weight": "500",
+            "text_color": "#2c4a3b",
+            "background_color": "#e5e0d6",
+            "section_padding": 40,
+            "item_spacing": 60,
+            "icon_text_gap": 12,
+            "scroll_speed": 30,
+            "pause_on_hover": true
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "1660925094098c539e-0",
-        "1660925094098c539e-1",
-        "1660925094098c539e-2",
-        "1660925094098c539e-3",
-        "1660925094098c539e-4",
-        "1660925094098c539e-5"
+        "ai_gen_block_1be3a4e_mKnA4i",
+        "ai_gen_block_1be3a4e_UfJULn",
+        "ai_gen_block_0944645_ygDTTz"
       ],
+      "custom_css": [
+        ".ai-marquee-text-auxg4wkn6zezpqtqrbaigenblock0944645ygdttz {font-family: \"Lobster\", cursive !important;}",
+        ".ai-collections-slider__button-adlqzwkl3q2tzngrnaaigenblock1be3a4emkna4i {color: white;}"
+      ],
+      "settings": {}
+    },
+    "update_collection_M79B9N": {
+      "type": "update-collection",
+      "custom_css": [
+        ".slick-slider {margin-bottom: 0px;}",
+        ".product-card__info {margin-bottom: 0 !important; padding-bottom: 0;}"
+      ],
+      "name": "Collection Promo Dublicate",
       "settings": {
         "animation": "fade-up",
         "setwidth": "container-fluid",
         "bgsection": "#f5f0e6",
-        "title_top": "Follow us",
-        "title": "@fleuriation",
-        "des": "Join the convo with #fleuriation",
+        "title": "Shop Our Baby & Kids Collections",
+        "description": "<p>Gentle yet effective, our baby + kids products provide everyday care that's pure, nourishing, and specifically formulated for little ones. </p>",
+        "view_all_text": "Shop Best Sellers",
+        "view_all_link": "",
+        "style_btn_all": "btn-underline",
+        "collection": "baby-kids",
+        "limit": 8,
+        "enable_slider": true,
+        "slides_to_show": 4,
+        "arrows": true,
+        "dots": false,
+        "promo_position": "left",
+        "promo_image": "shopify://shop_images/IMG_6298_c327926d-203d-4d18-8b6c-06851002b8ff.jpg",
+        "promo_text": "",
+        "promo_text_color": "#f7f6f2",
+        "promo_btn_label": "SHOP BABY COLLECTION",
+        "promo_btn_link": "shopify://collections/baby-kids",
+        "style_btn_promo": "btn-theme",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0.1,
+        "paddingsection": "60px 80px 50px 0px",
+        "paddingmobile": "36px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "quotes_square_qXHtih": {
+      "type": "quotes-square",
+      "blocks": {
+        "quote_hwfD7C": {
+          "type": "quote",
+          "settings": {
+            "author": "Author's name",
+            "info": "",
+            "rate": 5,
+            "quote": "Add customer reviews and testimonials to showcase your store’s happy customers."
+          }
+        },
+        "quote_JpFTVt": {
+          "type": "quote",
+          "settings": {
+            "author": "Author's name",
+            "info": "",
+            "rate": 5,
+            "quote": "Add customer reviews and testimonials to showcase your store’s happy customers."
+          }
+        },
+        "quote_hHnfRx": {
+          "type": "quote",
+          "settings": {
+            "author": "Author's name",
+            "info": "",
+            "rate": 5,
+            "quote": "Add customer reviews and testimonials to showcase your store’s happy customers."
+          }
+        },
+        "quote_hfXPNQ": {
+          "type": "quote",
+          "settings": {
+            "author": "Author's name",
+            "info": "",
+            "rate": 5,
+            "quote": "Add customer reviews and testimonials to showcase your store’s happy customers."
+          }
+        },
+        "quote_prcbyG": {
+          "type": "quote",
+          "settings": {
+            "author": "Author's name",
+            "info": "",
+            "rate": 5,
+            "quote": "Add customer reviews and testimonials to showcase your store’s happy customers."
+          }
+        },
+        "quote_gyFXHY": {
+          "type": "quote",
+          "settings": {
+            "author": "Author's name",
+            "info": "",
+            "rate": 5,
+            "quote": "Add customer reviews and testimonials to showcase your store’s happy customers."
+          }
+        },
+        "quote_emPtME": {
+          "type": "quote",
+          "settings": {
+            "author": "Author's name",
+            "info": "",
+            "rate": 5,
+            "quote": "Add customer reviews and testimonials to showcase your store’s happy customers."
+          }
+        }
+      },
+      "block_order": [
+        "quote_hwfD7C",
+        "quote_JpFTVt",
+        "quote_hHnfRx",
+        "quote_hfXPNQ",
+        "quote_prcbyG",
+        "quote_gyFXHY",
+        "quote_emPtME"
+      ],
+      "disabled": true,
+      "name": "Testimonials Square",
+      "settings": {
+        "animation": "",
+        "setwidth": "container-fluid",
+        "bgsection": "#f5f0e6",
+        "title_top": "",
+        "title": "Blooming Reviews",
+        "des": "",
         "align-heading": "center",
-        "image_size": "square",
+        "f_title": "",
+        "f_des": "Over 40,000 5-Star Reviews",
+        "f_bg": "#000000",
+        "f_color": "#ffffff",
+        "bg_item": "#ffffff",
+        "border_item": "#ffffff",
+        "color_item": "rgba(0,0,0,0)",
+        "color_rate": "#f1f1f1",
+        "color_rated": "#000000",
+        "aligntext": "text-left",
+        "size_text": "txt-body",
+        "show": 5,
         "arrows": true,
         "draggable": true,
-        "dots": true,
-        "infinite": true,
-        "show": 4,
-        "padding": true,
-        "gutter_padding": 16,
+        "dots": false,
+        "infinite": false,
         "paddingsection": "40px 0px 40px 0px",
-        "paddingmobile": "40px 0px 40px 0px",
+        "paddingmobile": "60px 0px 60px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
       }
@@ -650,9 +774,9 @@
       "settings": {
         "animation": "",
         "setwidth": "container",
-        "bgsection": "#f5f0e6",
+        "bgsection": "#e5e0d6",
         "title_color": "rgba(0,0,0,0)",
-        "title_top": "TESTIMONIAL",
+        "title_top": "",
         "title": "Blooming Reviews",
         "des": "",
         "align-heading": "center",
@@ -662,7 +786,7 @@
         "color_rated": "#c9a961",
         "size_text": "h5",
         "bg_item": "#f5f0e6",
-        "widthcolumn": 69,
+        "widthcolumn": 87,
         "enable_padding_inner": false,
         "show": 1,
         "arrows": true,
@@ -674,6 +798,122 @@
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
       }
+    },
+    "featured_articles_MmPpg6": {
+      "type": "featured-articles",
+      "name": "Blog posts",
+      "settings": {
+        "animation": "",
+        "setwidth": "container-fluid",
+        "bgsection": "#f5f0e6",
+        "title_top": "",
+        "title": "Latest Blog Posts",
+        "des": "",
+        "align-heading": "center",
+        "blog": "news",
+        "item_style": "blog-1",
+        "enable_btn_blog": true,
+        "enable_btn_line": false,
+        "enable_date": false,
+        "enable_tag": false,
+        "enable_comment": false,
+        "enable_short": true,
+        "image_size": "square",
+        "gutter_padding": 30,
+        "arrows": true,
+        "draggable": true,
+        "dots": true,
+        "infinite": true,
+        "rows": "1",
+        "limit": 5,
+        "show": 3,
+        "paddingsection": "40px 0px 40px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "1660925094098c539e": {
+      "type": "instagram-customize",
+      "blocks": {
+        "1660925094098c539e-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/4_36d63b05-fa57-416e-b477-d288df8d53f6.png",
+            "image_link": "https://www.instagram.com/fleuriation"
+          }
+        },
+        "1660925094098c539e-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/3_2590e7fa-680c-41b7-8b97-d652cea5dfba.png",
+            "image_link": "https://www.instagram.com/fleuriation"
+          }
+        },
+        "1660925094098c539e-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1_8d0fb3a4-5ea0-4e9c-abe9-dda1aab4d62d.png",
+            "image_link": "https://www.instagram.com/fleuriation"
+          }
+        },
+        "1660925094098c539e-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2_b84b4f8b-4cef-4fa0-9779-7941925b954c.png",
+            "image_link": "https://www.instagram.com/fleuriation"
+          }
+        },
+        "1660925094098c539e-4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/3_8220b614-559a-40e3-8900-e5e6cadc4c33.png",
+            "image_link": "https://www.instagram.com/fleuriation"
+          }
+        },
+        "1660925094098c539e-5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_nl8393nl8393nl83_12f84c32-aa6b-4ff4-af23-1fa7d3414412.png",
+            "image_link": "https://www.instagram.com/fleuriation"
+          }
+        }
+      },
+      "block_order": [
+        "1660925094098c539e-0",
+        "1660925094098c539e-1",
+        "1660925094098c539e-2",
+        "1660925094098c539e-3",
+        "1660925094098c539e-4",
+        "1660925094098c539e-5"
+      ],
+      "disabled": true,
+      "settings": {
+        "animation": "fade-up",
+        "setwidth": "container-fluid",
+        "bgsection": "#f5f0e6",
+        "title_top": "Follow us",
+        "title": "@fleuriation",
+        "des": "Join the convo with #fleuriation",
+        "align-heading": "center",
+        "image_size": "square",
+        "arrows": true,
+        "draggable": true,
+        "dots": true,
+        "infinite": true,
+        "show": 4,
+        "padding": true,
+        "gutter_padding": 16,
+        "paddingsection": "40px 0px 40px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "blocks_FbUQaq": {
+      "type": "_blocks",
+      "name": "Title and subtitle",
+      "settings": {}
     },
     "16609007639672b3d5": {
       "type": "newsletter",
@@ -790,6 +1030,137 @@
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
       }
+    },
+    "1762405093ee54c437": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_0944645_ygDTTz": {
+          "type": "ai_gen_block_0944645",
+          "disabled": true,
+          "settings": {
+            "text_1": "Plant-Based Products",
+            "icon_1": "shopify://shop_images/vegan.png",
+            "text_2": "Organic and All-Natural Ongredients",
+            "icon_2": "shopify://shop_images/organic_and_all_natural_illustration.png",
+            "text_3": "No Synthetic Ingredients",
+            "icon_3": "shopify://shop_images/dropper.png",
+            "text_4": "Made in Small Batches",
+            "icon_4": "shopify://shop_images/small_batches_illustration.png",
+            "text_5": "Handcrafted in Southwest Florida",
+            "icon_5": "shopify://shop_images/handmade_in_FL_illustration.png",
+            "icon_size": 48,
+            "text_size": 20,
+            "text_weight": "500",
+            "text_color": "#000000",
+            "background_color": "#949f74",
+            "section_padding": 40,
+            "item_spacing": 60,
+            "icon_text_gap": 12,
+            "scroll_speed": 30,
+            "pause_on_hover": true
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_1be3a4e_mKnA4i": {
+          "type": "ai_gen_block_1be3a4e",
+          "disabled": true,
+          "settings": {
+            "heading": "<strong>Facial Skin Type</strong>",
+            "heading_alignment": "center",
+            "heading_size": 32,
+            "heading_color": "#000000",
+            "heading_spacing": 30,
+            "slides_per_view": 4,
+            "slides_per_view_mobile": "2",
+            "slide_gap": 20,
+            "desktop_width_percent": 100,
+            "section_padding": 40,
+            "card_background": "#ffffff",
+            "card_border_radius": 8,
+            "card_padding": 20,
+            "image_aspect_ratio": 100,
+            "title_size": 20,
+            "title_color": "#000000",
+            "title_spacing": 10,
+            "description_size": 14,
+            "description_color": "#666666",
+            "nav_button_background": "#000000",
+            "nav_button_color": "#000000",
+            "nav_spacing": 30,
+            "collection_1": "dry-skincare-products-nourishing-hydrating-care",
+            "image_1": "shopify://shop_images/icon-02_c85413d4-db9c-495b-9973-8c1be492f5e5.jpg",
+            "title_1": "Dry Skin",
+            "description_1": "<h5> Rich, moisture-restoring formulas designed to replenish hydration, strengthen the skin barrier, and soothe dryness using nourishing plant oils and calming botanicals.</h5><p></p>",
+            "collection_2": "oily-skin",
+            "image_2": "shopify://shop_images/icon-03_6a623703-ea99-4c80-92ad-312215cda0c7.jpg",
+            "title_2": "Oily Skin",
+            "description_2": "<h5>Lightweight, balancing formulas designed to control excess oil, refine pores, and support clear, healthy skin using gentle botanical ingredients daily.</h5>",
+            "collection_3": "combination-skincare-products-fleuriation",
+            "image_3": "shopify://shop_images/icon-05_870ce155-00b5-47cc-9dc4-0207c4fb65bd.jpg",
+            "title_3": "Combination Skin",
+            "description_3": "<h5>Balanced care for combination skin that hydrates dry areas, controls shine, and supports healthy, harmonious skin with plant-based ingredients for daily use.</h5>",
+            "collection_4": "mature-skincare-products-fleuriation",
+            "image_4": "shopify://shop_images/icon-06_b6324753-dbe3-4164-ae71-d91b60be7c17.jpg",
+            "title_4": "Mature Skin",
+            "description_4": "<h5>Nourishing skincare for mature skin designed to support elasticity, boost radiance, and soften fine lines using plant-based and restorative ingredients.</h5>",
+            "collection_5": "",
+            "title_5": "",
+            "description_5": "",
+            "collection_6": "",
+            "title_6": "",
+            "description_6": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_0944645_ygDTTz",
+        "ai_gen_block_1be3a4e_mKnA4i"
+      ],
+      "custom_css": [
+        ".ai-marquee-text-auxg4wkn6zezpqtqrbaigenblock0944645ygdttz {font-family: \"Lobster\", cursive !important;}",
+        ".ai-collections-slider__button-adlqzwkl3q2tzngrnaaigenblock1be3a4emkna4i {color: white;}"
+      ],
+      "settings": {}
+    },
+    "17624047726c6428e5": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_d298cf3_EGkVLK": {
+          "type": "ai_gen_block_d298cf3",
+          "settings": {
+            "title": "The Fleuriation Pledge",
+            "subtitle": "We are committed to formulating herb-infused skincare and wellness \nplant-based products using high-quality organic and all-natural ingredients.",
+            "text_alignment": "center",
+            "content_width": 1050,
+            "spacing_between": 5,
+            "spacing_between_mobile": 10,
+            "title_size": 40,
+            "title_size_mobile": 28,
+            "title_weight": "700",
+            "title_color": "#2C4A3B",
+            "subtitle_size": 18,
+            "subtitle_size_mobile": 16,
+            "subtitle_weight": "400",
+            "subtitle_color": "#2C4A3B",
+            "section_padding_top": 50,
+            "section_padding_bottom": 50,
+            "section_padding_horizontal": 20,
+            "section_padding_top_mobile": 30,
+            "section_padding_bottom_mobile": 30,
+            "section_padding_horizontal_mobile": 15,
+            "background_color": "#F5F0E6"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_d298cf3_EGkVLK"
+      ],
+      "custom_css": [
+        ".ai-title-subtitle-aae5anvy5tkm5uujnlaigenblockd298cf3egkvlk {margin-top: 50px;}"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -797,14 +1168,20 @@
     "collection_promo_grid_piEYqk",
     "b178c7b9-711f-464d-af9c-aac1f4f31179",
     "17624047726c6428e4",
-    "1762405093ee54c436",
     "collection_promo_grid_nqADNL",
     "parallax_banner_4fbV4J",
     "collection_promo_grid_qWTi33",
     "6bcd474f-6206-4b67-a8f7-ffc08cd482f3",
-    "1660925094098c539e",
+    "1762405093ee54c436",
+    "update_collection_M79B9N",
+    "quotes_square_qXHtih",
     "6551debf-17e2-4b42-97df-03970e25b300",
+    "featured_articles_MmPpg6",
+    "1660925094098c539e",
+    "blocks_FbUQaq",
     "16609007639672b3d5",
-    "16485444103c52f5e9"
+    "16485444103c52f5e9",
+    "1762405093ee54c437",
+    "17624047726c6428e5"
   ]
 }

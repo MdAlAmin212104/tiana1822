@@ -9,7 +9,7 @@
  */
 {
   "current": {
-    "container": 1870,
+    "container": 1700,
     "gutter": 30,
     "slideshow": "slideshow-2",
     "sectionheading": "heading-1",
@@ -37,7 +37,7 @@
     "font_family_custom_body": false,
     "font_family": "pt_serif_n4",
     "font_family_google": "",
-    "font_family2": "open_sans_n4",
+    "font_family2": "pt_serif_n4",
     "font_family2_google": "",
     "slide_font_size": 48,
     "slide_font_weight": "700",
@@ -74,7 +74,7 @@
     "h5_font_spacing": "0",
     "h6_font_size": 16,
     "h6_font_weight": "600",
-    "h6_font_transform": "capitalize",
+    "h6_font_transform": "none",
     "h6_font_spacing": "0",
     "font_weight_body": "400",
     "base_size": 16,
@@ -93,7 +93,7 @@
     "currency_enable_image": false,
     "selector_enable_name": false,
     "mobile_phone": "",
-    "mobile_email": "support@fleuriation.com",
+    "mobile_email": "info@fleuriation.com",
     "enable_post": false,
     "enable_article": false,
     "enable_collection": false,
@@ -121,7 +121,7 @@
     "share_pinterest": true,
     "sidebar_html_title_top": "About Author",
     "sidebar_html_top": "<img src=\"https://cdn.shopify.com/s/files/1/0653/4489/7112/files/Model_in_white_dress_copy_2_48405c3b-1ae5-4a5d-a7ea-61e3a9fcdb6b.png?v=1783416617\">\n<p class=\"mt-2\">\n  Fleuriation was created with a passion for clean, plant-based skincare that nurtures both skin and well-being. Every product is thoughtfully handcrafted using organic ingredients, herbal infusions, and non-toxic formulas to help restore, nourish, and protect your skin naturally. We believe beauty begins with purity, transparency, and the healing power of nature.\n</p>",
-    "sidebar_tag": true,
+    "sidebar_tag": false,
     "sidebar_post": true,
     "sidebar_post_title": "Recent Post",
     "sidebar_post_limit": 3,
@@ -131,7 +131,7 @@
     "enable_wishlsit": false,
     "page_wishlist": "wishlist",
     "enable_popuptext": false,
-    "enable_popuptext_new": "Get 15% Off",
+    "enable_popuptext_new": "Get 10% Off",
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": true,
     "productgrid": "product-9",
@@ -171,6 +171,7 @@
     "sold_cl": "#d1512d",
     "qv_box": false,
     "select_product_option_display": "list",
+    "qv_vendor": false,
     "color_circle": true,
     "enable_button_hover": false,
     "enable_button_shadow": false,
@@ -202,15 +203,15 @@
     ],
     "gift_wrapping_enable": false,
     "product_gift": "the-gift-card",
-    "coupon_code_enable": false,
+    "coupon_code_enable": true,
     "coupon_code_title": "List Coupon",
     "coupon_code_content": "<p><strong>Pose</strong> → 20% off all collections</p><p>Coupon code will work on checkout page</p>",
     "free_shipping_enable": false,
     "free_shipping_value": 1000,
     "free_end": "for Free Shipping",
     "free_shipping_text": "Your order is free delivery !",
-    "shipping_calculator": false,
-    "enable_term": false,
+    "shipping_calculator": true,
+    "enable_term": true,
     "agree_text": "I agree with the",
     "terms_link": "#",
     "safe_checkout_pcart": "",
@@ -3010,7 +3011,9 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".d-flex.align-items-center.mb-3.pb-3.border-bottom.block-addon.gap-5 {display: none !important;}"
+      ".d-flex.align-items-center.mb-3.pb-3.border-bottom.block-addon.gap-5 {display: none !important;}",
+      ".slick-slider {margin-bottom: 0px;}",
+      ".product-card__info {margin-bottom: 0 !important; padding-bottom: 0;}"
     ]
   }
 }
