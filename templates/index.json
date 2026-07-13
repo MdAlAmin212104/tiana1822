@@ -109,7 +109,8 @@
       "type": "collection-promo-grid",
       "custom_css": [
         ".slick-slider {margin-bottom: 0px;}",
-        ".product-card__info {margin-bottom: 0 !important; padding-bottom: 0;}"
+        ".product-card__info {margin-bottom: 0 !important; padding-bottom: 0;}",
+        ".product-card__name {min-height: 0 !important;}"
       ],
       "name": "Collection with Promo",
       "settings": {
@@ -261,6 +262,7 @@
     },
     "collection_promo_grid_nqADNL": {
       "type": "collection-promo-grid",
+      "disabled": true,
       "custom_css": [
         ".slick-slider {margin-bottom: 0px;}",
         ".product-card__info {margin-bottom: 0 !important; padding-bottom: 0;}",
@@ -293,6 +295,44 @@
         "overlay_color": "#000000",
         "overlay_opacity": 0.4,
         "paddingsection": "60px 80px 50px 0px",
+        "paddingmobile": "36px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "update_collection_M79B9N": {
+      "type": "update-collection",
+      "custom_css": [
+        ".slick-slider {margin-bottom: 0px;}",
+        ".product-card__info {margin-bottom: 0 !important; padding-bottom: 0;}",
+        ".product-card__name {min-height: 0 !important;}"
+      ],
+      "name": "Collection Promo Dublicate",
+      "settings": {
+        "animation": "fade-up",
+        "setwidth": "container-fluid",
+        "bgsection": "#f5f0e6",
+        "title": "Explore Our Bundles",
+        "description": "<p>Save more with our curated bundles to elevate every step of your skincare routine.</p>",
+        "view_all_text": "Shop Best Sellers",
+        "view_all_link": "",
+        "style_btn_all": "btn-underline",
+        "collection": "bundle-save",
+        "limit": 8,
+        "enable_slider": true,
+        "slides_to_show": 4,
+        "arrows": true,
+        "dots": false,
+        "promo_position": "left",
+        "promo_image": "shopify://shop_images/Face_care_2_afd456c0-9649-4c7c-8c08-b982675d739e.png",
+        "promo_text": "",
+        "promo_text_color": "#f7f6f2",
+        "promo_btn_label": "SHOP BUNDLE SETS",
+        "promo_btn_link": "shopify://collections/bundle-save",
+        "style_btn_promo": "btn-theme",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0.1,
+        "paddingsection": "40px 40px 40px 0px",
         "paddingmobile": "36px 0px 40px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
@@ -477,7 +517,7 @@
             "card_background": "#f5f0e6",
             "card_border_radius": 8,
             "card_padding": 20,
-            "image_aspect_ratio": 50,
+            "image_aspect_ratio": 30,
             "title_size": 20,
             "title_color": "#2c4a3b",
             "title_spacing": 10,
@@ -549,11 +589,12 @@
       ],
       "settings": {}
     },
-    "update_collection_M79B9N": {
+    "update_collection_tLxtgz": {
       "type": "update-collection",
       "custom_css": [
         ".slick-slider {margin-bottom: 0px;}",
-        ".product-card__info {margin-bottom: 0 !important; padding-bottom: 0;}"
+        ".product-card__info {margin-bottom: 0 !important; padding-bottom: 0;}",
+        ".product-card__name {min-height: 0 !important;}"
       ],
       "name": "Collection Promo Dublicate",
       "settings": {
@@ -580,7 +621,7 @@
         "style_btn_promo": "btn-theme",
         "overlay_color": "#000000",
         "overlay_opacity": 0.1,
-        "paddingsection": "60px 80px 50px 0px",
+        "paddingsection": "40px 40px 40px 0px",
         "paddingmobile": "36px 0px 40px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
@@ -1149,11 +1190,12 @@
     "b178c7b9-711f-464d-af9c-aac1f4f31179",
     "17624047726c6428e4",
     "collection_promo_grid_nqADNL",
+    "update_collection_M79B9N",
     "parallax_banner_4fbV4J",
     "collection_promo_grid_qWTi33",
     "6bcd474f-6206-4b67-a8f7-ffc08cd482f3",
     "1762405093ee54c436",
-    "update_collection_M79B9N",
+    "update_collection_tLxtgz",
     "quotes_square_qXHtih",
     "testimonials_rebuilt_BzYHXV",
     "featured_articles_MmPpg6",

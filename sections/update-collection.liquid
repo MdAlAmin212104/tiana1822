@@ -55,7 +55,7 @@
   .customstyle{{ section.id }} .collection-promo-grid__container{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
   }
 
   .customstyle{{ section.id }} .collection-promo-grid__promo-col{ width: 100%; }
@@ -70,7 +70,7 @@
     .customstyle{{ section.id }} .collection-promo-grid__container{
       display: grid;
       grid-template-columns: 28% 72%;
-      column-gap: 30px;
+      column-gap: 10px;
     }
     .customstyle{{ section.id }} .collection-promo-grid__container.promo-pos-right{
       grid-template-columns: 72% 28%;
@@ -155,15 +155,8 @@
     transition: background-color .3s ease, color .3s ease, border-color .3s ease;
     border: 1px solid transparent;
   }
-  .customstyle{{ section.id }} .btn-theme{
-    background: var(--charcoal);
-    color: #fff;
-  }
-  .customstyle{{ section.id }} .btn-theme:hover{ background: #000; }
-  .customstyle{{ section.id }} .btn-theme.btn-white{
-    background: #ffffff;
-    color: var(--charcoal);
-  }
+  
+  
   .customstyle{{ section.id }} .btn-theme.btn-white:hover{ background: var(--cream); }
   .customstyle{{ section.id }} .btn-underline{
     background: transparent;
@@ -200,7 +193,7 @@
     border-bottom: 1px solid #e8e8e8;
     padding-bottom: 15px;
   }
-  .customstyle{{ section.id }} .promo-grid__heading-text{ flex: 1 1 auto; }
+  .customstyle{{ section.id }} .promo-grid__heading-text{ flex: 1 1 auto; margin-left: 20px; }
   .customstyle{{ section.id }} .promo-grid__heading{
     margin: 0 0 8px;
     font-size: 2.25rem;
@@ -237,14 +230,13 @@
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    padding-bottom: 4px;
   }
   .customstyle{{ section.id }} .productlist-slider__track::-webkit-scrollbar{ display: none; }
   .customstyle{{ section.id }} .productlist-slider__track{ scrollbar-width: none; }
 
   .customstyle{{ section.id }} .productlist-slider .productlist-item{
     scroll-snap-align: start;
-    flex: 0 0 calc((100% - (var(--cpg-slider-cols, 3) - 1) * 20px) / var(--cpg-slider-cols, 3));
+    flex: 0 0 calc((100% - (var(--cpg-slider-cols, 3) - 1) * 1px) / var(--cpg-slider-cols, 3));
   }
   @media (max-width: 767px){
     .customstyle{{ section.id }} .productlist-slider .productlist-item{
