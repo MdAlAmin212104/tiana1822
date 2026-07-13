@@ -13,13 +13,29 @@
 -%}
 
 {%- style -%}
-  /* ===== Section Wrap (replaces bootstrap .container / .container-fluid) ===== */
-  .customstyle{{ section.id }} .cpg-wrap {
+
+.productlist-slider, .productlist-swiper .row, .productlist-wrapper .row, .index-products .row, .product-image__product .row, .main-collection-template .row {
+    display: block!important;
+}
+
+  .customstyle{{ section.id }} {
+    --forest: #2F4A3C;
+    --cream: #F7F4EC;
+    --gold: #C79A3C;
+    --charcoal: #2B2B28;
+    --overlay-color: {{ overlay_bg }};
+    --overlay-opacity: {{ overlay_opacity }};
+  }
+
+  /* ===== Section Wrap ===== */
+  .customstyle{{ section.id }} .cpg-section{
+    padding: 36px 0 50px;
+  }
+
+  .customstyle{{ section.id }} .cpg-wrap{
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin: 0 auto;
+    padding: 0 15px;
   }
   .customstyle{{ section.id }} .cpg-wrap--boxed {
     max-width: 1320px;
@@ -35,49 +51,38 @@
     padding-right: 0;
   }
 
-  /* ===== Main two-column layout (replaces the old grid wrapper) ===== */
-  .customstyle{{ section.id }} .collection-promo-grid__container {
+  /* ===== Main two-column layout ===== */
+  .customstyle{{ section.id }} .collection-promo-grid__container{
     display: flex;
     flex-direction: column;
     gap: 30px;
   }
 
-  .customstyle{{ section.id }} .collection-promo-grid__promo-col {
-    width: 100%;
-  }
-
-  .customstyle{{ section.id }} .collection-promo-grid__content-col {
+  .customstyle{{ section.id }} .collection-promo-grid__promo-col{ width: 100%; }
+  .customstyle{{ section.id }} .collection-promo-grid__content-col{
     width: 100%;
     display: flex;
     flex-direction: column;
     min-width: 0;
   }
 
-  @media (min-width: 992px) {
-    .customstyle{{ section.id }} .collection-promo-grid__container {
+  @media (min-width: 992px){
+    .customstyle{{ section.id }} .collection-promo-grid__container{
       display: grid;
       grid-template-columns: 28% 72%;
       column-gap: 30px;
     }
-    .customstyle{{ section.id }} .collection-promo-grid__container.promo-pos-right {
+    .customstyle{{ section.id }} .collection-promo-grid__container.promo-pos-right{
       grid-template-columns: 72% 28%;
     }
-    .customstyle{{ section.id }} .collection-promo-grid__promo-col {
-      grid-column: 1;
-    }
-    .customstyle{{ section.id }} .collection-promo-grid__container.promo-pos-right .collection-promo-grid__promo-col {
-      grid-column: 2;
-    }
-    .customstyle{{ section.id }} .collection-promo-grid__content-col {
-      grid-column: 2;
-    }
-    .customstyle{{ section.id }} .collection-promo-grid__container.promo-pos-right .collection-promo-grid__content-col {
-      grid-column: 1;
-    }
+    .customstyle{{ section.id }} .collection-promo-grid__promo-col{ grid-column: 1; }
+    .customstyle{{ section.id }} .collection-promo-grid__container.promo-pos-right .collection-promo-grid__promo-col{ grid-column: 2; }
+    .customstyle{{ section.id }} .collection-promo-grid__content-col{ grid-column: 2; }
+    .customstyle{{ section.id }} .collection-promo-grid__container.promo-pos-right .collection-promo-grid__content-col{ grid-column: 1; }
   }
 
   /* ===== Promo Block ===== */
-  .customstyle{{ section.id }} .promo-block {
+  .customstyle{{ section.id }} .promo-block{
     position: relative;
     border-radius: 4px;
     overflow: hidden;
@@ -86,63 +91,106 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
   }
 
-  @media (max-width: 991px) {
-    .customstyle{{ section.id }} .promo-block {
-      min-height: 350px;
-    }
+  @media (max-width: 991px){
+    .customstyle{{ section.id }} .promo-block{ min-height: 350px; }
   }
 
-  .customstyle{{ section.id }} .promo-block__image-wrapper {
+  .customstyle{{ section.id }} .promo-block__image-wrapper{
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     z-index: 0;
+    background: linear-gradient(135deg, var(--forest), #1c3229);
   }
 
-  .customstyle{{ section.id }} .promo-block__image-wrapper img,
-  .customstyle{{ section.id }} .promo-block__image-wrapper svg {
+  .customstyle{{ section.id }} .promo-block__image-wrapper img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
+    display: block;
   }
 
-  .customstyle{{ section.id }} .promo-block__overlay {
+  .customstyle{{ section.id }} .promo-block__overlay{
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     z-index: 1;
     pointer-events: none;
+    background-color: var(--overlay-color);
+    opacity: var(--overlay-opacity);
   }
 
-  .customstyle{{ section.id }} .promo-block__content {
+  .customstyle{{ section.id }} .promo-block__content{
     position: relative;
     z-index: 2;
     padding: 30px;
-    color: var(--text-color);
+    color: var(--text-color, var(--cream));
   }
 
-  .customstyle{{ section.id }} .promo-block__text {
+  .customstyle{{ section.id }} .promo-block__text{
     font-size: 1.1rem;
     line-height: 1.5;
     margin-bottom: 20px;
     font-weight: 500;
   }
 
-  .customstyle{{ section.id }} .promo-block__btn-wrapper {
+  .customstyle{{ section.id }} .promo-block__btn-wrapper{
     display: flex;
     justify-content: center;
   }
 
+  /* ===== Buttons ===== */
+  .customstyle{{ section.id }} .btn{
+    display: inline-block;
+    padding: 13px 28px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: background-color .3s ease, color .3s ease, border-color .3s ease;
+    border: 1px solid transparent;
+  }
+  .customstyle{{ section.id }} .btn-theme{
+    background: var(--charcoal);
+    color: #fff;
+  }
+  .customstyle{{ section.id }} .btn-theme:hover{ background: #000; }
+  .customstyle{{ section.id }} .btn-theme.btn-white{
+    background: #ffffff;
+    color: var(--charcoal);
+  }
+  .customstyle{{ section.id }} .btn-theme.btn-white:hover{ background: var(--cream); }
+  .customstyle{{ section.id }} .btn-underline{
+    background: transparent;
+    color: var(--charcoal);
+    padding: 8px 0;
+    border-bottom: 1px solid var(--charcoal);
+    border-radius: 0;
+  }
+  .customstyle{{ section.id }} .btn-underline:hover{ opacity: .7; }
+  .customstyle{{ section.id }} .btn-underline.btn-underline-white{
+    color: #fff;
+    border-bottom-color: #fff;
+  }
+  .customstyle{{ section.id }} .btn-outline{
+    background: transparent;
+    color: var(--charcoal);
+    border-color: var(--charcoal);
+  }
+  .customstyle{{ section.id }} .btn-outline:hover{ background: var(--charcoal); color: #fff; }
+  .customstyle{{ section.id }} .btn-outline.btn-outline-white{
+    color: #fff;
+    border-color: #fff;
+  }
+  .customstyle{{ section.id }} .btn-outline.btn-outline-white:hover{ background: #fff; color: var(--charcoal); }
+
   /* ===== Heading Row ===== */
-  .customstyle{{ section.id }} .promo-grid__heading-holder {
+  .customstyle{{ section.id }} .promo-grid__heading-holder{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -152,130 +200,102 @@
     border-bottom: 1px solid #e8e8e8;
     padding-bottom: 15px;
   }
-
-  .customstyle{{ section.id }} .promo-grid__heading-text {
-    flex: 1 1 auto;
-  }
-
-  .customstyle{{ section.id }} .promo-grid__heading {
+  .customstyle{{ section.id }} .promo-grid__heading-text{ flex: 1 1 auto; }
+  .customstyle{{ section.id }} .promo-grid__heading{
     margin: 0 0 8px;
     font-size: 2.25rem;
     font-weight: 600;
+    color: var(--forest);
   }
-
-  .customstyle{{ section.id }} .promo-grid__description {
+  .customstyle{{ section.id }} .promo-grid__description{
     font-size: 0.95rem;
     color: #666;
+    margin: 0;
   }
+  .customstyle{{ section.id }} .promo-grid__heading-actions{ flex: 0 0 auto; }
 
-  .customstyle{{ section.id }} .promo-grid__heading-actions {
-    flex: 0 0 auto;
-  }
-
-  /* ===== Product Grid (replaces bootstrap .row/.col-*) ===== */
-  .customstyle{{ section.id }} .cpg-product-grid {
+  /* ===== Static Product Grid ===== */
+  .customstyle{{ section.id }} .cpg-product-grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
-
-  @media (min-width: 768px) {
-    .customstyle{{ section.id }} .cpg-product-grid {
+  @media (min-width: 768px){
+    .customstyle{{ section.id }} .cpg-product-grid{
       grid-template-columns: repeat(var(--cpg-cols, 3), 1fr);
     }
   }
+  .customstyle{{ section.id }} .productlist-item{ display: flex; }
 
-  .customstyle{{ section.id }} .cpg-product-grid .productlist-item {
+  /* ===== Vanilla Product Slider ===== */
+  .customstyle{{ section.id }} .productlist-slider{
+    position: relative;
+  }
+  .customstyle{{ section.id }} .productlist-slider__track{
     display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 4px;
+  }
+  .customstyle{{ section.id }} .productlist-slider__track::-webkit-scrollbar{ display: none; }
+  .customstyle{{ section.id }} .productlist-slider__track{ scrollbar-width: none; }
+
+  .customstyle{{ section.id }} .productlist-slider .productlist-item{
+    scroll-snap-align: start;
+    flex: 0 0 calc((100% - (var(--cpg-slider-cols, 3) - 1) * 20px) / var(--cpg-slider-cols, 3));
+  }
+  @media (max-width: 767px){
+    .customstyle{{ section.id }} .productlist-slider .productlist-item{
+      flex: 0 0 calc(100% / 2 - 10px);
+    }
   }
 
-  /* ===== Product Slider (slick.js hooks - not bootstrap) ===== */
-  .customstyle{{ section.id }} .productlist-slider {
+  .customstyle{{ section.id }} .productlist-slider__arrow{
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    background: #fff;
+    color: var(--charcoal);
     display: flex;
-  }
-
-  .customstyle{{ section.id }} .productlist-item {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .customstyle{{ section.id }} .slick-list {
-    margin-left: -10px;
-    margin-right: -10px;
-  }
-
-  .customstyle{{ section.id }} .slick-prev {
-    left: -20px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
     z-index: 10;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    transition: background-color .2s ease;
   }
+  .customstyle{{ section.id }} .productlist-slider__arrow:hover{ background: var(--cream); }
+  .customstyle{{ section.id }} .productlist-slider__arrow--prev{ left: -19px; }
+  .customstyle{{ section.id }} .productlist-slider__arrow--next{ right: -19px; }
+  .customstyle{{ section.id }} .productlist-slider__arrow svg{ width: 16px; height: 16px; fill: none; }
 
-  .customstyle{{ section.id }} .slick-next {
-    right: -20px;
-    z-index: 10;
+  .customstyle{{ section.id }} .productlist-slider__dots{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
   }
+  .customstyle{{ section.id }} .productlist-slider__dots button{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: none;
+    background: #ddd;
+    padding: 0;
+    cursor: pointer;
+  }
+  .customstyle{{ section.id }} .productlist-slider__dots button.is-active{ background: var(--forest); }
 
-  .customstyle{{ section.id }} .slick-track {
-    display: flex !important;
-  }
-  .customstyle{{ section.id }} .slick-slide {
-    height: auto !important;
-    display: flex !important;
-  }
-  .customstyle{{ section.id }} .slick-slide > div {
-    display: flex !important;
-    height: 100% !important;
-    width: 100% !important;
-  }
 
-  /* ===== Product Card (style9) height equalizing ===== */
-  .customstyle{{ section.id }} .product-card {
-    display: flex !important;
-    flex-direction: column !important;
-    height: 100% !important;
-    width: 100% !important;
-  }
-  .customstyle{{ section.id }} .product-card__image-wr {
-    flex-shrink: 0 !important;
-  }
-  .customstyle{{ section.id }} .product-card__info {
-    display: flex !important;
-    flex-direction: column !important;
-    flex-grow: 1 !important;
-  }
-  .customstyle{{ section.id }} .product-card--style9 .product-card-cart {
-    margin-top: auto !important;
-    padding-top: 15px !important;
-    position: relative !important;
-    bottom: auto !important;
-    left: auto !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-    transform: none !important;
-    display: block !important;
-  }
-
-  .customstyle{{ section.id }} .product-card--style9 .product-card-cart .btn-theme {
-    width: 100% !important;
-    display: block !important;
-    background-color: var(--g-color-heading, #333333) !important;
-    color: #ffffff !important;
-    border: none !important;
-    text-align: center !important;
-    padding: 12px 10px !important;
-    font-size: 0.85rem !important;
-    font-weight: 600 !important;
-    letter-spacing: 0.05em !important;
-    text-transform: uppercase !important;
-    transition: background-color 0.3s ease !important;
-  }
-
-  .customstyle{{ section.id }} .product-card--style9 .product-card-cart .btn-theme:hover {
-    background-color: #000000 !important;
-    color: #ffffff !important;
-  }
 {%- endstyle -%}
 
-<div class="customstyle{{ section.id }}" data-aos="{{ section.settings.animation }}">
+<div class="customstyle{{ section.id }}" data-aos="{{ section.settings.animation }}" id="CollectionPromoGrid-{{ section.id }}">
   {%- render 'style-section' -%}
 
   {%- liquid
@@ -289,8 +309,8 @@
     endcase
   -%}
 
-  <div class="cpg-wrap {{ wrap_class }}">
-    <div class="section-block">
+  <section class="cpg-section">
+    <div class="cpg-wrap {{ wrap_class }}">
       <div class="collection-promo-grid__container promo-pos-{{ promo_pos }}">
 
         <!-- Promo Column -->
@@ -308,19 +328,16 @@
                      alt="{{ section.settings.promo_image.alt | escape }}"
                      loading="lazy">
               {%- else -%}
-                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=720&q=80" alt="Promo">
               {%- endif -%}
             </div>
-
-            <div class="promo-block__overlay" style="background-color: {{ overlay_bg }}; opacity: {{ overlay_opacity }};"></div>
-
+            <div class="promo-block__overlay"></div>
             <div class="promo-block__content" style="--text-color: {{ promo_text_color }};">
               {%- if section.settings.promo_text != blank -%}
                 <div class="promo-block__text">
                   {{ section.settings.promo_text }}
                 </div>
               {%- endif -%}
-
               {%- if section.settings.promo_btn_label != blank and section.settings.promo_btn_link != blank -%}
                 <div class="promo-block__btn-wrapper">
                   <a href="{{ section.settings.promo_btn_link }}" class="btn {{ section.settings.style_btn_promo }}">
@@ -332,7 +349,7 @@
           </div>
         </div>
 
-        <!-- Content Column (Heading + Grid/Slider) -->
+        <!-- Content Column -->
         <div class="collection-promo-grid__content-col">
           <div class="promo-grid__heading-holder">
             <div class="promo-grid__heading-text">
@@ -340,12 +357,9 @@
                 <h2 class="promo-grid__heading">{{ section.settings.title | escape }}</h2>
               {%- endif -%}
               {%- if section.settings.description != blank -%}
-                <div class="promo-grid__description">
-                  {{ section.settings.description }}
-                </div>
+                <div class="promo-grid__description">{{ section.settings.description }}</div>
               {%- endif -%}
             </div>
-
             {%- if section.settings.view_all_text != blank and section.settings.view_all_link != blank -%}
               <div class="promo-grid__heading-actions">
                 <a href="{{ section.settings.view_all_link }}" class="btn {{ section.settings.style_btn_all }}">
@@ -357,30 +371,30 @@
 
           <div class="grid-outer">
             {%- if enable_slider -%}
-              <div class="productlist-slider" id="Productlist-{{ section.id }}"
-                   style="opacity:0"
-                   data-rows="1"
-                   data-slidesToShow="{{ columns }}"
-                   data-arrows="{{ arrows }}"
-                   data-dots="{{ dots }}"
-                   data-draggable="true"
-                   data-infinite="true"
-                   data-section-id="{{ section.id }}"
-                   data-section-type="productlist">
-                {%- if collection != blank and collection.products.size > 0 -%}
-                  {%- for product in collection.products limit: limit -%}
-                    <div class="productlist-item">
-                      {%- render 'product-card', product: product -%}
-                    </div>
-                  {%- endfor -%}
-                {%- else -%}
-                  {%- for i in (1..limit) -%}
-                    <div class="productlist-item">
-                      {%- render 'product-grid-blank' -%}
-                    </div>
-                  {%- endfor -%}
-                {%- endif -%}
+              <div class="productlist-slider" style="--cpg-slider-cols: {{ columns }};">
+                <button class="productlist-slider__arrow productlist-slider__arrow--prev" aria-label="Previous">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                </button>
+                <div class="productlist-slider__track">
+                  {%- if collection != blank and collection.products.size > 0 -%}
+                    {%- for product in collection.products limit: limit -%}
+                      <div class="productlist-item">
+                        {%- render 'product-card', product: product -%}
+                      </div>
+                    {%- endfor -%}
+                  {%- else -%}
+                    {%- for i in (1..limit) -%}
+                      <div class="productlist-item">
+                        {%- render 'product-grid-blank' -%}
+                      </div>
+                    {%- endfor -%}
+                  {%- endif -%}
+                </div>
+                <button class="productlist-slider__arrow productlist-slider__arrow--next" aria-label="Next">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                </button>
               </div>
+              <div class="productlist-slider__dots"></div>
             {%- else -%}
               <div class="cpg-product-grid" style="--cpg-cols: {{ columns }};">
                 {%- if collection != blank and collection.products.size > 0 -%}
@@ -403,8 +417,116 @@
 
       </div>
     </div>
-  </div>
+  </section>
 </div>
+
+<script>
+(function() {
+  function initPromoSlider(container) {
+    if (!container || container.dataset.promoSliderInitialized) return;
+    container.dataset.promoSliderInitialized = "true";
+
+    var track = container.querySelector('.productlist-slider__track');
+    var dotsWrap = container.querySelector('.productlist-slider__dots');
+    var slider = container.querySelector('.productlist-slider');
+    if (!slider || !track) return;
+    var prevBtn = slider.querySelector('.productlist-slider__arrow--prev');
+    var nextBtn = slider.querySelector('.productlist-slider__arrow--next');
+
+    var slidesToShow = parseInt(slider.style.getPropertyValue('--cpg-slider-cols')) || 3;
+    var arrowsEnabled = {{ arrows | default: true }};
+    var dotsEnabled = {{ dots | default: false }};
+    
+    var items = track.querySelectorAll('.productlist-item');
+    var totalItems = items.length;
+
+    function slideWidth() {
+      var item = track.querySelector('.productlist-item');
+      if (!item) return 0;
+      var gap = 20; 
+      return item.getBoundingClientRect().width + gap;
+    }
+
+    function scrollByCards(dir) {
+      track.scrollBy({ left: dir * slideWidth(), behavior: 'smooth' });
+    }
+
+    if (arrowsEnabled && prevBtn && nextBtn) {
+      prevBtn.addEventListener('click', function() { scrollByCards(-1); });
+      nextBtn.addEventListener('click', function() { scrollByCards(1); });
+      
+      function toggleArrows() {
+        if (track.scrollWidth <= track.clientWidth) {
+          prevBtn.style.display = 'none';
+          nextBtn.style.display = 'none';
+        } else {
+          prevBtn.style.display = 'flex';
+          nextBtn.style.display = 'flex';
+        }
+      }
+      toggleArrows();
+      window.addEventListener('resize', toggleArrows);
+    } else {
+      if (prevBtn) prevBtn.style.display = 'none';
+      if (nextBtn) nextBtn.style.display = 'none';
+    }
+
+    function buildDots() {
+      if (!dotsEnabled || !dotsWrap) {
+        if (dotsWrap) dotsWrap.style.display = 'none';
+        return;
+      }
+      var pageCount = Math.max(1, Math.ceil(totalItems / slidesToShow));
+      dotsWrap.innerHTML = '';
+      if (pageCount <= 1) {
+        dotsWrap.style.display = 'none';
+        return;
+      } else {
+        dotsWrap.style.display = 'flex';
+      }
+      for (var i = 0; i < pageCount; i++) {
+        var dot = document.createElement('button');
+        if (i === 0) dot.classList.add('is-active');
+        dot.setAttribute('aria-label', 'Go to slide page ' + (i + 1));
+        dot.addEventListener('click', (function(idx) {
+          return function() {
+            track.scrollTo({ left: idx * slidesToShow * slideWidth(), behavior: 'smooth' });
+          };
+        })(i));
+        dotsWrap.appendChild(dot);
+      }
+    }
+    
+    buildDots();
+
+    track.addEventListener('scroll', function() {
+      if (!dotsEnabled || !dotsWrap) return;
+      var page = Math.round(track.scrollLeft / (slidesToShow * slideWidth()));
+      var allDots = dotsWrap.querySelectorAll('button');
+      allDots.forEach(function(d, i) {
+        d.classList.toggle('is-active', i === page);
+      });
+    });
+
+    window.addEventListener('resize', buildDots);
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var container = document.getElementById('CollectionPromoGrid-{{ section.id }}');
+    if (container) initPromoSlider(container);
+  });
+  
+  document.addEventListener('shopify:section:load', function(event) {
+    if (event.detail.sectionId === '{{ section.id }}') {
+      var container = document.getElementById('CollectionPromoGrid-{{ section.id }}');
+      if (container) initPromoSlider(container);
+    }
+  });
+
+  var container = document.getElementById('CollectionPromoGrid-{{ section.id }}');
+  if (container) initPromoSlider(container);
+})();
+</script>
 
 {% schema %}
 {
