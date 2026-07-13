@@ -89,9 +89,12 @@
         "1567410176792",
         "ec49d85b-17bb-4b65-a49f-3086aa5430cd"
       ],
+      "custom_css": [
+        "svg, .icon, [class^=icon-] {width: 30px; height: 30px;}"
+      ],
       "settings": {
         "setwidth": "container",
-        "background": "#DDE8D5",
+        "background": "#e5e0d6",
         "border_headfooter": "rgba(0,0,0,0)",
         "border-copryright": "#d9d7dd",
         "text": "#4b5d52",

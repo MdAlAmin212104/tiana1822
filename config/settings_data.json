@@ -77,7 +77,7 @@
     "h6_font_transform": "none",
     "h6_font_spacing": "0",
     "font_weight_body": "400",
-    "base_size": 16,
+    "base_size": 18,
     "body_font_lineheight": "1.8",
     "font_weight_product": "400",
     "font_transform_product": "capitalize",
@@ -109,7 +109,7 @@
     "share_image": "",
     "social_facebook_link": "https://www.facebook.com/people/Fleuriation/61572920323520/",
     "social_twitter_link": "",
-    "social_pinterest_link": "",
+    "social_pinterest_link": "https://www.pinterest.com/fleuriation/",
     "social_instagram_link": "https://www.instagram.com/fleuriation",
     "social_tumblr_link": "",
     "social_snapchat_link": "",
@@ -395,8 +395,57 @@
     "sections": {
       "product-suggest": {
         "type": "product-suggest",
+        "blocks": {
+          "product_A9fNqG": {
+            "type": "product",
+            "settings": {
+              "product": "oh-sweet-baby-balm-marshmallow-root",
+              "local": "",
+              "time": ""
+            }
+          },
+          "product_wNFrat": {
+            "type": "product",
+            "settings": {
+              "product": "perineal-recovery-mist-postpartum-witch-hazel-spray",
+              "local": "",
+              "time": ""
+            }
+          },
+          "product_gK8Lrw": {
+            "type": "product",
+            "settings": {
+              "product": "hydrate-glow-facial-toner-rose-hydrosol",
+              "local": "",
+              "time": ""
+            }
+          },
+          "product_VbqJQK": {
+            "type": "product",
+            "settings": {
+              "product": "elderberry-bloom-facial-scrub-natural-face-exfoliator",
+              "local": "",
+              "time": ""
+            }
+          },
+          "product_Bz6bwH": {
+            "type": "product",
+            "settings": {
+              "product": "clarify-hydrate-facial-toner-duo",
+              "local": "",
+              "time": ""
+            }
+          }
+        },
+        "block_order": [
+          "product_A9fNqG",
+          "product_wNFrat",
+          "product_gK8Lrw",
+          "product_VbqJQK",
+          "product_Bz6bwH"
+        ],
         "settings": {
-          "enable": false,
+          "enable": true,
           "duration": 8,
           "text": "Someone recently bought",
           "verify": "Verified"
@@ -1038,20 +1087,20 @@
           "1583425647500": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/handcrafted-ginger-soap.jpg",
+              "image": "shopify://shop_images/Facial_Care_picture2.png",
               "posimage": "rightimage",
               "width_imageslide": 50,
               "alignment": "center center",
               "text_alignment": "center center",
               "bgwrap": "#eae2d2",
-              "slide_toptitle": "Purely Crafted, Naturally Yours",
+              "slide_toptitle": "",
               "slide_toptitle_color": "#c9a961",
-              "slide_title": "Purely Fleuriation",
+              "slide_title": "Honor Your Skin",
               "slide_title_color": "#2c4a3b",
-              "subheading": "Discover our premium collection of handcrafted skincare, designed to nourish your skin with botanical goodness. Elevate your daily routine with our signature formulas.",
+              "subheading": "Discover our premium collection of handcrafted skincare.",
               "subheading_color": "#2c4a3b",
-              "button_label": "Shop the Collection",
-              "button_link": "#",
+              "button_label": "Shop  Now",
+              "button_link": "shopify://collections/baby-kids",
               "stylebtns": "btn-theme",
               "bg_button": "#2c4a3b",
               "color_button": "#ffffff",
@@ -1069,20 +1118,20 @@
           "1584978388262": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/hydrating_body_butter2_copy_c541f4c7-94bf-4b09-9500-d2994ff3fd26.jpg",
+              "image": "shopify://shop_images/front-view-woman-applying-face-cream.jpg",
               "posimage": "rightimage",
               "width_imageslide": 50,
               "alignment": "center center",
               "text_alignment": "center center",
               "bgwrap": "#eae2d2",
-              "slide_toptitle": "Deeply Nourishing & Botanical",
+              "slide_toptitle": "",
               "slide_toptitle_color": "#c9a961",
-              "slide_title": "Radiance in Every Touch",
+              "slide_title": "Let Your Bloom",
               "slide_title_color": "#2c4a3b",
-              "subheading": "Indulge your skin with the rich, creamy texture of Fleuriation body butter. Crafted with natural botanicals to keep your skin hydrated, soft, and glowing all day long.",
+              "subheading": "The Elderberry Bloom Facial Treatment Duo — <br>a weekly mask and scrub ritual formulated to restore <br> radiance, renew skin cells, and reveal the glow that was always there.",
               "subheading_color": "#2c4a3b",
-              "button_label": "Shop Body Care",
-              "button_link": "shopify://collections",
+              "button_label": "Shop  Now",
+              "button_link": "shopify://collections/baby-kids",
               "stylebtns": "btn-theme",
               "bg_button": "#2c4a3b",
               "color_button": "#ffffff",
@@ -1103,7 +1152,7 @@
           "1584978388262"
         ],
         "settings": {
-          "enable_slideshow": false,
+          "enable_slideshow": true,
           "slideshow_height": "750",
           "slideshow_height_mobile": "300",
           "show_overlay": false,
@@ -1113,7 +1162,7 @@
           "color_arrow": "#ffffff",
           "bg_arrow": "#2c4a3b",
           "opacity_arrow": 0.1,
-          "e_dot": true,
+          "e_dot": false,
           "slide_dot": "circle",
           "color_dot_nav": "#2c4a3b",
           "color_dot_active": "#2c4a3b"
