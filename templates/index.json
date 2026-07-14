@@ -133,7 +133,7 @@
         "promo_text": "Meet elderberry and goji berry. Two of nature's most potent antioxidants  finally together in your daily facial routine.",
         "promo_text_color": "#f8f5ee",
         "promo_btn_label": "SHOP  FACIAL BALM",
-        "promo_btn_link": "shopify://collections/all",
+        "promo_btn_link": "shopify://collections/face-balms",
         "style_btn_promo": "btn-theme",
         "overlay_color": "#000000",
         "overlay_opacity": 0.2,
@@ -154,7 +154,7 @@
             "bg_banner": "rgba(0,0,0,0)",
             "image": "shopify://shop_images/rosehip-sea-buckthorn-face-oil.png",
             "width": "4",
-            "description": "<h4 class=\"mt-2 mb-3\">FACIAL CARE</h4>\n<p>Botanical facial care thoughtfully crafted to cleanse, nourish, and reveal your skin's natural radiance..</p>",
+            "description": "<h4 class=\"mt-2 mb-3\">FACIAL CARE</h4>\n<p>Botanical facial care thoughtfully crafted to cleanse, nourish, and reveal your skin's natural radiance.</p>",
             "button_text": "SHOP FACIAL PRODUCTS",
             "button_link": "shopify://collections/face",
             "style_btn": "btn-theme",
@@ -207,7 +207,7 @@
       "settings": {
         "animation": "fade-up",
         "setwidth": "container-fluid",
-        "bgsection": "#f5f0e6",
+        "bgsection": "#fffdf9",
         "title_top": "",
         "title": "",
         "des": "",
@@ -351,7 +351,7 @@
         "paragraph_3XkgKW": {
           "type": "paragraph",
           "settings": {
-            "subtext": "Inspired by creation's provision and generations of herbal wisdom, <br> we blend botanical traditions with modern skincare."
+            "subtext": "<p style=\"font-size: 20px;\">Inspired by creation's provision and generations of herbal wisdom, <br> we blend botanical traditions with modern skincare.</p>"
           }
         },
         "button_3ttyBi": {
@@ -556,7 +556,7 @@
           "settings": {
             "text_1": "Plant-Based Skincare",
             "icon_1": "shopify://shop_images/icon-14.png",
-            "text_2": "Woman Founded and Family Operated",
+            "text_2": "Woman Owned and Family Operated",
             "icon_2": "shopify://shop_images/icon-15.png",
             "text_3": "No Synthetic Ingredients",
             "icon_3": "shopify://shop_images/icon-07.png",
@@ -768,7 +768,7 @@
         "testimonial_camPUW": {
           "type": "testimonial",
           "settings": {
-            "quote": "The hydrating body butter is my favorite. It doesn't take much of it to smooth out the skin. My dry skin has drastically improved after using the body butter. It's better than any lotion I've used.",
+            "quote": "The hydrating body butter is my favorite. It doesn't take much of it to smooth out the skin. My dry skin has drastically improved after using the body butter. It's better than any lotion I've used.\"",
             "author": "Emmanuel G.",
             "card_bg": "",
             "card_text_color": ""
@@ -838,7 +838,7 @@
         "enable_tag": false,
         "enable_comment": false,
         "enable_short": true,
-        "image_size": "landscape",
+        "image_size": "wide",
         "gutter_padding": 30,
         "arrows": true,
         "draggable": true,
