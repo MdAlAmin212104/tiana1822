@@ -171,10 +171,11 @@
             {% if collection.products_count < 4 %} grid--{{ collection.products_count }}-col-tablet{% else %}
               {% if collection.products_count == 4 %} grid--4-col-desktop{% else %} grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max{% endif %}
             {% endif %}">
+            {%- assign banner_shown = false -%}
             {%- for product in collection.products -%}
-              
-              {%- if forloop.index > 2 -%}
-                
+              {%- if paginate.current_page == 1 and forloop.index == 4 -%}
+                {%- render 'grid-banner-card', gridProduct: gridProduct -%}
+                {%- assign banner_shown = true -%}
               {%- endif -%}
 
               <li class="grid__item {{ gridProduct }}">
@@ -185,6 +186,10 @@
                 {%- render 'product-card', product: product, size_image_grid: size_image_grid, cover_contain: cover_contain , enable_edit_item: enable_edit_item, select_item: select_item -%}
               </li>
             {%- endfor -%}
+
+            {%- if paginate.current_page == 1 and banner_shown == false and collection.products.size > 0 -%}
+              {%- render 'grid-banner-card', gridProduct: gridProduct -%}
+            {%- endif -%}
           </ul>
           {% case type_pagi %}
             {% when 'click' %}
@@ -513,6 +518,32 @@
       "id": "link_list_head",
       "type": "link_list",
       "label": "Menu"
+    },
+    {
+      "type": "header",
+      "content": "Custom Grid Banner"
+    },
+    {
+      "type": "image_picker",
+      "id": "default_banner_image",
+      "label": "Default Banner Image"
+    },
+    {
+      "type": "richtext",
+      "id": "default_banner_heading",
+      "label": "Default Banner Heading",
+      "default": "<p>Sitewide Summer Sale</p>"
+    },
+    {
+      "type": "text",
+      "id": "default_banner_button",
+      "label": "Default Banner Button Text",
+      "default": "Up to 30% OFF"
+    },
+    {
+      "type": "url",
+      "id": "default_banner_link",
+      "label": "Default Banner Link"
     },
     {
       "type": "header",
