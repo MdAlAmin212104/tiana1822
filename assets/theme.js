@@ -5056,7 +5056,7 @@ theme.FooterSection = (function(){
             });
           }
           */
-          $('.site-footer__section-title').click(function() {
+          $('.footer-block-menu .site-footer__section-title').click(function() {
             $(this).toggleClass('active');
             $(this).next().slideToggle('fast');
             return false;
@@ -5092,7 +5092,7 @@ theme.collectionView =  (function (){
     $(btnView).removeClass('active');
     $(this).addClass('active');
 
-    $gridItemCol.removeClass().addClass('js-col col-sm-6 col-6');
+    $gridItemCol.removeClass('col-6 col-sm-6 col-lg-4 col-lg-3 col-lg-2-4 col-lg-2').addClass('col-sm-6 col-6');
     if (value === 3){
       $gridItemCol.addClass('col-lg-4');
     }else if(value === 4){

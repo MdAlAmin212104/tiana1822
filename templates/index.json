@@ -104,8 +104,47 @@
         "color_dot_active": "#c99a5c"
       }
     },
+    "update_collection_M79B9N": {
+      "type": "update-collection",
+      "custom_css": [
+        ".slick-slider {margin-bottom: 0px;}",
+        ".product-card__info {margin-bottom: 0 !important; padding-bottom: 0;}",
+        ".product-card__name {min-height: 0 !important;}"
+      ],
+      "name": "Collection Promo Dublicate",
+      "settings": {
+        "animation": "fade-up",
+        "setwidth": "container-fluid",
+        "bgsection": "#f5f0e6",
+        "title": "Best Sellers",
+        "description": "<p>Shop the botanical favorites our customers keep coming back for.</p>",
+        "view_all_text": "Shop Best Sellers",
+        "view_all_link": "",
+        "style_btn_all": "btn-underline",
+        "collection": "best-seller",
+        "limit": 8,
+        "enable_slider": true,
+        "slides_to_show": 4,
+        "arrows": true,
+        "dots": false,
+        "promo_position": "left",
+        "promo_image": "shopify://shop_images/7.png",
+        "promo_text": "Meet elderberry and goji berry. Two of nature's most potent antioxidants  finally together in your daily facial routine.",
+        "promo_text_color": "#f7f6f2",
+        "promo_btn_label": "SHOP  FACIAL BALM",
+        "promo_btn_link": "shopify://collections/face-balms",
+        "style_btn_promo": "btn-theme",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0.1,
+        "paddingsection": "40px 40px 40px 0px",
+        "paddingmobile": "36px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
     "collection_promo_grid_piEYqk": {
       "type": "collection-promo-grid",
+      "disabled": true,
       "custom_css": [
         ".slick-slider {margin-bottom: 0px;}",
         ".product-card__info {margin-bottom: 0 !important; padding-bottom: 0;}",
@@ -299,7 +338,7 @@
         "marginmobile": "0px 0px 0px 0px"
       }
     },
-    "update_collection_M79B9N": {
+    "update_collection_rcrHkL": {
       "type": "update-collection",
       "custom_css": [
         ".slick-slider {margin-bottom: 0px;}",
@@ -1185,11 +1224,12 @@
   },
   "order": [
     "slideshow_1_HKLY88",
+    "update_collection_M79B9N",
     "collection_promo_grid_piEYqk",
     "b178c7b9-711f-464d-af9c-aac1f4f31179",
     "17624047726c6428e4",
     "collection_promo_grid_nqADNL",
-    "update_collection_M79B9N",
+    "update_collection_rcrHkL",
     "parallax_banner_4fbV4J",
     "collection_promo_grid_qWTi33",
     "6bcd474f-6206-4b67-a8f7-ffc08cd482f3",
