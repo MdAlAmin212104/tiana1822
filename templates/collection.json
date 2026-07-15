@@ -31,6 +31,97 @@
         "link_list_head": ""
       }
     },
+    "featured_collections_5_qMGENx": {
+      "type": "featured-collections-5",
+      "blocks": {
+        "collection_mLfNtJ": {
+          "type": "collection",
+          "settings": {
+            "collection": "shop-all",
+            "image": "shopify://shop_images/hydrating_body_butter2_copy_2.png",
+            "color": "#ffffff",
+            "enable_gradient": false,
+            "bg_overlay": "#222222",
+            "opacity_overlay": 0.2
+          }
+        },
+        "collection_DeQGyr": {
+          "type": "collection",
+          "settings": {
+            "collection": "best-seller",
+            "image": "shopify://shop_images/Body_Care_2.jpg",
+            "color": "#ffffff",
+            "enable_gradient": false,
+            "bg_overlay": "#222222",
+            "opacity_overlay": 0.2
+          }
+        },
+        "collection_C4DEtc": {
+          "type": "collection",
+          "settings": {
+            "collection": "face-bar",
+            "image": "shopify://shop_images/facial_care_2_copy_66d63434-a0a1-4816-829e-836327a292b9.jpg",
+            "color": "#ffffff",
+            "enable_gradient": false,
+            "bg_overlay": "#222222",
+            "opacity_overlay": 0.2
+          }
+        },
+        "collection_cDmmH8": {
+          "type": "collection",
+          "settings": {
+            "collection": "body-bar",
+            "image": "shopify://shop_images/beauty-skin-care-close-up-portrait-beautiful-woman-looking-mirror-touching-her-clear-g.png",
+            "color": "#ffffff",
+            "enable_gradient": false,
+            "bg_overlay": "#222222",
+            "opacity_overlay": 0.2
+          }
+        },
+        "collection_yhjENq": {
+          "type": "collection",
+          "settings": {
+            "collection": "bundle-save",
+            "image": "shopify://shop_images/OLD_FLEUriology_pictures.jpg",
+            "color": "#ffffff",
+            "enable_gradient": false,
+            "bg_overlay": "#222222",
+            "opacity_overlay": 0.2
+          }
+        }
+      },
+      "block_order": [
+        "collection_mLfNtJ",
+        "collection_DeQGyr",
+        "collection_C4DEtc",
+        "collection_cDmmH8",
+        "collection_yhjENq"
+      ],
+      "custom_css": [
+        "h4.mb-1.title-collection.h4 {text-transform: uppercase;}"
+      ],
+      "name": "Collection grid",
+      "settings": {
+        "animation": "",
+        "setwidth": "container-fluid",
+        "bgsection": "#F5F0E6",
+        "title_top": "",
+        "title": "",
+        "des": "",
+        "align-heading": "center",
+        "layout": "grid",
+        "col": "col-1-5",
+        "enable_padding": true,
+        "gutter_padding": 30,
+        "show_overlay": true,
+        "size_image_col": "square",
+        "size_title": "h4",
+        "paddingsection": "40px 0px 40px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
     "product-grid": {
       "type": "main-collection-template",
       "settings": {
@@ -63,6 +154,7 @@
   },
   "order": [
     "collection-banner",
+    "featured_collections_5_qMGENx",
     "product-grid"
   ]
 }

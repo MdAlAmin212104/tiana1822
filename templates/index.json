@@ -413,6 +413,7 @@
         "bgsection": "#f8f5ee",
         "parrallax_enable": true,
         "image": "shopify://shop_images/Newsletter_pop_picture.jpg",
+        "image_mobile": "shopify://shop_images/Newsletter_pop_picture.png",
         "height_section": "650",
         "height_section_mobile": "450",
         "align": "left",

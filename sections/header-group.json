@@ -78,24 +78,28 @@
           "type": "menu-banner",
           "settings": {
             "menu_title": "face",
+            "menu_1": "header-sidebar-mega",
+            "menu_1_title": "Shop by Category",
+            "menu_2": "shop-your-skin-type",
+            "menu_2_title": "Shop your Skin Type",
             "menu_width": "container",
             "menu_column": 2,
             "enable_menu_banner": true,
-            "menu_banner_width": 75,
+            "menu_banner_width": 50,
             "menu_banner_height": 300,
             "menu_banner_size_title": "h3",
             "menu_banner_image_1": "shopify://shop_images/hydrating_body_butter2_copy_2.png",
             "menu_banner_position_text_1": "bot-center",
-            "menu_banner_subheading_1": "Sub Heading 1",
-            "menu_banner_heading_1": "Heading 1",
-            "menu_banner_paragraph_1": "<p>Paragraph 1</p>",
+            "menu_banner_subheading_1": "",
+            "menu_banner_heading_1": "",
+            "menu_banner_paragraph_1": "<p>Discover Your Perfect Skincare Essentials</p>",
             "menu_banner_btn_1": "",
             "menu_banner_link_1": "",
-            "menu_banner_image_2": "shopify://shop_images/IMG_6298_c327926d-203d-4d18-8b6c-06851002b8ff.png",
+            "menu_banner_image_2": "shopify://shop_images/facial_round_toner_copy.png",
             "menu_banner_position_text_2": "bot-center",
-            "menu_banner_subheading_2": "Sub Heading 2",
-            "menu_banner_heading_2": "Heading 2",
-            "menu_banner_paragraph_2": "<p>Paragraph 2</p>",
+            "menu_banner_subheading_2": "",
+            "menu_banner_heading_2": "",
+            "menu_banner_paragraph_2": "<p>Find the Perfect Routine for Your Skin Type</p>",
             "menu_banner_btn_2": "",
             "menu_banner_link_2": "",
             "menu_banner_position_text_3": "mid-center",
@@ -105,30 +109,10 @@
             "menu_banner_btn_3": "",
             "menu_banner_link_3": ""
           }
-        },
-        "menu_collection_Mbn6eX": {
-          "type": "menu-collection",
-          "disabled": true,
-          "settings": {
-            "menu_title": "face",
-            "menu_width": "container",
-            "menu_column": 3,
-            "enable_menu_collection": true,
-            "enable_items_count": true,
-            "image_size": "auto",
-            "menu_collection_width": 25,
-            "menu_collection_1": "",
-            "menu_collection_2": "",
-            "menu_collection_3": "",
-            "menu_collection_4": "",
-            "menu_collection_5": "",
-            "menu_collection_6": ""
-          }
         }
       },
       "block_order": [
-        "menu_banner_pPfw4i",
-        "menu_collection_Mbn6eX"
+        "menu_banner_pPfw4i"
       ],
       "settings": {
         "logo": "shopify://shop_images/Logo_Deep_Forest_Color_5f06f918-f976-4887-9d19-db2f8b0c9dcd.png",
