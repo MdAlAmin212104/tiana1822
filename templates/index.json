@@ -83,7 +83,6 @@
         "image_HC6rhr",
         "image_wgNAx6"
       ],
-      "disabled": true,
       "name": "Slider 1",
       "settings": {
         "enable_slideshow": true,
@@ -137,7 +136,7 @@
         "style_btn_promo": "btn-theme",
         "overlay_color": "#000000",
         "overlay_opacity": 0.2,
-        "paddingsection": "60px 80px 50px 0px",
+        "paddingsection": "40px 40px 40px 0px",
         "paddingmobile": "36px 0px 40px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
@@ -510,7 +509,7 @@
             "heading_color": "#2c4a3b",
             "heading_spacing": 30,
             "slides_per_view": 4,
-            "slides_per_view_mobile": "2",
+            "slides_per_view_mobile": "1",
             "slide_gap": 20,
             "desktop_width_percent": 90,
             "section_padding": 40,

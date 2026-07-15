@@ -52,6 +52,10 @@
         "select_item": "product-7",
         "enable_list_collection": false,
         "link_list_head": "",
+        "default_banner_image": "shopify://shop_images/hydrating_body_butter2_copy_922e8601-966b-4d5b-a49f-5c09e770b03b.jpg",
+        "default_banner_heading": "<p>Sitewide Summer Sale</p>",
+        "default_banner_button": "Up to 30% OFF",
+        "default_banner_link": "",
         "padding_top": 48,
         "padding_bottom": 48
       }

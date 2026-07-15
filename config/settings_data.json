@@ -1152,7 +1152,7 @@
           "1584978388262"
         ],
         "settings": {
-          "enable_slideshow": true,
+          "enable_slideshow": false,
           "slideshow_height": "750",
           "slideshow_height_mobile": "300",
           "show_overlay": false,

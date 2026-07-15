@@ -1,5 +1,5 @@
 {%- liquid
-  assign banner_heading = collection.metafields.custom.banner_heading.value | default: collection.metafields.custom.banner_heading
+  assign banner_heading = collection.metafields.custom.banner_heading.value | default: collection.metafields.custom.banner_heading | metafield_tag 
   assign banner_button = collection.metafields.custom.banner_button.value | default: collection.metafields.custom.banner_button
   assign banner_image = collection.metafields.custom.banner_image.value | default: collection.metafields.custom.banner_image
   assign banner_link = collection.metafields.custom.banner_link.value | default: collection.metafields.custom.banner_link
@@ -30,17 +30,28 @@
                src="{{ banner_image | image_url: width: 300 }}"
                data-src="{{ banner_image | image_url: width: 800 }}"
                data-sizes="auto"
-               alt="{{ banner_heading | strip_html | escape }}"
+               width="auto"
+               height="auto"
+               alt="{{ banner_heading }}"
                loading="lazy">
         </div>
       {%- endif -%}
       <div class="banner-card-overlay"></div>
       <div class="banner-card-content">
-        {%- if banner_heading != blank -%}
+        {% comment %} {%- if banner_heading != blank -%}
           <div class="banner-card-title">
             {{ banner_heading }}
           </div>
-        {%- endif -%}
+        {%- endif -%} {% endcomment %}
+         {%- if banner_heading != blank -%}
+            <div class="banner-card-title">
+              {{ banner_heading }}
+            </div>
+          {%- elsif section.settings.default_banner_heading != blank -%}
+            <div class="banner-card-title">
+              {{ section.settings.default_banner_heading }}
+            </div>
+          {%- endif -%}
         {%- if banner_button != blank -%}
           <span class="btn btn-theme">{{ banner_button }}</span>
         {%- endif -%}

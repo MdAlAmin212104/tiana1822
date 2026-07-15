@@ -37,10 +37,10 @@
         "8288910a-1ad6-47df-b127-118bc1d2ce24": {
           "type": "buttons",
           "settings": {
-            "enable_local_pickup": true,
+            "enable_local_pickup": false,
             "enable_hurrify": false,
-            "enable_payment_button": true,
-            "waitlist": true,
+            "enable_payment_button": false,
+            "waitlist": false,
             "product_selector": "radio",
             "sw_color_product": true,
             "color_circle": true,
@@ -49,6 +49,7 @@
         },
         "ab3c624e-4b26-4bb4-b6bc-f283badc9347": {
           "type": "separator",
+          "disabled": true,
           "settings": {}
         },
         "2830007b-b9f5-4f33-86cf-680e0a91ca8d": {
@@ -94,6 +95,7 @@
         },
         "bf089f50-667c-4417-a84a-9478625741a1": {
           "type": "list-info",
+          "disabled": true,
           "settings": {
             "block_style": "ver",
             "product_vendor_enable": true,
@@ -104,10 +106,12 @@
         },
         "7120c076-9673-4f15-a579-5efa29fefb6f": {
           "type": "separator",
+          "disabled": true,
           "settings": {}
         },
         "1431e891-e819-4fa1-8416-0cb3956f0e39": {
           "type": "description",
+          "disabled": true,
           "settings": {
             "enable_tab": true,
             "title_tab": "Description"
@@ -115,6 +119,7 @@
         },
         "883720d7-3346-4495-85a0-add8b3d7a51f": {
           "type": "trust-badge",
+          "disabled": true,
           "settings": {
             "trust-heading": "Guarantee safe checkout",
             "width_image": 66
@@ -145,12 +150,12 @@
         "2d534ed0-517d-48ca-8370-8659965f32c4"
       ],
       "settings": {
-        "setwidth": "container",
+        "setwidth": "container-fluid",
         "media_style": "media-left",
         "media_size": "normal",
         "image_size": "square",
         "enable_video_looping": true,
-        "stock_enable": true,
+        "stock_enable": false,
         "sizeguide_enable": false,
         "sizeguide_title": "Size Guide",
         "sizeguide_page": "size-guide",
@@ -187,10 +192,28 @@
     "product-content": {
       "type": "product-content",
       "blocks": {
-        "6889c9ba-caef-4edd-9757-6711505cb095": {
-          "type": "description",
+        "content_8mdPrX": {
+          "type": "content",
           "settings": {
-            "title_tab": "Description"
+            "title_tab": "Description",
+            "answer_content": "{{ product.metafields.custom.description | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "content_jPyHm9": {
+          "type": "content",
+          "settings": {
+            "title_tab": "How to Use",
+            "answer_content": "{{ product.metafields.custom.suggested_use | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "content_VDRCxY": {
+          "type": "content",
+          "settings": {
+            "title_tab": "Key Ingredients",
+            "answer_content": "{{ product.metafields.custom.ingredients | metafield_tag }}",
+            "page": ""
           }
         },
         "2e69c5c0-ab83-4cda-9c38-1aaab6fdf1cc": {
@@ -198,19 +221,20 @@
           "settings": {
             "title_heading": "Buy with",
             "size_text": "h4",
-            "product_limit": 3
+            "product_limit": 2
           }
         }
       },
       "block_order": [
-        "6889c9ba-caef-4edd-9757-6711505cb095",
+        "content_8mdPrX",
+        "content_jPyHm9",
+        "content_VDRCxY",
         "2e69c5c0-ab83-4cda-9c38-1aaab6fdf1cc"
       ],
-      "disabled": true,
       "settings": {
         "animation": "fade-up",
         "setwidth": "container",
-        "tab_size": "normal",
+        "tab_size": "largest",
         "enable_left": true,
         "paddingsection": "48px 0px 20px 0px",
         "paddingmobile": "32px 0px 32px 0px",
