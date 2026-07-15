@@ -1,0 +1,627 @@
+<!-- sections/ingredients-showcase.liquid -->
+
+{%- liquid
+  # Resolve ingredients and default values using | metafield_tag for rich text fields
+  assign ing_1_title = product.metafields.custom.ingredients_1_heading | default: section.settings.default_ing_1_title
+  assign ing_1_desc_html = product.metafields.custom.ingredients_1_desc | metafield_tag | default: section.settings.default_ing_1_desc
+  assign ing_1_image = product.metafields.custom.ingredients_1_image | default: section.settings.default_ing_1_image
+
+  assign ing_2_title = product.metafields.custom.ingredients_2_heading | default: section.settings.default_ing_2_title
+  assign ing_2_desc_html = product.metafields.custom.ingredients_2_desc | metafield_tag | default: section.settings.default_ing_2_desc
+  assign ing_2_image = product.metafields.custom.ingredients_2_image | default: section.settings.default_ing_2_image
+
+  assign ing_3_title = product.metafields.custom.ingredients_3_heading | default: section.settings.default_ing_3_title
+  assign ing_3_desc_html = product.metafields.custom.ingredients_3_desc | metafield_tag | default: section.settings.default_ing_3_desc
+  assign ing_3_image = product.metafields.custom.ingredients_3_image | default: section.settings.default_ing_3_image
+
+  assign ing_4_title = product.metafields.custom.ingredients_4_heading | default: section.settings.default_ing_4_title
+  assign ing_4_desc_html = product.metafields.custom.ingredients_4_desc | metafield_tag | default: section.settings.default_ing_4_desc
+  assign ing_4_image = product.metafields.custom.ingredients_4_image | default: section.settings.default_ing_4_image
+
+  assign all_ingredients_html = product.metafields.custom.all_ingredients | metafield_tag | default: section.settings.default_all_ingredients
+
+  # Decide whether to show the section
+  assign should_show = false
+  if section.settings.hide_defaults_if_empty
+    # Show only if product metafields are populated
+    if product.metafields.custom.ingredients_1_heading != blank or product.metafields.custom.all_ingredients != blank
+      assign should_show = true
+    endif
+  else
+    # Show if either product metafields or default settings are populated
+    if ing_1_title != blank or all_ingredients_html != blank
+      assign should_show = true
+    endif
+  endif
+-%}
+
+{%- if should_show -%}
+  <style>
+    .IngredientsShowcase {
+      padding: 60px 0;
+      background: {{ section.settings.bg_color }};
+      color: {{ section.settings.text_color }};
+    }
+    
+    .IngredientsShowcase-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      padding-bottom: 15px;
+    }
+    .IngredientsShowcase-title {
+      font-size: 2.25rem;
+      margin: 0;
+      font-weight: 500;
+    }
+    .IngredientsShowcase-button {
+      background: none;
+      border: none;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      cursor: pointer;
+      text-decoration: underline;
+      padding: 0;
+    }
+    .IngredientsShowcase__ingredients.grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+    .IngredientsShowcase-slide {
+      width: 100%;
+    }
+    .IngredientCard {
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+      aspect-ratio: 1 / 1;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+    .IngredientCard:hover {
+      transform: translateY(-4px);
+    }
+    .IngredientCard-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.5s ease;
+      z-index: 0;
+    }
+    .IngredientCard:hover .IngredientCard-bg {
+      transform: scale(1.03);
+    }
+    .IngredientCard .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #000000;
+      opacity: 0.35;
+      z-index: 1;
+      transition: opacity 0.3s ease;
+    }
+    .IngredientCard.show-details .overlay {
+      opacity: 0.75;
+    }
+    .IngredientCard-face {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+      text-align: center;
+      box-sizing: border-box;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+    .IngredientCard-face--front {
+      opacity: 1;
+      visibility: visible;
+    }
+    .IngredientCard.show-details .IngredientCard-face--front {
+      opacity: 0;
+      visibility: hidden;
+    }
+    .IngredientCard-face--back {
+      opacity: 0;
+      visibility: hidden;
+      color: #ffffff;
+      overflow-y: auto;
+      justify-content: flex-start;
+      padding: 30px 20px;
+    }
+    .IngredientCard-face--back::-webkit-scrollbar {
+      width: 4px;
+    }
+    .IngredientCard-face--back::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 4px;
+    }
+    .IngredientCard.show-details .IngredientCard-face--back {
+      opacity: 1;
+      visibility: visible;
+    }
+    .IngredientCard-title {
+      color: #ffffff;
+      font-size: 22px;
+      font-weight: 600;
+      margin: 0;
+      line-height: 1.3;
+    }
+    .IngredientCard-learn-more {
+      display: block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-top: 10px;
+      text-decoration: underline;
+    }
+    .IngredientCard-description {
+      font-size: 13.5px;
+      line-height: 1.5;
+      color: #ffffff;
+      width: 100%;
+      margin: auto 0;
+    }
+    .IngredientCard-description p, 
+    .IngredientCard-description span,
+    .IngredientCard-description div {
+      color: #ffffff !important;
+      margin: 0 0 10px 0;
+    }
+    .IngredientCard-description p:last-child {
+      margin-bottom: 0;
+    }
+    .IngredientsShowcase-button.btn--mobile {
+      display: none;
+    }
+
+    /* Modal / Offcanvas Styles */
+    .Offcanvas-bgDimmer {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1050;
+      backdrop-filter: blur(2px);
+    }
+    .Offcanvas {
+      display: none;
+      flex-direction: column;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: calc(100vw - 30px);
+      max-width: 600px;
+      background: #fdfaf6;
+      border-radius: 8px;
+      padding: 40px;
+      z-index: 1060;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      max-height: 85vh;
+      overflow-y: auto;
+    }
+    .Offcanvas.is-active, .Offcanvas-bgDimmer.is-active {
+      display: flex;
+    }
+    .Offcanvas-bgDimmer.is-active {
+      display: block;
+    }
+    .IngredientsShowcase-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: none;
+      border: none;
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      padding: 0;
+    }
+    .IngredientsShowcase-close svg {
+      width: 100%;
+      height: 100%;
+    }
+    .IngredientsShowcase-ingredientsTitle {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      padding-bottom: 10px;
+    }
+    .IngredientsShowcase-products {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #5c5e58;
+    }
+    .IngredientsShowcase-products p,
+    .IngredientsShowcase-products span {
+      color: #5c5e58 !important;
+    }
+
+    @media screen and (max-width: 991px) {
+      .IngredientsShowcase__ingredients.grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      .IngredientsShowcase-button.btn--desktop {
+        display: none;
+      }
+      .IngredientsShowcase-button.btn--mobile {
+        display: block;
+        margin: 30px auto 0 auto;
+        font-size: 14px;
+      }
+      .IngredientsShowcase__ingredients.grid {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        gap: 15px;
+        padding-bottom: 15px;
+        scrollbar-width: none;
+      }
+      .IngredientsShowcase__ingredients.grid::-webkit-scrollbar {
+        display: none;
+      }
+      .IngredientsShowcase-slide {
+        flex: 0 0 75%;
+        scroll-snap-align: start;
+      }
+      .IngredientCard {
+        aspect-ratio: 1 / 1.1;
+      }
+      .IngredientsShowcase-title {
+        font-size: 1.75rem;
+      }
+    }
+  </style>
+
+  <section id="section-showcase-ingredients" class="IngredientsShowcase">
+    <div class="container-fluid">
+      <div class="IngredientsShowcase-header">
+        <h2 class="IngredientsShowcase-title">{{ section.settings.heading }}</h2>
+        {%- if all_ingredients_html != blank -%}
+          <button type="button" class="IngredientsShowcase-button button-link js-offcanvas-trigger btn btn--desktop">
+            {{ section.settings.btn_label }}
+          </button>
+        {%- endif -%}
+      </div>
+
+      <div class="IngredientsShowcase__ingredients grid">
+        <!-- Card 1 -->
+        {%- if ing_1_title != blank -%}
+          <div class="IngredientsShowcase-slide">
+            <div class="IngredientsShowcase-ingredient IngredientCard" onclick="this.classList.toggle('show-details');">
+              <div class="IngredientCard-bg" style="background-image: url({%- if ing_1_image != blank -%}{{ ing_1_image | image_url: width: 600 }}{%- else -%}https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&q=80{%- endif -%});"></div>
+              <div class="overlay"></div>
+              
+              <!-- Front Face (Title / Learn More) -->
+              <div class="IngredientCard-face IngredientCard-face--front">
+                <h3 class="IngredientCard-title">
+                  <span class="IngredientCard-title-text">{{ ing_1_title }}</span>
+                  <span class="IngredientCard-learn-more">Learn More</span>
+                </h3>
+              </div>
+              
+              <!-- Back Face (Rich Text Description) -->
+              <div class="IngredientCard-face IngredientCard-face--back">
+                <div class="IngredientCard-description">
+                  {{ ing_1_desc_html }}
+                </div>
+              </div>
+            </div>
+          </div>
+        {%- endif -%}
+
+        <!-- Card 2 -->
+        {%- if ing_2_title != blank -%}
+          <div class="IngredientsShowcase-slide">
+            <div class="IngredientsShowcase-ingredient IngredientCard" onclick="this.classList.toggle('show-details');">
+              <div class="IngredientCard-bg" style="background-image: url({%- if ing_2_image != blank -%}{{ ing_2_image | image_url: width: 600 }}{%- else -%}https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&q=80{%- endif -%});"></div>
+              <div class="overlay"></div>
+              
+              <!-- Front Face -->
+              <div class="IngredientCard-face IngredientCard-face--front">
+                <h3 class="IngredientCard-title">
+                  <span class="IngredientCard-title-text">{{ ing_2_title }}</span>
+                  <span class="IngredientCard-learn-more">Learn More</span>
+                </h3>
+              </div>
+              
+              <!-- Back Face -->
+              <div class="IngredientCard-face IngredientCard-face--back">
+                <div class="IngredientCard-description">
+                  {{ ing_2_desc_html }}
+                </div>
+              </div>
+            </div>
+          </div>
+        {%- endif -%}
+
+        <!-- Card 3 -->
+        {%- if ing_3_title != blank -%}
+          <div class="IngredientsShowcase-slide">
+            <div class="IngredientsShowcase-ingredient IngredientCard" onclick="this.classList.toggle('show-details');">
+              <div class="IngredientCard-bg" style="background-image: url({%- if ing_3_image != blank -%}{{ ing_3_image | image_url: width: 600 }}{%- else -%}https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&q=80{%- endif -%});"></div>
+              <div class="overlay"></div>
+              
+              <!-- Front Face -->
+              <div class="IngredientCard-face IngredientCard-face--front">
+                <h3 class="IngredientCard-title">
+                  <span class="IngredientCard-title-text">{{ ing_3_title }}</span>
+                  <span class="IngredientCard-learn-more">Learn More</span>
+                </h3>
+              </div>
+              
+              <!-- Back Face -->
+              <div class="IngredientCard-face IngredientCard-face--back">
+                <div class="IngredientCard-description">
+                  {{ ing_3_desc_html }}
+                </div>
+              </div>
+            </div>
+          </div>
+        {%- endif -%}
+
+        <!-- Card 4 -->
+        {%- if ing_4_title != blank -%}
+          <div class="IngredientsShowcase-slide">
+            <div class="IngredientsShowcase-ingredient IngredientCard" onclick="this.classList.toggle('show-details');">
+              <div class="IngredientCard-bg" style="background-image: url({%- if ing_4_image != blank -%}{{ ing_4_image | image_url: width: 600 }}{%- else -%}https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&q=80{%- endif -%});"></div>
+              <div class="overlay"></div>
+              
+              <!-- Front Face -->
+              <div class="IngredientCard-face IngredientCard-face--front">
+                <h3 class="IngredientCard-title">
+                  <span class="IngredientCard-title-text">{{ ing_4_title }}</span>
+                  <span class="IngredientCard-learn-more">Learn More</span>
+                </h3>
+              </div>
+              
+              <!-- Back Face -->
+              <div class="IngredientCard-face IngredientCard-face--back">
+                <div class="IngredientCard-description">
+                  {{ ing_4_desc_html }}
+                </div>
+              </div>
+            </div>
+          </div>
+        {%- endif -%}
+      </div>
+
+      {%- if all_ingredients_html != blank -%}
+        <button type="button" class="IngredientsShowcase-button button-link js-offcanvas-trigger btn btn--mobile">
+          {{ section.settings.btn_label }}
+        </button>
+      {%- endif -%}
+    </div>
+  </section>
+
+  <!-- Offcanvas Overlay / Background Dimmer -->
+  <div id="js-offcanvas-bg" class="Offcanvas-bgDimmer"></div>
+
+  <!-- Offcanvas Drawer for All Ingredients -->
+  {%- if all_ingredients_html != blank -%}
+    <div class="Offcanvas Offcanvas--ingredients">
+      <button type="button" class="IngredientsShowcase-close js-offcanvas-close">
+        <svg width="100%" height="100%" viewBox="0 0 40 40">
+          <path d="M20.354,19.294L9.746,8.686L9.039,9.393L19.646,20.001L9.041,30.607L9.748,31.314L20.354,20.708L30.252,30.607L30.959,29.899L21.061,20.001L30.961,10.101L30.254,9.393L20.354,19.294Z" style="fill:rgb(92,94,88);"></path>
+        </svg>
+      </button>
+      <h2 class="IngredientsShowcase-title IngredientsShowcase-ingredientsTitle">{{ section.settings.all_ing_title }}</h2>
+      <div class="IngredientsShowcase-products">
+        <div class="IngredientsShowcase-product">
+          {{ all_ingredients_html }}
+        </div>
+      </div>
+    </div>
+  {%- endif -%}
+
+  <script>
+    (function() {
+      function initIngredientsShowcase() {
+        var dimmer = document.getElementById('js-offcanvas-bg');
+        var fullIngredientsModal = document.querySelector('.Offcanvas--ingredients');
+        if (!dimmer) return;
+
+        // Trigger All Ingredients list Drawer
+        var triggers = document.querySelectorAll('.js-offcanvas-trigger');
+        triggers.forEach(function(btn) {
+          btn.addEventListener('click', function() {
+            if (fullIngredientsModal) {
+              dimmer.classList.add('is-active');
+              fullIngredientsModal.classList.add('is-active');
+            }
+          });
+        });
+
+        // Close button events
+        var closeButtons = document.querySelectorAll('.js-offcanvas-close');
+        closeButtons.forEach(function(btn) {
+          btn.addEventListener('click', function() {
+            closeAllModals();
+          });
+        });
+
+        dimmer.addEventListener('click', function() {
+          closeAllModals();
+        });
+
+        function closeAllModals() {
+          dimmer.classList.remove('is-active');
+          if (fullIngredientsModal) fullIngredientsModal.classList.remove('is-active');
+        }
+      }
+
+      document.addEventListener('DOMContentLoaded', initIngredientsShowcase);
+      
+      document.addEventListener('shopify:section:load', function(event) {
+        if (event.detail.sectionId === '{{ section.id }}') {
+          initIngredientsShowcase();
+        }
+      });
+      
+      initIngredientsShowcase();
+    })();
+  </script>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Ingredients Showcase",
+  "class": "ingredients-showcase-section",
+  "templates": ["product"],
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Title"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Key Ingredients"
+    },
+    {
+      "type": "text",
+      "id": "btn_label",
+      "label": "Button text",
+      "default": "full ingredient list"
+    },
+    {
+      "type": "text",
+      "id": "all_ing_title",
+      "label": "Drawer Title",
+      "default": "All Ingredients"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#000000"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_defaults_if_empty",
+      "label": "Hide Default Content when empty",
+      "default": false,
+      "info": "If checked, this section will only appear on products that have custom metafields populated."
+    },
+    {
+      "type": "header",
+      "content": "Default Ingredients Fallbacks"
+    },
+    {
+      "type": "text",
+      "id": "default_ing_1_title",
+      "label": "Ingredient 1 Name",
+      "default": "Coconut Oil"
+    },
+    {
+      "type": "richtext",
+      "id": "default_ing_1_desc",
+      "label": "Ingredient 1 Description",
+      "default": "<p>Rich in anti-inflammatory and antibacterial benefits, it helps prevent unwanted odor, calm inflammation and moisturize skin. Packed with medium-chain fatty acids and antimicrobial compounds, it helps keep skin clear of harmful bacteria and support healing.</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "default_ing_1_image",
+      "label": "Ingredient 1 Image"
+    },
+    {
+      "type": "text",
+      "id": "default_ing_2_title",
+      "label": "Ingredient 2 Name",
+      "default": "Aloe Vera Juice"
+    },
+    {
+      "type": "richtext",
+      "id": "default_ing_2_desc",
+      "label": "Ingredient 2 Description",
+      "default": "<p>This succulent is a natural source of antioxidants and stimulates the production of hyaluronic acid in the skin to decrease inflammation and rebuild hydration. Its healing properties also help to protect and repair skin from environmental stressors.</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "default_ing_2_image",
+      "label": "Ingredient 2 Image"
+    },
+    {
+      "type": "text",
+      "id": "default_ing_3_title",
+      "label": "Ingredient 3 Name",
+      "default": "Shea Butter"
+    },
+    {
+      "type": "richtext",
+      "id": "default_ing_3_desc",
+      "label": "Ingredient 3 Description",
+      "default": "<p>High concentrations of fatty acids, anti-inflammatory compounds and vitamins make shea butter the best healthy fat for softening skin and provide a much-needed boost of nourishment.</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "default_ing_3_image",
+      "label": "Ingredient 3 Image"
+    },
+    {
+      "type": "text",
+      "id": "default_ing_4_title",
+      "label": "Ingredient 4 Name",
+      "default": "Essential Oils of Orange and Peppermint"
+    },
+    {
+      "type": "richtext",
+      "id": "default_ing_4_desc",
+      "label": "Ingredient 4 Description",
+      "default": "<p>A fresh, uplifting synergistic blend of essential oils that purifies, balances and brightens the skin with minerals, vitamins, antioxidants and antibacterial benefits.</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "default_ing_4_image",
+      "label": "Ingredient 4 Image"
+    },
+    {
+      "type": "richtext",
+      "id": "default_all_ingredients",
+      "label": "All Ingredients List",
+      "default": "<p>Water, Organic Fractionated Coconut Oil, Organic Coconut Oil, Potassium Hydroxide, Organic Aloe Vera Juice, Organic Olive Oil, Glycerin, Essential Oils of Organic Pink Grapefruit, Organic Lemon, Organic Peppermint and Organic Orange, Organic Cold-Pressed Sunflower Oil, Organic Shea Butter, Organic Rosemary Extract, Guar Gum, Citric Acid, Non-GMO Vitamin E (No Potassium Hydroxide is present in the final product)</p>"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Ingredients Showcase",
+      "category": "Product"
+    }
+  ]
+}
+{% endschema %}

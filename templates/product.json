@@ -302,12 +302,19 @@
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
       }
+    },
+    "ingredients-showcase": {
+      "type": "ingredients-showcase",
+      "settings": {
+        "hide_defaults_if_empty": false
+      }
     }
   },
   "order": [
     "main",
     "product-requently",
     "product-content",
+    "ingredients-showcase",
     "16956665928504d885",
     "product-recommendations",
     "product-recent"
