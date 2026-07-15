@@ -43,6 +43,48 @@
       </div>
     </div>
   </div>
+  {%- if section.settings.enable_mobile_quick_menu and section.settings.mobile_quick_menu != blank -%}
+    <div class="mobile-quick-menu d-block d-lg-none" style="background-color: {{ section.settings.mobile_quick_menu_bg }};">
+      <div class="container-fluid">
+        <ul class="mobile-quick-menu__list list-unstyled d-flex align-items-center justify-content-around mb-0">
+          {%- for link in linklists[section.settings.mobile_quick_menu].links limit: 4 -%}
+            <li class="mobile-quick-menu__item text-center">
+              <a href="{{ link.url }}" class="mobile-quick-menu__link text-uppercase" style="color: {{ section.settings.mobile_quick_menu_text }};">
+                {{ link.title }}
+              </a>
+            </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    </div>
+    <style>
+      .mobile-quick-menu {
+        border-top: 1px solid rgba(0, 0, 0, 0.08);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      }
+      .mobile-quick-menu__list {
+        margin: 0;
+        padding: 10px 0;
+      }
+      .mobile-quick-menu__link {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-decoration: none !important;
+        display: block;
+      }
+      @media (min-width: 375px) {
+        .mobile-quick-menu__link {
+          font-size: 12px;
+        }
+      }
+      @media (min-width: 425px) {
+        .mobile-quick-menu__link {
+          font-size: 13px;
+        }
+      }
+    </style>
+  {%- endif -%}
   {%- if enable_menu_vertical -%}
     {% unless layout_header == 'logo-center-navigation-split' or layout_header == 'logo-center-navigation-drawer' %}
       {% render 'slide-menu' %}
@@ -686,6 +728,34 @@
           "label": "Icon & Text"
         }
       ]
+    },
+    {
+      "type": "header",
+      "content": "Mobile Quick Menu"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_mobile_quick_menu",
+      "label": "Enable Mobile Quick Menu",
+      "default": false
+    },
+    {
+      "type": "link_list",
+      "id": "mobile_quick_menu",
+      "label": "Select Mobile Quick Menu",
+      "info": "Displays a horizontal bar below the header on mobile (maximum 4 items)."
+    },
+    {
+      "type": "color",
+      "id": "mobile_quick_menu_bg",
+      "label": "Background Color",
+      "default": "#f8f5ee"
+    },
+    {
+      "type": "color",
+      "id": "mobile_quick_menu_text",
+      "label": "Text Color",
+      "default": "#4b5d52"
     }
   ],
   "blocks": [

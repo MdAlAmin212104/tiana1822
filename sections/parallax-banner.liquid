@@ -40,6 +40,9 @@
   @media( max-width:749px){
     .parallax-banner__wraper--{{ section.id }} {
       min-height :  var(--st-bgvideo-height-mb);
+      {%- if section.settings.image_mobile != blank -%}
+        background-image: url('{{ section.settings.image_mobile | image_url: width: 800 }}') !important;
+      {%- endif -%}
     }
   }
   {% if opacity_bgbox > 0 %}
@@ -78,15 +81,25 @@
   <section class="d-flex {{ positiontxt }} parallax-{{ section.id }} parallax-container lazyload parallax-banner__wraper  parallax-banner__wraper--{{section.id}} {% if section.settings.image != blank %}parallax-banner__wraper--has-background{% endif %}" 
          data-section-id="{{ section.id }}" data-section-type="parallax-image" 
         {% if section.settings.parrallax_enable %}
-        data-bgset="{% render 'bgset', image: section.settings.image %}"
-        data-sizes="auto"
-        data-parent-fit="cover" {% endif %} >
+          {%- if section.settings.image_mobile != blank -%}
+            data-bgset="{% render 'bgset', image: section.settings.image_mobile %} [(max-width: 749px)] | {% render 'bgset', image: section.settings.image %}"
+          {%- else -%}
+            data-bgset="{% render 'bgset', image: section.settings.image %}"
+          {%- endif -%}
+          data-sizes="auto"
+          data-parent-fit="cover" 
+        {% endif %} >
        {% if section.settings.parrallax_enable == false %}
        <parallax-image class="simpleParallax" id="simpleParallax-{{ section.id }}" section-id="simpleParallax-{{ section.id }}" data-aos="{{ section.settings.animation }}">
-       <img  class="thumbnail{{ section.id }} lazyload" src="{{ section.settings.image | image_url: width: 1920 }}" alt="{{ section.settings.title }}" 
-        loading="lazy"
-        width="{{ section.settings.image.width }}"
-        height="{{ section.settings.image.height }}" />
+         <picture>
+           {%- if section.settings.image_mobile != blank -%}
+             <source media="(max-width: 749px)" srcset="{{ section.settings.image_mobile | image_url: width: 800 }}">
+           {%- endif -%}
+           <img class="thumbnail{{ section.id }} lazyload" src="{{ section.settings.image | image_url: width: 1920 }}" alt="{{ section.settings.title }}" 
+            loading="lazy"
+            width="{{ section.settings.image.width }}"
+            height="{{ section.settings.image.height }}" />
+         </picture>
         </parallax-image>
       {% endif %} 
        <div class="container">
@@ -358,6 +371,11 @@ customElements.define('parallax-image', ParallaxImage);
       "type": "image_picker",
       "id": "image",
       "label": "Background image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Mobile background image"
     },
     
     {
