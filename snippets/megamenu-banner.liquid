@@ -23,44 +23,172 @@
       else 
       assign link_column = 'col-sm-2'
     endcase
+
+    assign menu_1 = block.settings.menu_1
+    assign menu_2 = block.settings.menu_2
+
+    if block.settings.menu_1_title != blank
+      assign menu_1_title = block.settings.menu_1_title
+    else
+      assign menu_1_title = linklists[menu_1].title
+    endif
+
+    if block.settings.menu_2_title != blank
+      assign menu_2_title = block.settings.menu_2_title
+    else
+      assign menu_2_title = linklists[menu_2].title
+    endif
+
+    assign use_custom_menus = false
+    if menu_1 != blank or menu_2 != blank
+      assign use_custom_menus = true
+    endif
   -%}
-  <div class="{{ menu_width }}">
+
+  <style>
+    /* ── Scoped heading style for this block ── */
+    #shopify-section-header .megabanner-{{ block.id }} .mm-heading {
+      font-family: Georgia, 'Times New Roman', serif !important;
+      font-size: 24px !important;
+      font-style: italic !important;
+      font-weight: 400 !important;
+      color: #2c4a3b !important;
+      text-transform: none !important;
+      letter-spacing: 0 !important;
+      line-height: 1.2 !important;
+      margin: 0 0 18px 0 !important;
+      display: block;
+      text-decoration: none !important;
+    }
+    .mm-heading{
+      font-size: 35px; 
+      padding-bottom: 35px;
+    }
+    #shopify-section-header .megabanner-{{ block.id }} .mm-heading:hover {
+      opacity: 0.72;
+    }
+    #shopify-section-header .megabanner-{{ block.id }} .nav-links {
+      list-style: none !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    #shopify-section-header .megabanner-{{ block.id }} .nav-links li {
+      margin-bottom: 10px !important;
+    }
+    #shopify-section-header .megabanner-{{ block.id }} .nav-links a {
+      font-size: 14px !important;
+      color: #3d4540 !important;
+      font-weight: 400 !important;
+      text-transform: none !important;
+      letter-spacing: 0.01em !important;
+      text-decoration: none !important;
+      transition: color 0.18s ease;
+    }
+    #shopify-section-header .megabanner-{{ block.id }} .nav-links a:hover {
+      color: #2c4a3b !important;
+      text-decoration: underline !important;
+    }
+    /* When using custom menus: two equal-width columns */
+    #shopify-section-header .megabanner-{{ block.id }} .mm-custom-col {
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  </style>
+
+  <div class="megabanner-{{ block.id }} {{ menu_width }}">
     <div class="row">
-      {%- if link.links != blank -%}
-      <div class="mega-col mega-link {% if enable_menu_banner == false %} col-12 {% else %} col {% endif %}">
-        <div class="row">
-          {%- if link.links != blank -%}
-          {%- for childlink in link.links -%}
-          <div class="{{ link_column }} d-col-link">
-            <div class="mega-col-inner ">
-              <div class="menu-title">
-                <a href="{{ childlink.url }}" >
-                  {%- render 'processMenuTitle' , itemName: childlink.title -%}
-                  {%- render 'processMenuLabel' , itemName: childlink.title -%}
-                </a>
-              </div>
-              <div class="widget-inner">
-                <ul class="nav-links">
-                  {%- if childlink.links != blank -%}
-                  {%- for grandchildlink in childlink.links -%}
-                    <li>
-                      <a href="{{ grandchildlink.url }}" >
-                        {%- render 'processMenuTitle' , itemName: grandchildlink.title -%}
-                        {%- render 'processMenuLabel' , itemName: grandchildlink.title -%}
-                      </a>
-                    </li>
-                  {%- endfor -%}
+
+      {%- comment -%}── LEFT: link columns ──{%- endcomment -%}
+
+      {%- if use_custom_menus -%}
+        {%- comment -%} Custom menu mode: render menu_1 and menu_2 with headings {%- endcomment -%}
+        <div class="mega-col mega-link {% if enable_menu_banner == false %} col-12 {% else %} col {% endif %}">
+          <div class="row" style="justify-content: space-around; padding: 0 10px;">
+
+            {%- if menu_1 != blank -%}
+              <div class="mm-custom-col d-col-link">
+                <div class="mega-col-inner">
+                  {%- if menu_1_title != blank -%}
+                    <a href="{{ linklists[menu_1].url | default: '#' }}" class="mm-heading">
+                      {{ menu_1_title }}
+                    </a>
                   {%- endif -%}
-                </ul>
+                  <ul class="nav-links site-footer__list site-footer-block" style="padding-top: 20px">
+                    {%- for childlink in linklists[menu_1].links -%}
+                      <li class="site-footer__list-item">
+                        <a href="{{ childlink.url }}">
+                          {%- render 'processMenuTitle', itemName: childlink.title -%}
+                          {%- render 'processMenuLabel', itemName: childlink.title -%}
+                        </a>
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                </div>
+              </div>
+            {%- endif -%}
+
+            {%- if menu_2 != blank -%}
+              <div class="mm-custom-col d-col-link">
+                <div class="mega-col-inner">
+                  {%- if menu_2_title != blank -%}
+                    <a href="{{ linklists[menu_2].url | default: '#' }}" class="mm-heading">
+                      {{ menu_2_title }}
+                    </a>
+                  {%- endif -%}
+                  <ul class="nav-links site-footer__list site-footer-block" style="padding-top: 20px">
+                    {%- for childlink in linklists[menu_2].links -%}
+                      <li class="site-footer__list-item">
+                        <a href="{{ childlink.url }}">
+                          {%- render 'processMenuTitle', itemName: childlink.title -%}
+                          {%- render 'processMenuLabel', itemName: childlink.title -%}
+                        </a>
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                </div>
+              </div>
+            {%- endif -%}
+
+          </div>
+        </div>
+
+      {%- elsif link.links != blank -%}
+        {%- comment -%} Original mode: use nested link.links from main navigation {%- endcomment -%}
+        <div class="mega-col mega-link {% if enable_menu_banner == false %} col-12 {% else %} col {% endif %} custom-class">
+          <div class="row">
+            {%- for childlink in link.links -%}
+            <div class="{{ link_column }} d-col-link">
+              <div class="mega-col-inner ">
+                <div class="menu-title">
+                  <a href="{{ childlink.url }}" class="mm-heading">
+                    {%- render 'processMenuTitle' , itemName: childlink.title -%}
+                    {%- render 'processMenuLabel' , itemName: childlink.title -%}
+                  </a>
+                </div>
+                <div class="widget-inner">
+                  <ul class="nav-links">
+                    {%- if childlink.links != blank -%}
+                    {%- for grandchildlink in childlink.links -%}
+                      <li>
+                        <a href="{{ grandchildlink.url }}" >
+                          {%- render 'processMenuTitle' , itemName: grandchildlink.title -%}
+                          {%- render 'processMenuLabel' , itemName: grandchildlink.title -%}
+                        </a>
+                      </li>
+                    {%- endfor -%}
+                    {%- endif -%}
+                  </ul>
+                </div>
               </div>
             </div>
+            {%- endfor -%}
           </div>
-          {%- endfor -%}
-          {%- endif -%}
         </div>
-      </div>
       {%- endif -%}
-  
+
+      {%- comment -%}── RIGHT: promotional banners ──{%- endcomment -%}
       {% if enable_menu_banner %}
         <div class="mega-col col" style="max-width:{{ menu_banner_width }}%;flex:0 0 {{ menu_banner_width }}%;">    
           <div class="row">
@@ -147,4 +275,3 @@
       {% endif %}
     </div>
   </div>
-  
