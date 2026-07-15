@@ -242,6 +242,33 @@
         "marginmobile": "0px 0px 0px 0px"
       }
     },
+    "ingredients-showcase": {
+      "type": "ingredients-showcase",
+      "custom_css": [
+        ".IngredientsShowcase__ingredients.container-fluid.grid {padding: 0;}"
+      ],
+      "settings": {
+        "heading": "Key Ingredients",
+        "btn_label": "full ingredient list",
+        "all_ing_title": "All Ingredients",
+        "bg_color": "#f5f0e6",
+        "text_color": "#2c4a3b",
+        "hide_defaults_if_empty": false,
+        "default_ing_1_title": "Coconut Oil",
+        "default_ing_1_desc": "<p>Rich in anti-inflammatory and antibacterial benefits, it helps prevent unwanted odor, calm inflammation and moisturize skin. Packed with medium-chain fatty acids and antimicrobial compounds, it helps keep skin clear of harmful bacteria and support healing.</p>",
+        "default_ing_1_image": "shopify://shop_images/coconut_oil_learn_more_1024x1024_0eafd6e4-3fce-4147-b8a0-3900194bdd26.webp",
+        "default_ing_2_title": "Aloe Vera Juice",
+        "default_ing_2_desc": "<p>This succulent is a natural source of antioxidants and stimulates the production of hyaluronic acid in the skin to decrease inflammation and rebuild hydration. Its healing properties also help to protect and repair skin from environmental stressors.</p>",
+        "default_ing_2_image": "shopify://shop_images/aloe_vera_juice_learn_more_1024x1024_b8e99e3b-f0f0-4908-9458-6c56d68013de.webp",
+        "default_ing_3_title": "Shea Butter",
+        "default_ing_3_desc": "<p>High concentrations of fatty acids, anti-inflammatory compounds and vitamins make shea butter the best healthy fat for softening skin and provide a much-needed boost of nourishment.</p>",
+        "default_ing_3_image": "shopify://shop_images/shea_butter_learn_more_1024x1024_7772bf5a-1c40-4663-b0da-068a5a5f73c6.webp",
+        "default_ing_4_title": "Essential Oils of Orange and Peppermint",
+        "default_ing_4_desc": "<p>A fresh, uplifting synergistic blend of essential oils that purifies, balances and brightens the skin with minerals, vitamins, antioxidants and antibacterial benefits.</p>",
+        "default_ing_4_image": "shopify://shop_images/Orange_ingredient_1024x1024_14278bc9-2bc6-4470-8ea8-64d1e608229c.webp",
+        "default_all_ingredients": "<p>Water, Organic Fractionated Coconut Oil, Organic Coconut Oil, Potassium Hydroxide, Organic Aloe Vera Juice, Organic Olive Oil, Glycerin, Essential Oils of Organic Pink Grapefruit, Organic Lemon, Organic Peppermint and Organic Orange, Organic Cold-Pressed Sunflower Oil, Organic Shea Butter, Organic Rosemary Extract, Guar Gum, Citric Acid, Non-GMO Vitamin E (No Potassium Hydroxide is present in the final product)</p>"
+      }
+    },
     "16956665928504d885": {
       "type": "apps",
       "blocks": {
@@ -301,12 +328,6 @@
         "paddingmobile": "40px 0px 40px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
-      }
-    },
-    "ingredients-showcase": {
-      "type": "ingredients-showcase",
-      "settings": {
-        "hide_defaults_if_empty": false
       }
     }
   },
