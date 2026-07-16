@@ -85,6 +85,61 @@ grid-template-columns: 1fr 1fr;
     padding:0 15px;
   }
 }
+
+/* ── Mobile Slider ── */
+@media (max-width:749px){
+  .customstyle{{ section.id }} .collection-grid-desktop{ display:none !important; }
+  .customstyle{{ section.id }} .collection-mobile-swiper{ display:block; }
+  .customstyle{{ section.id }} .collection-mobile-swiper .swiper-container{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+  }
+  .customstyle{{ section.id }} .collection-mobile-swiper .swiper-wrapper{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    transition-property: transform;
+    box-sizing: content-box;
+  }
+  .customstyle{{ section.id }} .collection-mobile-swiper .swiper-slide{
+    width: 70%;
+    flex-shrink: 0;
+    height: auto;
+    position: relative;
+    transition-property: transform;
+  }
+  @media (min-width: 480px) {
+    .customstyle{{ section.id }} .collection-mobile-swiper .swiper-slide{
+      width: 42%;
+    }
+  }
+  .customstyle{{ section.id }} .collection-mobile-swiper .swiper-pagination{
+    position:relative;
+    margin-top:20px;
+    bottom:auto;
+  }
+  .customstyle{{ section.id }} .collection-mobile-swiper .swiper-pagination-bullet{
+    background: #aaa;
+    opacity:1;
+  }
+  .customstyle{{ section.id }} .collection-mobile-swiper .swiper-pagination-bullet-active{
+    background: #333;
+  }
+  .customstyle{{ section.id }} .swiper-mobile-wrap{
+    padding-bottom: 36px;
+    overflow: hidden;
+  }
+}
+@media (min-width:750px){
+  .customstyle{{ section.id }} .collection-mobile-swiper{ display:none !important; }
+  .customstyle{{ section.id }} .collection-grid-desktop{ display:flex !important; }
+}
 </style>
 {%-liquid
   assign layout = section.settings.layout
@@ -103,7 +158,8 @@ grid-template-columns: 1fr 1fr;
         <div class="section-block" >
           <div class="{{ section.settings.setwidth }}">
             {%- render 'section-heading' -%}
-                <div class="collection-grid {{ class }} row {% if section.settings.enable_padding == false %} mx-0 {% endif %}" id="collection-grid-{{ section.id }}">
+                {%- comment -%}── DESKTOP GRID ──{%- endcomment -%}
+                <div class="collection-grid-desktop collection-grid {{ class }} row {% if section.settings.enable_padding == false %} mx-0 {% endif %}" id="collection-grid-{{ section.id }}">
                   {%- for block in section.blocks -%}
                     {%-liquid
                       assign hex2rgb_hex = block.settings.bg_overlay
@@ -219,6 +275,136 @@ grid-template-columns: 1fr 1fr;
                   </div>
                   {%- endfor -%}
                 </div>
+
+                {%- comment -%}── MOBILE SWIPER ──{%- endcomment -%}
+                <div class="collection-mobile-swiper swiper-mobile-wrap">
+                  <div class="swiper-container" id="mobile-swiper-{{ section.id }}">
+                    <div class="swiper-wrapper">
+                      {%- for block in section.blocks -%}
+                        {%-liquid
+                          assign hex2rgb_hex = block.settings.bg_overlay
+                          assign opacity = block.settings.opacity_overlay
+                          assign enable_gradient = block.settings.enable_gradient
+                          assign color = block.settings.color
+                          assign featured_collection = collections[block.settings.collection]
+                          assign featured_image = block.settings.image
+                          capture current
+                          cycle 1, 2, 3, 4, 5, 6
+                          endcapture
+                          assign collectionTitle = featured_collection.title | default: 'Collection title'
+                        -%}
+                        <div class="swiper-slide collect-grid-{{ block.id }}">
+                          <div class="collection-card-3">
+                            <div class="collection-card__image overflow-hidden position-relative image-content__image-container">
+                              <a class="hv-image banner-theme photo-wrapper image-content__image-wrapper {{ section.settings.size_image_col }}" href="{{ featured_collection.url | default : '#' }}"
+                                {%- if featured_image != blank -%}
+                                  style="padding-top:{{ 1 | divided_by: featured_image.aspect_ratio | times: 100 }}%;"
+                                {%- elsif featured_collection.image != blank -%}
+                                  style="padding-top:{{ 1 | divided_by: featured_collection.image.aspect_ratio | times: 100 }}%;"
+                                {%- else -%}
+                                  style=""
+                                {%- endif -%}
+                              >
+                                {%- assign img_url = featured_image | image_url: width: 1 | replace: 'width=1', 'width={width}' -%}
+                                {%- assign f_img_url = featured_collection.image | image_url: width: 1 | replace: 'width=1', 'width={width}' -%}
+                                {%- if featured_image != blank -%}
+                                  <img
+                                    class="lazyload scale-in"
+                                    src="{{ featured_image | image_url: width: 1, height: 1 }}"
+                                    data-srcset="{{ img_url }}"
+                                    data-widths="[360, 540, 720, 900, 1080]"
+                                    data-aspectratio="{{ featured_image.aspect_ratio }}"
+                                    data-sizes="auto"
+                                    alt="{{ collectionTitle }}"
+                                    loading="lazy"
+                                    width="{{ featured_image.width }}"
+                                    height="{{ featured_image.height }}"
+                                  >
+                                {%- elsif featured_collection.image != blank -%}
+                                  <img
+                                    class="lazyload scale-in"
+                                    src="{{ featured_collection.image | image_url: width: 1, height: 1 }}"
+                                    data-srcset="{{ f_img_url }}"
+                                    data-widths="[360, 540, 720, 900, 1080]"
+                                    data-aspectratio="{{ featured_collection.image.aspect_ratio }}"
+                                    data-sizes="auto"
+                                    alt="{{ collectionTitle }}"
+                                    loading="lazy"
+                                  >
+                                {%- else -%}
+                                  {{ 'collection-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+                                {%- endif -%}
+                              </a>
+                              {%- capture count -%}
+                                {% assign c = featured_collection.products_count | plus: 0 %}
+                                {{ featured_collection.products_count | default: 0 }}
+                                {%- if c > 1 -%}{{ 'collections.general.items' | t }}{%- else -%}{{ 'collections.general.item' | t }}{%- endif -%}
+                              {%- endcapture -%}
+                              <div class="m-0 type-onimage position-absolute collection-card__meta w-100 d-flex flex-column h-100 justify-content-center p-4 text-center">
+                                <h4 class="mb-1 title-collection {{ section.settings.size_title }}">
+                                  <a href="{{ featured_collection.url | default : '#' }}">{{ collectionTitle }}</a>
+                                </h4>
+                                <p class="item-counts">{{ count }}</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      {%- endfor -%}
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+
+                <script>
+                  (function() {
+                    function initMobileSwiper{{ section.id | replace: '-', '_' }}() {
+                      if (window.innerWidth > 749) return;
+                      
+                      var el = document.getElementById('mobile-swiper-{{ section.id }}');
+                      if (!el) return;
+
+                      if (typeof Swiper === 'undefined') {
+                        setTimeout(initMobileSwiper{{ section.id | replace: '-', '_' }}, 100);
+                        return;
+                      }
+
+                      if (el.classList.contains('js-swiper-initialized')) {
+                        return;
+                      }
+                      
+                      el.classList.add('js-swiper-initialized');
+
+                      new Swiper(el, {
+                        slidesPerView: 'auto',
+                        spaceBetween: 16,
+                        grabCursor: true,
+                        watchSlidesVisibility: true,
+                        watchSlidesProgress: true,
+                        observer: true,
+                        observeParents: true,
+                        pagination: {
+                          el: el.querySelector('.swiper-pagination'),
+                          clickable: true
+                        }
+                      });
+                    }
+
+                    if (document.readyState === 'loading') {
+                      document.addEventListener('DOMContentLoaded', initMobileSwiper{{ section.id | replace: '-', '_' }});
+                    } else {
+                      initMobileSwiper{{ section.id | replace: '-', '_' }}();
+                    }
+
+                    window.addEventListener('load', initMobileSwiper{{ section.id | replace: '-', '_' }});
+                    window.addEventListener('resize', initMobileSwiper{{ section.id | replace: '-', '_' }});
+
+                    document.addEventListener('shopify:section:load', function(e) {
+                      if (e.detail.sectionId === '{{ section.id }}') {
+                        initMobileSwiper{{ section.id | replace: '-', '_' }}();
+                      }
+                    });
+                  })();
+                </script>
               {%- if section.blocks.size == 0 -%}
               {%- render 'no-blocks' -%}
               {%- endif -%}
