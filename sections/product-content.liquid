@@ -52,22 +52,28 @@
                             else
                                 assign active = ''
                             endif
+                            assign title_handle = block.settings.title_tab | default: '' | handleize
+                            if title_handle contains 'ingredient' or title_handle contains 'showcase'
+                                assign scroll_class = 'js-scroll-to-ingredients'
+                            else
+                                assign scroll_class = ''
+                            endif
                         -%}
                         {%- case block.type -%}
                             {%- when 'description' -%}
-                                <a class="nav-item nav-link {{ active }} disabled-anchor" href="#gtab{{ block.id }}" data-toggle="tab" role="tab" aria-selected="true">
+                                <a class="nav-item nav-link {{ active }} {{ scroll_class }} disabled-anchor" href="#gtab{{ block.id }}" data-toggle="tab" role="tab" aria-selected="true">
                                     {{ block.settings.title_tab | default: 'Description' }}
                                 </a>
                             {%- when 'custom_liquid' -%}
-                                <a class="nav-item nav-link {{ active }} disabled-anchor" href="#gtab{{ block.id }}" data-toggle="tab" role="tab" aria-selected="true">
+                                <a class="nav-item nav-link {{ active }} {{ scroll_class }} disabled-anchor" href="#gtab{{ block.id }}" data-toggle="tab" role="tab" aria-selected="true">
                                     {{ block.settings.title_tab | default: 'Custom Liquid' }}
                                 </a>
                             {%- when 'content' -%}
-                                <a class="nav-item nav-link {{ active }} disabled-anchor" href="#gtab{{ block.id }}" data-toggle="tab" role="tab" aria-selected="true">
+                                <a class="nav-item nav-link {{ active }} {{ scroll_class }} disabled-anchor" href="#gtab{{ block.id }}" data-toggle="tab" role="tab" aria-selected="true">
                                     {{ block.settings.title_tab | default: 'Title Content' }}
                                 </a>
                             {%- when 'review' -%}
-                                    <a class="nav-item nav-link {{ active }} disabled-anchor" href="#gtab{{ block.id }}" data-toggle="tab" role="tab" aria-selected="true">
+                                    <a class="nav-item nav-link {{ active }} {{ scroll_class }} disabled-anchor" href="#gtab{{ block.id }}" data-toggle="tab" role="tab" aria-selected="true">
                                         {{ block.settings.title_tab | default: 'Reviews' }}
                                     </a>
                             {%- endcase -%}
@@ -157,6 +163,23 @@
   }
 
   customElements.define('product-pairs', productPairs);
+
+  document.addEventListener('click', function(e) {
+    var target = e.target.closest('.js-scroll-to-ingredients');
+    if (target) {
+      var showcase = document.getElementById('section-showcase-ingredients');
+      if (showcase) {
+        setTimeout(function() {
+          var offset = 100;
+          var topPos = showcase.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({
+            top: topPos,
+            behavior: 'smooth'
+          });
+        }, 50);
+      }
+    }
+  });
 {% endjavascript %}
 {% schema %}
 {
