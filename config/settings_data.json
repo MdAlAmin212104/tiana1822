@@ -87,7 +87,7 @@
     "font_weight_sub": "600",
     "base_size_sup": 12,
     "letter_spacing_sub": 0,
-    "main_linklist": "header",
+    "main_linklist": "header-working",
     "lang_enable": false,
     "currency_enable": false,
     "currency_enable_image": false,
@@ -3062,7 +3062,8 @@
     "custom_css": [
       ".d-flex.align-items-center.mb-3.pb-3.border-bottom.block-addon.gap-5 {display: none !important;}",
       ".slick-slider {margin-bottom: 0px;}",
-      ".product-card__info {margin-bottom: 0 !important; padding-bottom: 0;}"
+      ".product-card__info {margin-bottom: 0 !important; padding-bottom: 0;}",
+      ".product-card__name {min-height: 0 !important;}"
     ]
   }
 }

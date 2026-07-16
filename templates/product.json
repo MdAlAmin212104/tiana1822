@@ -253,7 +253,7 @@
         "all_ing_title": "All Ingredients",
         "bg_color": "#f5f0e6",
         "text_color": "#2c4a3b",
-        "hide_defaults_if_empty": false,
+        "hide_defaults_if_empty": true,
         "default_ing_1_title": "Coconut Oil",
         "default_ing_1_desc": "<p>Rich in anti-inflammatory and antibacterial benefits, it helps prevent unwanted odor, calm inflammation and moisturize skin. Packed with medium-chain fatty acids and antimicrobial compounds, it helps keep skin clear of harmful bacteria and support healing.</p>",
         "default_ing_1_image": "shopify://shop_images/coconut_oil_learn_more_1024x1024_0eafd6e4-3fce-4147-b8a0-3900194bdd26.webp",
@@ -266,7 +266,7 @@
         "default_ing_4_title": "Essential Oils of Orange and Peppermint",
         "default_ing_4_desc": "<p>A fresh, uplifting synergistic blend of essential oils that purifies, balances and brightens the skin with minerals, vitamins, antioxidants and antibacterial benefits.</p>",
         "default_ing_4_image": "shopify://shop_images/Orange_ingredient_1024x1024_14278bc9-2bc6-4470-8ea8-64d1e608229c.webp",
-        "default_all_ingredients": "<p>Water, Organic Fractionated Coconut Oil, Organic Coconut Oil, Potassium Hydroxide, Organic Aloe Vera Juice, Organic Olive Oil, Glycerin, Essential Oils of Organic Pink Grapefruit, Organic Lemon, Organic Peppermint and Organic Orange, Organic Cold-Pressed Sunflower Oil, Organic Shea Butter, Organic Rosemary Extract, Guar Gum, Citric Acid, Non-GMO Vitamin E (No Potassium Hydroxide is present in the final product)</p>"
+        "default_all_ingredients": "{{ product.metafields.custom.ingredients | metafield_tag }}"
       }
     },
     "16956665928504d885": {

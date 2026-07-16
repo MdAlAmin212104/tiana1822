@@ -17,8 +17,8 @@
         "show_collection_description": true,
         "show_collection_image": true,
         "save_allproducts": true,
-        "title_all": "",
-        "des_all": "",
+        "title_all": "All Products",
+        "des_all": "<p>Explore our full collection of handcrafted botanical skincare and wellness essentials.</p>",
         "style_banner": "full",
         "heading_size": "h2",
         "img_height": "450px",
@@ -39,7 +39,7 @@
           "settings": {
             "collection": "shop-all",
             "image": "shopify://shop_images/hydrating_body_butter2_copy_2.png",
-            "color": "#ffffff",
+            "color": "#F8F5EE",
             "enable_gradient": false,
             "bg_overlay": "#222222",
             "opacity_overlay": 0.2
@@ -50,7 +50,7 @@
           "settings": {
             "collection": "best-seller",
             "image": "shopify://shop_images/Body_Care_2.jpg",
-            "color": "#ffffff",
+            "color": "#F8F5EE",
             "enable_gradient": false,
             "bg_overlay": "#222222",
             "opacity_overlay": 0.2
@@ -59,9 +59,9 @@
         "collection_C4DEtc": {
           "type": "collection",
           "settings": {
-            "collection": "face-bar",
+            "collection": "face",
             "image": "shopify://shop_images/facial_care_2_copy_66d63434-a0a1-4816-829e-836327a292b9.jpg",
-            "color": "#ffffff",
+            "color": "#F8F5EE",
             "enable_gradient": false,
             "bg_overlay": "#222222",
             "opacity_overlay": 0.2
@@ -70,9 +70,9 @@
         "collection_cDmmH8": {
           "type": "collection",
           "settings": {
-            "collection": "body-bar",
+            "collection": "body",
             "image": "shopify://shop_images/beauty-skin-care-close-up-portrait-beautiful-woman-looking-mirror-touching-her-clear-g.png",
-            "color": "#ffffff",
+            "color": "#F8F5EE",
             "enable_gradient": false,
             "bg_overlay": "#222222",
             "opacity_overlay": 0.2
@@ -83,7 +83,7 @@
           "settings": {
             "collection": "bundle-save",
             "image": "shopify://shop_images/OLD_FLEUriology_pictures.jpg",
-            "color": "#ffffff",
+            "color": "#F8F5EE",
             "enable_gradient": false,
             "bg_overlay": "#222222",
             "opacity_overlay": 0.2
@@ -104,7 +104,7 @@
       "settings": {
         "animation": "",
         "setwidth": "container-fluid",
-        "bgsection": "#F5F0E6",
+        "bgsection": "#f5f0e6",
         "title_top": "",
         "title": "",
         "des": "",
