@@ -86,6 +86,23 @@
 <!-- blog-sidebar.liquid -->
 <div class="col col--sidebar-blog">
   <div class="sidebar-blog-wrap">
+    {%- if settings.sidebar_tag -%}
+    <div class="content-block content-block--small">
+      <h6 class="sidebar__title">{{ 'blogs.article.tags' | t }}</h6>
+      <ul class="list-unstyled list-blog-tags clearfix mb-0">
+        <li>
+          <a href="{{ blog.url }}">{{ 'blogs.article.all_tags' | t }}</a>
+        </li>
+        {%- for tag in blog.all_tags -%}
+        {%- if current_tags contains tag -%}
+        <li class="active">{{ tag }}</li>
+        {%- else -%}
+        <li>{{ tag | link_to_tag: tag }}</li>
+        {%- endif -%}
+        {%- endfor -%}
+      </ul>
+    </div>
+    {%- endif -%}
     {%- if settings.sidebar_html_top != blank -%}
     <div class="content-block content-block--small">
       {%- if settings.sidebar_html_title_top != blank -%}
@@ -134,23 +151,7 @@
     </div>
     {%- endif -%}
 
-    {%- if settings.sidebar_tag -%}
-    <div class="content-block content-block--small">
-      <h6 class="sidebar__title">{{ 'blogs.article.tags' | t }}</h6>
-      <ul class="list-unstyled list-blog-tags clearfix mb-0">
-        <li>
-          <a href="{{ blog.url }}">{{ 'blogs.article.all_tags' | t }}</a>
-        </li>
-        {%- for tag in blog.all_tags -%}
-        {%- if current_tags contains tag -%}
-        <li class="active">{{ tag }}</li>
-        {%- else -%}
-        <li>{{ tag | link_to_tag: tag }}</li>
-        {%- endif -%}
-        {%- endfor -%}
-      </ul>
-    </div>
-    {%- endif -%}
+    
     {%- if settings.sidebar_html != blank -%}
     <div class="content-block content-block--small">
       {%- if settings.sidebar_html_title != blank -%}

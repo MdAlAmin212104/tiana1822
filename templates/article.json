@@ -15,7 +15,7 @@
         "animation": "fade",
         "bgsection": "rgba(0,0,0,0)",
         "gradient_bg": "linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8) 100%)",
-        "layout_featured": "in-image",
+        "layout_featured": "first-image",
         "align": "left",
         "enable_image": true,
         "enable_full": true,
@@ -39,7 +39,7 @@
         "animation": "",
         "paddingsection": "64px 0px 64px 0px",
         "marginsection": "0px 0px 0px 0px",
-        "bgsection": "#F5F0E6",
+        "bgsection": "#f5f0e6",
         "setwidth": "full",
         "bgborder": "#dddddd",
         "wborder": "1px"
@@ -50,7 +50,7 @@
       "settings": {
         "animation": "fade",
         "setwidth": "container",
-        "bgsection": "#F5F0E6",
+        "bgsection": "#f5f0e6",
         "title_top": "",
         "title": "You may so like",
         "des": "",

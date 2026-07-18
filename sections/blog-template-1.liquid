@@ -116,7 +116,7 @@
       {%- paginate blog.articles by limit -%}
       <div class="{% if section.settings.sidebar_enable %}col-md-9 {% if section.settings.sidebar_position == 'left' %} pl-lg-5 {% else %} pr-lg-5{% endif %} {% else %}col-12{% endif %}">
       <tag-blog class="mb-5 d-block" data-aos="{{ animation }}">
-        <ul class="list-unstyled template-blog__tags border-bottom border-top d-flex justify-content-center">
+        <ul class="list-unstyled template-blog__tags border-bottom border-top d-flex">
           <li class="first-alltag template-tags-item">
             <a class="h6" href="{{ blog.url }}">{{ 'blogs.article.all_tags' | t }}</a>
           </li>
