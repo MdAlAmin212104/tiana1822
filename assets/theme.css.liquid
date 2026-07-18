@@ -11782,4 +11782,59 @@ blockquote::before {
   flex: 1 1 auto !important;
 }
 
+/* Custom Side-by-Side Price and Review Badge Layout */
+.product-card__price-review {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 8px;
+  padding: 8px 0;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+.product-card__price-review .product-card__price {
+  margin-bottom: 0 !important;
+  display: inline-flex;
+  align-items: center;
+  font-size: calc(var(--g-font-size) - 1px) !important;
+}
+
+.product-card__price-review .js-review {
+  margin-bottom: 0 !important;
+  display: inline-flex;
+  align-items: center;
+}
+
+.product-card__price-review .jdgm-widget.jdgm-widget {
+  display: inline-block !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.product-card__price-review .jdgm-prev-badge {
+  display: inline-flex !important;
+  align-items: center;
+}
+
+.product-card__price-review .jdgm-prev-badge__text {
+  margin-left: 4px;
+}
+
+/* Force showing review count even if it is 0.00 */
+.product-card .jdgm-widget .jdgm-prev-badge[data-average-rating='0.00'] .jdgm-prev-badge__text {
+  display: inline-block !important;
+}
+
+@media (max-width: 576px) {
+  .product-card__price-review {
+    flex-wrap: wrap;
+    gap: 4px;
+    padding: 6px 0;
+    margin-bottom: 6px;
+  }
+}
+
+
 

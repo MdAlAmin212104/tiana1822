@@ -135,6 +135,38 @@ grid-template-columns: 1fr 1fr;
     padding-bottom: 36px;
     overflow: hidden;
   }
+  .customstyle{{ section.id }} .collection-mobile-swiper .swiper-button-prev,
+  .customstyle{{ section.id }} .collection-mobile-swiper .swiper-button-next {
+    color: #2b2b28 !important;
+    background: #f7f4ec !important;
+    width: 36px !important;
+    height: 36px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1) !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    z-index: 10 !important;
+  }
+  .customstyle{{ section.id }} .collection-mobile-swiper .swiper-button-prev::after,
+  .customstyle{{ section.id }} .collection-mobile-swiper .swiper-button-next::after {
+    font-size: 14px !important;
+    font-weight: bold !important;
+  }
+  .customstyle{{ section.id }} .collection-mobile-swiper .swiper-button-prev {
+    left: 8px !important;
+  }
+  .customstyle{{ section.id }} .collection-mobile-swiper .swiper-button-next {
+    right: 8px !important;
+  }
+  @media (min-width: 750px) {
+    .customstyle{{ section.id }} .collection-mobile-swiper .swiper-button-prev,
+    .customstyle{{ section.id }} .collection-mobile-swiper .swiper-button-next {
+      display: none !important;
+    }
+  }
 }
 @media (min-width:750px){
   .customstyle{{ section.id }} .collection-mobile-swiper{ display:none !important; }
@@ -352,6 +384,8 @@ grid-template-columns: 1fr 1fr;
                       {%- endfor -%}
                     </div>
                     <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                   </div>
                 </div>
 
@@ -385,6 +419,10 @@ grid-template-columns: 1fr 1fr;
                         pagination: {
                           el: el.querySelector('.swiper-pagination'),
                           clickable: true
+                        },
+                        navigation: {
+                          nextEl: el.querySelector('.swiper-button-next'),
+                          prevEl: el.querySelector('.swiper-button-prev'),
                         }
                       });
                     }

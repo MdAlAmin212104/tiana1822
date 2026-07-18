@@ -5878,3 +5878,36 @@ class CheckoutButton extends HTMLElement {
 }
 
 customElements.define('checkout-button', CheckoutButton);
+
+/* Simplify Judge.me Review Badge Counts to Digits Only */
+(function() {
+  function simplifyReviews() {
+    document.querySelectorAll('.jdgm-prev-badge__text').forEach(function(el) {
+      let txt = el.innerText.trim();
+      if (/^\d+$/.test(txt)) {
+        return;
+      }
+      let match = txt.match(/\d+/);
+      if (match) {
+        el.innerText = match[0];
+      } else {
+        let lowerTxt = txt.toLowerCase();
+        if (lowerTxt.indexOf('no reviews') !== -1 || lowerTxt.indexOf('no review') !== -1) {
+          el.innerText = '0';
+        }
+      }
+    });
+  }
+
+  simplifyReviews();
+
+  if (typeof MutationObserver !== 'undefined') {
+    let observer = new MutationObserver(function() {
+      simplifyReviews();
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+  } else {
+    setInterval(simplifyReviews, 1000);
+  }
+})();
+
