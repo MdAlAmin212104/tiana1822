@@ -5911,3 +5911,27 @@ customElements.define('checkout-button', CheckoutButton);
   }
 })();
 
+/* Scroll to Spotlight Ingredients when clicking Product Ingredients tab */
+document.addEventListener('click', function(e) {
+  var target = e.target.closest('.js-scroll-to-ingredients, .tabcustom');
+  if (target) {
+    if (target.classList.contains('tabcustom')) {
+      var text = target.textContent.toLowerCase();
+      if (text.indexOf('ingredient') === -1) {
+        return;
+      }
+    }
+    var showcase = document.getElementById('section-showcase-ingredients');
+    if (showcase) {
+      setTimeout(function() {
+        var offset = 80;
+        var topPos = showcase.getBoundingClientRect().top + window.pageYOffset - offset;
+        window.scrollTo({
+          top: topPos,
+          behavior: 'smooth'
+        });
+      }, 300);
+    }
+  }
+});
+

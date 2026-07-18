@@ -536,8 +536,16 @@
                 </div>
               </div>
             {%- when 'tabcustom' -%}
+              {%- liquid
+                assign title_handle = block.settings.title_tab | default: '' | handleize
+                if title_handle contains 'ingredient' or title_handle contains 'showcase'
+                  assign scroll_class = 'js-scroll-to-ingredients'
+                else
+                  assign scroll_class = ''
+                endif
+              -%}
               <div class="accordion">
-                <div class="tabcustom collapsed d-flex align-items-center h6" data-toggle="collapse" data-target="#tabp-{{ block.id }}">
+                <div class="tabcustom collapsed d-flex align-items-center h6 {{ scroll_class }}" data-toggle="collapse" data-target="#tabp-{{ block.id }}">
                   {% if block.settings.icon != 'none' %}
                   {% case block.settings.icon %}
                     {% when 'checkmark' %} <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-circle-checkmark" viewBox="0 0 64 64"><defs><style>.a{fill:none;stroke:#000;stroke-width:2px}</style></defs><path class="a" d="M52.68 24.48A22 22 0 1 1 47 15.93M21 32l8.5 8.5L57 13"/></svg>
