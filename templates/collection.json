@@ -39,7 +39,7 @@
           "settings": {
             "collection": "shop-all",
             "image": "shopify://shop_images/hydrating_body_butter2_copy_2.png",
-            "color": "#F8F5EE",
+            "color": "#f8f5ee",
             "enable_gradient": false,
             "bg_overlay": "#222222",
             "opacity_overlay": 0.2
@@ -50,7 +50,7 @@
           "settings": {
             "collection": "best-seller",
             "image": "shopify://shop_images/Body_Care_2.jpg",
-            "color": "#F8F5EE",
+            "color": "#f8f5ee",
             "enable_gradient": false,
             "bg_overlay": "#222222",
             "opacity_overlay": 0.2
@@ -61,7 +61,7 @@
           "settings": {
             "collection": "face",
             "image": "shopify://shop_images/facial_care_2_copy_66d63434-a0a1-4816-829e-836327a292b9.jpg",
-            "color": "#F8F5EE",
+            "color": "#f8f5ee",
             "enable_gradient": false,
             "bg_overlay": "#222222",
             "opacity_overlay": 0.2
@@ -72,7 +72,7 @@
           "settings": {
             "collection": "body",
             "image": "shopify://shop_images/beauty-skin-care-close-up-portrait-beautiful-woman-looking-mirror-touching-her-clear-g.png",
-            "color": "#F8F5EE",
+            "color": "#f8f5ee",
             "enable_gradient": false,
             "bg_overlay": "#222222",
             "opacity_overlay": 0.2
@@ -83,7 +83,7 @@
           "settings": {
             "collection": "bundle-save",
             "image": "shopify://shop_images/OLD_FLEUriology_pictures.jpg",
-            "color": "#F8F5EE",
+            "color": "#f8f5ee",
             "enable_gradient": false,
             "bg_overlay": "#222222",
             "opacity_overlay": 0.2
@@ -117,7 +117,7 @@
         "size_image_col": "square",
         "size_title": "h4",
         "paddingsection": "40px 0px 40px 0px",
-        "paddingmobile": "40px 0px 40px 0px",
+        "paddingmobile": "0px 0px 0px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
       }

@@ -16,14 +16,6 @@
         </a>
       </li>
       {%- endif -%}
-      {%- if settings.social_pinterest_link != blank -%}
-      <li class="list-inline-item">
-        <a href="{{ settings.social_pinterest_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Pinterest' }}">
-          {%- render 'icon-pinterest' -%}
-          <span class="icon__fallback-text">Pin</span>
-        </a>
-      </li>
-      {%- endif -%}
       {%- if settings.social_instagram_link != blank -%}
       <li class="list-inline-item">
         <a href="{{ settings.social_instagram_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Instagram' }}">
@@ -32,6 +24,15 @@
         </a>
       </li>
       {%- endif -%}
+      {%- if settings.social_pinterest_link != blank -%}
+      <li class="list-inline-item">
+        <a href="{{ settings.social_pinterest_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Pinterest' }}">
+          {%- render 'icon-pinterest' -%}
+          <span class="icon__fallback-text">Pin</span>
+        </a>
+      </li>
+      {%- endif -%}
+      
       {%- if settings.social_tumblr_link != blank -%}
       <li class="list-inline-item">
         <a href="{{ settings.social_tumblr_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Tumblr' }}">

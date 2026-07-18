@@ -52,7 +52,7 @@
       padding-bottom: 15px;
     }
     .IngredientsShowcase-title {
-      font-size: 2.25rem;
+      font-size: 20px;
       margin: 0;
       font-weight: 500;
     }
@@ -296,7 +296,7 @@
         aspect-ratio: 1 / 1.1;
       }
       .IngredientsShowcase-title {
-        font-size: 1.75rem;
+        font-size: 18px;
       }
     }
   </style>
@@ -304,12 +304,12 @@
   <section id="section-showcase-ingredients" class="IngredientsShowcase">
     <div class="container-fluid">
       <div class="IngredientsShowcase-header">
-        <h2 class="IngredientsShowcase-title">{{ section.settings.heading }}</h2>
-        {%- if all_ingredients_html != blank -%}
+        <p class="IngredientsShowcase-title" style="">{{ section.settings.heading }}</p>
+        {% comment %} {%- if all_ingredients_html != blank -%}
           <button type="button" class="IngredientsShowcase-button button-link js-offcanvas-trigger btn btn--desktop">
             {{ section.settings.btn_label }}
           </button>
-        {%- endif -%}
+        {%- endif -%} {% endcomment %}
       </div>
 
       <div class="IngredientsShowcase__ingredients grid container-fluid">

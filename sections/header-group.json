@@ -165,7 +165,7 @@
         "e_link_login": "link",
         "icon_search": "text",
         "enable_mobile_quick_menu": true,
-        "mobile_quick_menu": "header-working",
+        "mobile_quick_menu": "mobile-header",
         "mobile_quick_menu_bg": "#f8f5ee",
         "mobile_quick_menu_text": "#3d4540"
       }

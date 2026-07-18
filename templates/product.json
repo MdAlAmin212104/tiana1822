@@ -211,7 +211,7 @@
         "content_VDRCxY": {
           "type": "content",
           "settings": {
-            "title_tab": "Key Ingredients",
+            "title_tab": "Product Ingredients",
             "answer_content": "{{ product.metafields.custom.ingredients | metafield_tag }}",
             "page": ""
           }
@@ -248,12 +248,12 @@
         ".IngredientsShowcase__ingredients.container-fluid.grid {padding: 0;}"
       ],
       "settings": {
-        "heading": "Key Ingredients",
+        "heading": "Spotlight Ingredients",
         "btn_label": "full ingredient list",
         "all_ing_title": "All Ingredients",
         "bg_color": "#f5f0e6",
         "text_color": "#2c4a3b",
-        "hide_defaults_if_empty": true,
+        "hide_defaults_if_empty": false,
         "default_ing_1_title": "Coconut Oil",
         "default_ing_1_desc": "<p>Rich in anti-inflammatory and antibacterial benefits, it helps prevent unwanted odor, calm inflammation and moisturize skin. Packed with medium-chain fatty acids and antimicrobial compounds, it helps keep skin clear of harmful bacteria and support healing.</p>",
         "default_ing_1_image": "shopify://shop_images/coconut_oil_learn_more_1024x1024_0eafd6e4-3fce-4147-b8a0-3900194bdd26.webp",
