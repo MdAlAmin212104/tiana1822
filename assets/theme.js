@@ -5911,7 +5911,7 @@ customElements.define('checkout-button', CheckoutButton);
   }
 })();
 
-/* Scroll to Spotlight Ingredients when clicking Product Ingredients tab */
+/* Scroll to/Toggle Spotlight Ingredients when clicking Product Ingredients tab */
 document.addEventListener('click', function(e) {
   var target = e.target.closest('.js-scroll-to-ingredients, .tabcustom');
   if (target) {
@@ -5923,14 +5923,31 @@ document.addEventListener('click', function(e) {
     }
     var showcase = document.getElementById('section-showcase-ingredients');
     if (showcase) {
+      // Small delay to allow Bootstrap collapse triggers to update classes
       setTimeout(function() {
-        var offset = 80;
-        var topPos = showcase.getBoundingClientRect().top + window.pageYOffset - offset;
-        window.scrollTo({
-          top: topPos,
-          behavior: 'smooth'
-        });
-      }, 300);
+        var trigger = target.classList.contains('tabcustom') ? target : document.querySelector('.js-scroll-to-ingredients.tabcustom');
+        if (trigger) {
+          var isCollapsed = trigger.classList.contains('collapsed');
+          if (!isCollapsed) {
+            showcase.style.display = 'block';
+            var offset = 80;
+            var topPos = showcase.getBoundingClientRect().top + window.pageYOffset - offset;
+            window.scrollTo({
+              top: topPos,
+              behavior: 'smooth'
+            });
+          } else {
+            showcase.style.display = 'none';
+          }
+        } else {
+          // Fallback toggle
+          if (showcase.style.display === 'none' || !showcase.style.display) {
+            showcase.style.display = 'block';
+          } else {
+            showcase.style.display = 'none';
+          }
+        }
+      }, 150);
     }
   }
 });

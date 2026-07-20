@@ -769,7 +769,17 @@ var onThumbnailsClick = function(e) {
   e = e || window.event;
   e.preventDefault ? e.preventDefault() : e.returnValue = false;
 
+  var enablePhotoswipe = {{ section.settings.enable_photoswipe | default: false }};
+  if (!enablePhotoswipe) {
+    return false;
+  }
+
   var eTarget = e.target || e.srcElement;
+
+  // Only open PhotoSwipe modal if clicking the zoom button
+  if (!eTarget.closest('.btn-zoom-photoswipe')) {
+    return false;
+  }
 
   // find root element of slide
   var clickedListItem = closest(eTarget, function(el) {
@@ -1032,6 +1042,12 @@ initPhotoSwipeFromDOM('.my-gallery');
       "id": "enable_video_looping",
       "label": "Enable video looping",
       "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_photoswipe",
+      "label": "Enable Image Lightbox / Modal",
+      "default": true
     },
     {
       "type": "header",
