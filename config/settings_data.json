@@ -176,7 +176,7 @@
     "enable_button_hover": false,
     "enable_button_shadow": false,
     "btn_shadow_color": "#C9A961",
-    "text_transform_btn": "capitalize",
+    "text_transform_btn": "uppercase",
     "font_weight_button": "600",
     "base_size_button": 14,
     "letter_spacing_button": 0,

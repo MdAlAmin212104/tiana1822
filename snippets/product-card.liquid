@@ -619,7 +619,7 @@
         <a href="{{ product.url | within: collection }}" title="{{ product.title }}" class=" d-block product-card__name {% if settings.t_product %} text-uppercase {% endif %}">{{ product.title }}</a>
         {{ vendor }}
         {% render 'swatch-grid-1', product: product %}
-        <div class="product-card-cart mt-2">
+        <div class="product-card-cart">
           <span class="btn btn-theme js-grid-cart w-100 {% unless product.available %} disabled {% endunless %}" 
             {% if product.available %}
               title="{{ 'products.product.add_to_cart' | t }}" 
@@ -688,7 +688,7 @@
           <a href="{{ product.url | within: collection }}" title="{{ product.title }}" class=" d-block product-card__name {% if settings.t_product %} text-uppercase {% endif %}">{{ product.title }}</a>
           {{ vendor }}
           {% render 'swatch-grid-1', product: product %}
-          <div class="product-card-cart mt-2">
+          <div class="product-card-cart">
             <span  class="btn btn-theme js-grid-cart {% unless product.available %} disabled {% endunless %}" 
               {% if product.available %}
                 title="{{ 'products.product.add_to_cart' | t }}" 

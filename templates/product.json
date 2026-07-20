@@ -36,9 +36,9 @@
             "widget_style": "card",
             "widget_style_card_selector": "dropdown",
             "subscription_policy_url": "",
-            "color_text_body": "#2C4A3B",
-            "dividers_color": "#C9A961",
-            "background_color": "#F5F0E6",
+            "color_text_body": "#2c4a3b",
+            "dividers_color": "#c9a961",
+            "background_color": "#f5f0e6",
             "border_thickness": 1,
             "border_radius": 0,
             "product": "{{product}}"
@@ -188,7 +188,7 @@
         "media_style": "media-bottom",
         "media_size": "normal",
         "image_size": "square",
-        "enable_video_looping": true,
+        "enable_video_looping": false,
         "stock_enable": false,
         "sizeguide_enable": false,
         "sizeguide_title": "Size Guide",
@@ -332,6 +332,9 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "custom_css": [
+        "a.d-block.product-card__name {height: 20px;}"
+      ],
       "settings": {
         "animation": "fade-up",
         "setwidth": "container",
